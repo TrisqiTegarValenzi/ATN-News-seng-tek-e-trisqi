@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\berita;
 use App\Models\Kategori;
+use App\Models\keywoard;
 use App\Models\tag;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -78,6 +79,7 @@ class beritaeditorController extends Controller
         $berita = berita::all();
 
         $tag = tag::where('berita_id', $data->id)->get();
+        $keywoard = keywoard::where('berita_id', $data->id)->get();
         // $tag = tag::where('id_berita',$id)-get();
         $tagstring = '';
         foreach($tag as $item){
@@ -86,7 +88,14 @@ class beritaeditorController extends Controller
             }
             $tagstring = $tagstring.$item->tag;
         }
-        return view('editor.edite.index', compact('data','ber', 'berita', 'tagstring'));
+        $keywoardstring = '';
+        foreach($keywoard as $itemk){
+            if($keywoardstring != ''){
+                $keywoardstring = $keywoardstring.',';
+            }
+            $keywoardstring = $keywoardstring.$itemk->keywoard;
+        }
+        return view('editor.edite.index', compact('data','ber', 'berita', 'tagstring','keywoardstring'));
     }
     public function updatee(Request $request, $id)
     {
