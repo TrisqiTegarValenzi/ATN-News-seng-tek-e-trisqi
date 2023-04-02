@@ -30580,6 +30580,96 @@
                 </section>
             </div>
         </div>
+        {{-- @php
+            $no=0;
+        @endphp 
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                
+                @foreach($penghargaan as $beritas)
+                <div class="carousel-item @if($no == 0) active  @endif">
+                    <img src="{{ asset('fotopenghargaan/'. $beritas->foto ) }}" alt="berita" 
+                    style="width: 400px;float: left;margin-bottom: 20px; margin:30px">
+                  </div>
+                  @php 
+                    $no++
+                  @endphp
+                @endforeach
+             
+             
+            </div>
+          </div> --}}
+          <div class="post-slider swiper-container pre-load"
+                                                    data-play="1" data-speed="3000" >
+                                                                    <div class="swiper-wrapper">
+                                                                        @foreach ($penghargaan as $beritas)
+                                                                        <div class="p-wrap p-highlight p-overlay-1 swiper-slide"
+                                                                            data-pid="1599">
+                                                                            <div class="overlay-holder">
+                                                                                <div class="p-featured"> <a
+                                                                                        class="p-flink"
+                                                                                        href="/isi_berita/{{ $beritas->id }}"
+                                                                                        title="{{$beritas->judul}}">
+                                                                                        <img width="200" height="150"
+                                                                                            src="{{asset('fotopenghargaan/'. $beritas->foto)}}"
+                                                                                            class="featured-img wp-post-image"
+                                                                                            alt="" decoding="async"
+                                                                                            loading="lazy" /> </a></div>
+                                                                                <div class="overlay-wrap">
+                                                                                    <div
+                                                                                        class="overlay-inner p-content overlay-text">
+                                                                                        <div class="p-categories p-top">
+
+                                                                                        </div>
+                                                                                        <h2 class="entry-title"> <a
+                                                                                                class="p-url"
+                                                                                                href="/isi_berita/{{ $beritas->id }}"
+                                                                                                rel="bookmark">{{ $beritas->judul }}</a>
+                                                                                        </h2>
+                                                                                        <div
+                                                                                            class="review-meta is-meta is-rstyle-1 type-score has-bookmark">
+                                                                                            <div
+                                                                                                class="review-meta-inner">
+                                                                                                <!-- <span
+                                                                                                    class="rline-wrap"><span
+                                                                                                        class="rline activated"></span><span
+                                                                                                        class="rline activated"></span><span
+                                                                                                        class="rline activated"></span><span
+                                                                                                        class="rline activated"></span><span
+                                                                                                        class="rline activated"></span></span> -->
+                                                                                                <div
+                                                                                                    class="review-extra">
+                                                                                                    <!-- <span
+                                                                                                        class="review-description"><strong
+                                                                                                            class="meta-bold">8.8</strong>
+                                                                                                        dari
+                                                                                                        10</span><span
+                                                                                                        class="extra-meta meta-bold">Nilai
+                                                                                                        Bagus</span> -->
+                                                                                                </div>
+                                                                                            </div><span
+                                                                                                class="rb-bookmark bookmark-trigger"
+                                                                                                data-pid="1599">
+                                                                                                <!-- <i
+                                                                                                    data-title="Save it"
+                                                                                                    class="rbi rbi-bookmark"></i> -->
+                                                                                                    <!-- <i
+                                                                                                    data-title="Remove"
+                                                                                                    class="bookmarked-icon rbi rbi-bookmark-fill"></i> -->
+                                                                                                </span>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        @endforeach
+
+                                                                         
+                                                                    </div>
+                                                                    <div
+                                                                        class="slider-pagination slider-pagination-top">
+                                                                    </div>
+                                                                   </div> 
         @include('layouts.utama.footer')
     </div>
     <script>
