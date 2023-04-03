@@ -77,6 +77,11 @@ class PenghargaanController extends Controller
             $data->foto = $filename;
             $data->save();
         }        
+        $data->update([
+            'penghargaan' => $request -> penghargaan,
+            'tanggal' => $request -> tanggal,
+        ]);
+
         return redirect()->route('penghargaan')->with('success','Data Berhasil Di Update');
 
     }

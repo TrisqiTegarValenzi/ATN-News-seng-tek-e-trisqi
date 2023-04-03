@@ -78,16 +78,16 @@
                                   @csrf
                                   <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Nama Penghargaan</label>
-                                    <input type="text" name="penghargaan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->penghargaan}}">
+                                    <input type="text" name="penghargaan" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->penghargaan }}">
                                   </div>
                                   <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Foto</label>
                                     <br><img src="{{ asset('fotopenghargaan/'.$data->foto)}}" alt="" style="width: 120px;float: left;margin-bottom: 5px;"></br>
-                                    <input type="file" name="foto" class="form-control" value="{{ $data->foto}}">
+                                    <input type="file" name="foto" class="form-control" value="{{ $data->foto }}">
                                   </div>
                                   <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Tanggal Penghargaan</label>
-                                    <input type="date" name="tanggal" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->tanggal}}">
+                                    <input type="date" name="tanggal" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->tanggal }}">
                                   </div>
                                   <button type="submit" class="btn btn-primary">Edit</button>
                                 </form>
