@@ -112,8 +112,19 @@
                                                                 <td>
                                                                     <a href="/tampilkategori/{{ $row->id }}"
                                                                         class="btn btn-info" style="color: white;"><i class="mdi mdi-pencil"></i></a>
-                                                                    <a href="/deletekategori/{{ $row->id }}"
-                                                                        class="btn btn-dark" style="color: white;"><i class="mdi mdi-delete"></i></a>
+                                                                        
+                                                                    <!-- <a href="/deletekategori/{{ $row->id }}"
+                                                                    onsubmit="return confirm('Yakin Ingin Menghapus Kategori Ini')"
+                                                                        class="btn btn-dark" style="color: white;"><i class="mdi mdi-delete"></i></a> -->
+                                                                        <form
+                                                                        onsubmit="return confirm('Yakin Ingin Menghapus Data Ini?')"
+                                                                        class="d-inline" action="/deletekategori/{{ $row->id }}"
+                                                                        method="get" enctype="multipart/form-data">
+                                                                        @csrf
+                                                                        <button type="submit" style="color: white;" name="submit"
+                                                                            class="btn btn-dark"><i
+                                                                                class="mdi mdi-delete"></i></button>
+                                                                    </form>
                                                                 </td>
                                                             </tr>
                                                             <?php $i++ ?>

@@ -159,8 +159,16 @@
                                                 <div class="card-body">
                                                     <a href="/editb/{{ $berita->id }}"
                                                         class="btn btn-warning btn-sm">Edit Berita</a>
-                                                    <a href="/deleteb/{{ $berita->id }}"
-                                                        class="btn btn-danger btn-sm">Hapus Berita</a>
+                                                    <!-- <a href="/deleteb/{{ $berita->id }}"
+                                                        class="btn btn-danger btn-sm">Hapus Berita</a> -->
+                                                        <form
+                                                                        onsubmit="return confirm('Yakin Ingin Menghapus Berita Ini?')"
+                                                                        class="d-inline" action="/deleteb/{{ $berita->id }}"
+                                                                        method="get" enctype="multipart/form-data">
+                                                                        @csrf
+                                                                        <button type="submit" style="color: white;" name="submit"
+                                                                            class="btn btn-danger btn-sm">Hapus Berita</button>
+                                                                    </form>
                                                 </div>
                                             </div>
                                         @endforeach
