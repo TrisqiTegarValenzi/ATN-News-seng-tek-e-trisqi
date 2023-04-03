@@ -85,6 +85,15 @@ class HalamanutamaController extends Controller
 
         $penghargaan = penghargaan::limit(3)->get();
 
+        if (Auth::check()) {
+        
+            $notif = Komentar::where('user_id', Auth::user()->id)
+            ->where('parent','!=', 0)->get();
+ 
+         //    dd($notif);
+         }else {
+             $notif = [];
+        }
 
         
         $data = berita::find($id);
@@ -128,6 +137,7 @@ class HalamanutamaController extends Controller
         'keywoard' => $keywoard,
         'keywoardstring' => $keywoardstring,
         'sosmed' => $sosmed,
+        'notif' => $notif,
     ]);
 
        
@@ -146,6 +156,7 @@ class HalamanutamaController extends Controller
             'komentar' => $request->komentar, 
             'berita' => $id,
             'parent' => $request->parent,
+            'user_id' => Auth::user()->id,
         ]);
         return redirect()->back();
     }
