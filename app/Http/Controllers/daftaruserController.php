@@ -38,15 +38,17 @@ class daftaruserController extends Controller
 
     }
     public function dibanned(Request $request)
-    {
+    {   
         $data = User::query()
         ->with('Role')
         ->where("status", "banned")
+        ->orderBy('created_at', 'desc')
         ->where('role_id', '!=',1);
+        // ->appends($request->all());
         if( $katakunci = $request->katakunci){
-            $data = $data->where('username', 'LIKE', '%'.$katakunci.'%')->paginate(5);
+            $data = $data->where('username', 'LIKE', '%'.$katakunci.'%')->paginate(5)->withQueryString();
         }else{
-            $data = $data->paginate(5);
+            $data = $data->paginate(5)->withQueryString();
         }
         // $datap = peminjaman::with('nama', 'buku')->orderBy('id', 'desc')->paginate(5);
         $kontak = Kontak::all();

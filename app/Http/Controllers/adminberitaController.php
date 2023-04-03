@@ -50,7 +50,7 @@ class adminberitaController extends Controller
             ->where('role_id', 3)
             ->where('status', 'aktif')
             ->orderBy('berita_count', 'desc')
-            ->paginate(5);
+            ->paginate(5)->withQueryString();
 
 
         // $diterima = berita::query()

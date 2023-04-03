@@ -21,7 +21,7 @@ class PenggunaController extends Controller
         $data = User::where('username', 'LIKE', '%'.$katakunci.'%')
         ->where('status', 'tidak aktif')
         ->orderBy('created_at', 'desc')
-        ->paginate(5);
+        ->paginate(5)->withQueryString();
     //    dd($files);/
         
         
