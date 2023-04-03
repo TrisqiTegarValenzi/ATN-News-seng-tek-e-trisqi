@@ -59,13 +59,6 @@ class iklanController extends Controller
         return view('admin.iklan.tampiliklan', compact('data', 'kontak'));
     }
     
-    // public function tampilaturan($id){
-
-    //     $data = Aturannews::find($id);
-    //     // dd($data);
-    //     return view('tampilaturan', compact('data'));
-    // }
-    
     public function updateiklan(Request $request, $id){
        $data = sponsor::find($id);
        if ($request->hasFile('foto')) {
@@ -76,6 +69,13 @@ class iklanController extends Controller
         $data->foto = $filename;
         $data->save();
     }
+
+    $data->update([
+        'sponsor' => $request -> sponsor,
+        'deskripsi' => $request -> deskripsi,
+        'mulai' => $request -> mulai,
+        'akhir' => $request -> akhir,
+    ]);
         return redirect()->route('iklan')->with('success','Data Berhasil Di Update');
 
     }
