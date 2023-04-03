@@ -18,7 +18,7 @@ class beritaeditorController extends Controller
         $data = berita::where('judul', 'LIKE', '%'.$katakunci.'%')
         ->where('status', 'belum diterima')
         ->orderBy('updated_at', 'desc')
-        ->paginate(3);
+        ->paginate(3)->withQueryString();
 
         
        
@@ -27,7 +27,7 @@ class beritaeditorController extends Controller
     public function dibuat_editor(Request $request)
     {
         $katakunci = $request->katakunci;
-        $data = berita::where('penulis',Auth::user()->id)->orderBy('updated_at', 'desc')->where('judul', 'LIKE', '%'.$katakunci.'%')->paginate(3);
+        $data = berita::where('penulis',Auth::user()->id)->orderBy('updated_at', 'desc')->where('judul', 'LIKE', '%'.$katakunci.'%')->paginate(3)->withQueryString();
         // $data = compact('kat');
         return view('editor.dibuat_editor.index', compact('data'), [
             'data' => $data
@@ -39,7 +39,7 @@ class beritaeditorController extends Controller
         $data = berita::where('judul', 'LIKE', '%'.$katakunci.'%')
         ->where('status', 'belum diterima')
         ->orderBy('created_at', 'desc')
-        ->paginate(5);
+        ->paginate(5)->withQueryString();
 
         $beritaCount = berita::where('penulis', Auth::user()->id)->count();
         $beritasetuju = berita::where('editor', Auth::user()->id)
@@ -57,7 +57,7 @@ class beritaeditorController extends Controller
         ->where('status', 'diterima')
         ->where('editor', Auth::user()->id)
         ->orderBy('updated_at', 'desc')
-        ->paginate(5);
+        ->paginate(5)->withQueryString();
        
         return view('editor.setujue1.index',['data' => $data]);
     }

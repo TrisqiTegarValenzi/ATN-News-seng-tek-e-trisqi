@@ -48,7 +48,7 @@ class dbadminController extends Controller
         $berita = berita::where('judul', 'LIKE', '%'.$katakunci.'%')
         ->where('penulis', Auth::user()->id)
         ->where('status', 'diterima')
-        ->with('users')->orderBy('view', 'desc')->paginate(5);
+        ->with('users')->orderBy('view', 'desc')->paginate(5)->withQueryString();
         return view('penulis.dashboard.index', ['beritaCount' => $beritaCount,
             'beritasetuju' => $beritasetuju,
             'beritatolak' => $beritatolak,

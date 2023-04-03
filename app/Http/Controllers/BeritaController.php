@@ -481,7 +481,7 @@ class BeritaController extends Controller
         $data = berita::where('judul', 'LIKE', '%'.$katakunci.'%')
         ->where('status', 'diterima')
         ->where('penulis', Auth::user()->id)
-        ->paginate(3);
+        ->paginate(3)->withQueryString();
        
         return view('penulis.disetujui.index',['data' => $data]);
     }
@@ -492,7 +492,7 @@ class BeritaController extends Controller
         $data = berita::where('judul', 'LIKE', '%'.$katakunci.'%')
         ->where('penulis',Auth::user()->id)
         ->where('status', 'ditolak')
-        ->paginate(5);
+        ->paginate(5)->withQueryString();
        
         return view('penulis.ditolak.index',['data' => $data]);
     }

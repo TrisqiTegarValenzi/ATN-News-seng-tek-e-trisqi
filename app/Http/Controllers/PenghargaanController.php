@@ -13,7 +13,7 @@ class PenghargaanController extends Controller
     public function peindex(Request $request){
 
         $katakunci = $request->katakunci;
-        $data = Penghargaan::where('penghargaan', 'LIKE', '%'.$katakunci.'%')->paginate(5);
+        $data = Penghargaan::where('penghargaan', 'LIKE', '%'.$katakunci.'%')->paginate(5)->withQueryString();
         $kontak = Kontak::all();
        
         return view('admin.penghargaan.index',['data' => $data, 'kontak' => $kontak]);

@@ -13,7 +13,7 @@ class iklanController extends Controller
     public function index(Request $request){
 
         $katakunci = $request->katakunci;
-        $data = sponsor::where('sponsor', 'LIKE', '%'.$katakunci.'%')->paginate(5);
+        $data = sponsor::where('sponsor', 'LIKE', '%'.$katakunci.'%')->paginate(5)->withQueryString();
         $kontak = Kontak::all();
         return view('admin.iklan.index',['data' => $data, 'kontak' =>$kontak]);
     }

@@ -24,7 +24,7 @@ class adminberitaController extends Controller
         ->where('status', 'aktif')
         ->withSum('berita', 'view')
         ->orderByDesc('berita_sum_view')
-        ->paginate(5);
+        ->paginate(5)->withQueryString();
 
         return view('admin.penulis berita.index', ['data' => $data, 'kontak' => $kontak]);
     }
