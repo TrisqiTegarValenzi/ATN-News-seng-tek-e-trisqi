@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\berita;
 use App\Models\Kategori;
+use App\Models\keywoard;
 use App\Models\Komentar;
 use App\Models\penghargaan;
 use App\Models\sosmed;
@@ -99,8 +100,17 @@ class HalamanutamaController extends Controller
             }
             $tagstring = $tagstring.$item->tag;
         }
+        $keywoard = keywoard::where('berita_id', $data->id)->get();
+        // $tag = tag::where('id_berita',$id)-get();
+        $keywoardstring = '';
+        foreach($keywoard as $itemk){
+            if($keywoardstring != ''){
+                $keywoardstring = $keywoardstring.',';
+            }
+            $keywoardstring = $keywoardstring.$itemk->keywoard;
+        }
         // $y = $tag->implode(', ', $tag);
-        // dd($tagstring);
+        // dd($keywoardstring);
         
         $komentar = komentar::where('berita',$id)->where('parent', 0)->orderBy('created_at', 'desc')->limit(3)->get();
         $balas = komentar::where('berita',$id)->where('parent', 4)->orderBy('created_at', 'desc')->get();
@@ -114,6 +124,8 @@ class HalamanutamaController extends Controller
         'balas' => $balas,
         'tag' => $tag,
         'tagstring' => $tagstring,
+        'keywoard' => $keywoard,
+        'keywoardstring' => $keywoardstring,
         'sosmed' => $sosmed,
     ]);
 

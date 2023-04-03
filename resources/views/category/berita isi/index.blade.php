@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta charset="UTF-8">
     <meta name="description" content="{{$data->deskripsi}}">
-    <meta name="keywords" content="{{$tagstring}}">
-    {{-- {{dd($tagstring)}} --}}
+    <meta name="keywoards" content="{{$keywoardstring}}">
+    {{-- {{dd($keywoardstring)}} --}}
     <meta name="author" content="{{$data->users->username}}}">
     {{-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
     <link rel="profile" href="https://gmpg.org/xfn/11" />
