@@ -33,7 +33,7 @@ class tolakController extends Controller
         ->where('status', 'ditolak')
         ->where('editor', Auth::user()->id)
         ->orderBy('updated_at', 'desc')
-        ->paginate(5);
+        ->paginate(5)->withQueryString();
        
         return view('editor.tolake1.index',['data' => $data]);
     }

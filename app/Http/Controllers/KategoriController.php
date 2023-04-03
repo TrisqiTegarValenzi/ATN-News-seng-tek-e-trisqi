@@ -14,7 +14,7 @@ class KategoriController extends Controller
     public function kindex(Request $request){
 
         $katakunci = $request->katakunci;
-        $data = Kategori::where('name', 'LIKE', '%'.$katakunci.'%')->orderBy('created_at', 'desc')->paginate(5);
+        $data = Kategori::where('name', 'LIKE', '%'.$katakunci.'%')->orderBy('created_at', 'desc')->paginate(5)->withQueryString();
         $kontak = Kontak::all();
         return view('admin.kategori_admin.index',['data' => $data, 'kontak' => $kontak]);
         
