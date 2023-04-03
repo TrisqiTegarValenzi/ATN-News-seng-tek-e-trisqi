@@ -94,6 +94,7 @@
                                                             <th>Foto</th>
                                                             <th>Iklan Dimulai</th>
                                                             <th>Iklan Berakhir</th>
+                                                            <th>Status</th>
                                                             <th>Aksi</th>
                                                         </tr>
                                                     </thead>
@@ -110,6 +111,7 @@
                                                                 </td>
                                                                 <td>{{$row->mulai}}</td>
                                                                 <td>{{$row->akhir}}</td>
+                                                                <td>{{$row->status}}</td>
                                                                 <td>
                                                                     <a href="/tampiliklan/{{ $row->id }}"
                                                                         class="btn btn-info" style="color: white;"><i class="mdi mdi-pencil"></i></a>

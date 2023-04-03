@@ -13,10 +13,20 @@ class iklanController extends Controller
     public function index(Request $request){
 
         $katakunci = $request->katakunci;
-        $data = sponsor::where('sponsor', 'LIKE', '%'.$katakunci.'%')->paginate(5)->withQueryString();
+        $data = sponsor::where('sponsor', 'LIKE', '%'.$katakunci.'%')
+                      ->paginate(5)
+                      ->withQueryString();
+    
+        // Mengubah status iklan yang berakhir menjadi tidak aktif
+        $expired_data = sponsor::where('akhir', '<', date('Y-m-d'))->get();
+        foreach ($expired_data as $expired) {
+            $expired->update(['status' => 'tidak aktif']);
+        }
+    
         $kontak = Kontak::all();
         return view('admin.iklan.index',['data' => $data, 'kontak' =>$kontak]);
     }
+    
 
     public function tambahiklan(){
         $kontak = Kontak::all();

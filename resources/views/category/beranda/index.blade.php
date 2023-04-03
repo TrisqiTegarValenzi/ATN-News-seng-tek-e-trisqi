@@ -31297,6 +31297,12 @@
             }
         };
     </script>
+    {{-- <script>
+        setTimeout(function() {
+            location.reload();
+        }, 10000);
+    </script> --}}
+    
     <script defer src="wp-content/cache/autoptimize/3/js/autoptimize_23f21e18a67393905ebd2f45fc9eab3f.js"></script>
 </body>
 

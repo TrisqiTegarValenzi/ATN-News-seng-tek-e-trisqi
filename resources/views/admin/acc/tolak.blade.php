@@ -67,7 +67,7 @@
                         <div class="row">
                             <div class="col-12">
                                 <div class="mb-3 row">
-                                    <a href="../daftare">
+                                    <a href="../acc">
                                     <div class="col-sm-10">
                                         <button class="btn btn-warning" name="submit">Kembali</button></div>
                                     </a>

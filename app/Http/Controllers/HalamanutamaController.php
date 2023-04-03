@@ -36,7 +36,8 @@ class HalamanutamaController extends Controller
         $kategori = Kategori::limit(5)->orderBy('created_at', 'desc')->get();
         $kategori2 = Kategori::limit(10)->orderBy('created_at', 'desc')->skip(5)->get();
         $iklan = sponsor::where('status', 'aktif')->limit(1)->inRandomOrder()->get();
-        $iklan1 = sponsor::limit(1)->skip(1)->orderBy('created_at', 'desc')->get();
+        $iklan1 = sponsor::where('status', 'aktif')->limit(1)->inRandomOrder()->get();
+        // $iklan1 = sponsor::limit(1)->skip(1)->orderBy('created_at', 'desc')->get();
 
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
         $penghargaan = penghargaan::limit(3)->orderBy('created_at', 'desc')->get();
