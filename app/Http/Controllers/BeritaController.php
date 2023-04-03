@@ -362,6 +362,21 @@ class BeritaController extends Controller
                 ]);
             }
         }
+        if ($request->keywoard) {
+            $keywoards = keywoard::where('berita_id', $data->id)->get();
+            foreach ($keywoards as $keywoard) {
+                $keywoard->delete();
+            }
+    
+            $try = $request->keywoard;
+            $tes = explode(',', $try);
+            foreach ($tes as $row) {
+                keywoard::create([
+                    'keywoard' => $row,
+                    'berita_id' => $data->id,
+                ]);
+            }
+        }
       
     
    
@@ -419,6 +434,21 @@ class BeritaController extends Controller
             foreach ($test as $row) {
                 Tag::create([
                     'tag' => $row,
+                    'berita_id' => $data->id,
+                ]);
+            }
+        }
+        if ($request->keywoard) {
+            $keywoards = keywoard::where('berita_id', $data->id)->get();
+            foreach ($keywoards as $keywoard) {
+                $keywoard->delete();
+            }
+    
+            $try = $request->keywoard;
+            $tes = explode(',', $try);
+            foreach ($tes as $row) {
+                keywoard::create([
+                    'keywoard' => $row,
                     'berita_id' => $data->id,
                 ]);
             }

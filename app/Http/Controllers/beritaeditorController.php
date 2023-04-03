@@ -152,6 +152,21 @@ class beritaeditorController extends Controller
                 ]);
             }
         }
+        if ($request->keywoard) {
+            $keywoards = keywoard::where('berita_id', $data->id)->get();
+            foreach ($keywoards as $keywoard) {
+                $keywoard->delete();
+            }
+    
+            $try = $request->keywoard;
+            $tes = explode(',', $try);
+            foreach ($tes as $row) {
+                keywoard::create([
+                    'keywoard' => $row,
+                    'berita_id' => $data->id,
+                ]);
+            }
+        }
         
         return redirect()->route('daftare')->with('success', 'Berhasil Diperbarui');
     }
