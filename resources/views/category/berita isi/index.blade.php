@@ -25800,14 +25800,17 @@
                                                {!!$data->deskripsi!!}                
                                                {!!$data->isi!!} 
                                             </p>
-                                            <div class="" style="display: flex; margin-bottom: 5%">
+                                            <div class="" style="margin-bottom: 5%">
                                                 <h3>Tag:</h3>
+                                                <div style="display: flex; margin-top: 2%;">
                                                 @foreach ($data->tags as $tag)
                                                 <form action="{{url('tag')}}" method="get" class="rb-search-form">
-                                                    <input class="form-control me-1" type="search" style="color: white;" name="katakunci" value="{{$tag->tag}}" placeholder="Masukkan kata kunci" aria-label="Search">
+                                                    <input class="form-control me-1" type="hidden" style="color: white;" name="katakunci" value="{{$tag->tag}}" placeholder="Masukkan kata kunci" aria-label="Search">
                                                     <button type="submit">{{$tag->tag}}</button>
                                                 </form>
-                                                @endforeach             
+                                                @endforeach
+                                                </div>
+                                                             
                                             </div>
 
 
