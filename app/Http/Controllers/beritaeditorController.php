@@ -105,6 +105,8 @@ class beritaeditorController extends Controller
             'isi' => 'required',
             'foto' => 'dimensions:min_width=1000,min_height=600',
             'kategori_id' => 'required',
+            'tag' => 'required',
+            'keywoard' => 'required',
         ], [
             'judul.required' => 'Judul Wajib Diisi',
             'judul.max' => 'Judul Maksimal 80 Karakter',
@@ -113,6 +115,8 @@ class beritaeditorController extends Controller
             // 'foto.required' => 'Foto Wajib Diisi',
             'foto.dimensions' => 'Sesuaikan Ukuran Foto',
             'kategori_id.required' => 'Kategori Wajib Diisi',
+            'tag.required' => 'Tag Wajib Diisi',
+            'keywoard.required' => 'Keywoard Wajib Diisi',
         ]);
 
         $data = berita::find($id);
