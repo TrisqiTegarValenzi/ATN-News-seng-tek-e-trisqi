@@ -30580,37 +30580,26 @@
                 </section>
             </div>
         </div>
-        {{-- @php
-            $no=0;
-        @endphp 
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                
-                @foreach($penghargaan as $beritas)
-                <div class="carousel-item @if($no == 0) active  @endif">
-                    <img src="{{ asset('fotopenghargaan/'. $beritas->foto ) }}" alt="berita" 
-                    style="width: 400px;float: left;margin-bottom: 20px; margin:30px">
-                  </div>
-                  @php 
-                    $no++
-                  @endphp
-                @endforeach
-             
-             
-            </div>
-          </div> --}}
-          <div class="post-slider swiper-container pre-load"
-                                                    data-play="1" data-speed="3000" >
+       
+        <h3 class="entry-title"> <a class="p-url" rel="bookmark" style="margin-left: 20px; margin-bottom: 40px;">Penghargaan / Galeri: </a></h3> 
+                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-08344ab"
+                                            data-id="08344ab" data-element_type="column" style="margin-left: 20px; margin-bottom: 20px; margin-top: 20px">
+                                            <div class="elementor-widget-wrap elementor-element-populated">
+                                           
+                                                    <div class="elementor-widget-container">
+                                                        <div id="uid_707005c"
+                                                            class="block-wrap block-overlay overlay-1 light-overlay-scheme p-gradient ecat-bg-2 ecat-size-big">
+                                                            <div class="block-inner">
+                                                                <div class="post-slider swiper-container pre-load"
+                                                                    data-play="1" data-speed="5000">
                                                                     <div class="swiper-wrapper">
                                                                         @foreach ($penghargaan as $beritas)
                                                                         <div class="p-wrap p-highlight p-overlay-1 swiper-slide"
                                                                             data-pid="1599">
                                                                             <div class="overlay-holder">
                                                                                 <div class="p-featured"> <a
-                                                                                        class="p-flink"
-                                                                                        href="/isi_berita/{{ $beritas->id }}"
-                                                                                        title="{{$beritas->judul}}">
-                                                                                        <img width="200" height="150"
+                                                                                        class="p-flink" title="{{$beritas->penghargaan}}">
+                                                                                        <img width="615" height="410"
                                                                                             src="{{asset('fotopenghargaan/'. $beritas->foto)}}"
                                                                                             class="featured-img wp-post-image"
                                                                                             alt="" decoding="async"
@@ -30621,11 +30610,7 @@
                                                                                         <div class="p-categories p-top">
 
                                                                                         </div>
-                                                                                        <h2 class="entry-title"> <a
-                                                                                                class="p-url"
-                                                                                                href="/isi_berita/{{ $beritas->id }}"
-                                                                                                rel="bookmark">{{ $beritas->judul }}</a>
-                                                                                        </h2>
+                                                                                       
                                                                                         <div
                                                                                             class="review-meta is-meta is-rstyle-1 type-score has-bookmark">
                                                                                             <div
@@ -30669,8 +30654,15 @@
                                                                     <div
                                                                         class="slider-pagination slider-pagination-top">
                                                                     </div>
-                                                                   </div> 
-        @include('layouts.utama.footer')
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                                                   
+        @include('layouts.utama.footer') 
     </div>
     <script>
         (function () {
