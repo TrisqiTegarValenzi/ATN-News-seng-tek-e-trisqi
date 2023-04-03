@@ -83,6 +83,11 @@ class KategoriController extends Controller
             $data->fotokat = $filename;
             $data->save();
         }
+        $data->update([
+            'name' => $request -> name,
+            'deskripsi' => $request -> deskripsi,
+        ]);
+
         return redirect()->route('kategori_admin')->with('success','Data Berhasil Di Update');
 
     }
