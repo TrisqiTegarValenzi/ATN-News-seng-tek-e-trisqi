@@ -16,6 +16,7 @@ class tagController extends Controller
     public function index(Request $request)
     {
         $katakunci = $request->katakunci;
+        // dd($katakunci);
         $tag = tag::where('tag', 'LIKE', '%'.$katakunci.'%')
         ->get();
         $beritaid = $tag->pluck('berita_id')->toArray();
@@ -47,6 +48,7 @@ class tagController extends Controller
         'sosmed' => $sosmed,
         'berita' => $berita,
         'notif' => $notif,
+        'katakunci' => $katakunci,
         ]);
         // return view('tag.index');
     }
