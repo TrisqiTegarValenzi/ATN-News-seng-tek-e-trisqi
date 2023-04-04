@@ -166,7 +166,7 @@ class HalamanutamaController extends Controller
             'berita' => $id,
             'parent' => $request->parent,
             'user_id' => Auth::user()->id,
-4        ]);
+        ]);
         return redirect()->back();
     }
 }
