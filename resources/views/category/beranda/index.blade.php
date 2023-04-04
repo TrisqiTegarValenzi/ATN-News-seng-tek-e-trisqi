@@ -30341,7 +30341,7 @@
                                                 <h3 class="heading-title"><span>Berita Lanjutan</span></h3>
                                             </div>
                                         </div>
-                                    </div>judul
+                                    </div>
                                 </div>
                                 <div class="elementor-element elementor-element-7a4c608 elementor-widget elementor-widget-foxiz-overlay-1"
                                 data-id="7a4c608" data-element_type="widget"
@@ -30580,90 +30580,13 @@
                 </section>
             </div>
         </div>
-       
-        <h3 class="entry-title"> <a class="p-url" rel="bookmark" style="margin-left: 20px; margin-bottom: 40px;">Penghargaan / Galeri: </a></h3> 
-                            <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-08344ab"
-                                            data-id="08344ab" data-element_type="column" style="margin-left: 20px; margin-bottom: 20px; margin-top: 20px">
-                                            <div class="elementor-widget-wrap elementor-element-populated">
-                                           
-                                                    <div class="elementor-widget-container">
-                                                        <div id="uid_707005c"
-                                                            class="block-wrap block-overlay overlay-1 light-overlay-scheme p-gradient ecat-bg-2 ecat-size-big">
-                                                            <div class="block-inner">
-                                                                <div class="post-slider swiper-container pre-load"
-                                                                    data-play="1" data-speed="5000">
-                                                                    <div class="swiper-wrapper">
-                                                                        @foreach ($penghargaan as $beritas)
-                                                                        <div class="p-wrap p-highlight p-overlay-1 swiper-slide"
-                                                                            data-pid="1599">
-                                                                            <div class="overlay-holder">
-                                                                                <div class="p-featured"> <a
-                                                                                        class="p-flink" title="{{$beritas->penghargaan}}">
-                                                                                        <img width="615" height="410"
-                                                                                            src="{{asset('fotopenghargaan/'. $beritas->foto)}}"
-                                                                                            class="featured-img wp-post-image"
-                                                                                            alt="" decoding="async"
-                                                                                            loading="lazy" /> </a></div>
-                                                                                <div class="overlay-wrap">
-                                                                                    <div
-                                                                                        class="overlay-inner p-content overlay-text">
-                                                                                        <div class="p-categories p-top">
-
-                                                                                        </div>
-                                                                                       
-                                                                                        <div
-                                                                                            class="review-meta is-meta is-rstyle-1 type-score has-bookmark">
-                                                                                            <div
-                                                                                                class="review-meta-inner">
-                                                                                                <!-- <span
-                                                                                                    class="rline-wrap"><span
-                                                                                                        class="rline activated"></span><span
-                                                                                                        class="rline activated"></span><span
-                                                                                                        class="rline activated"></span><span
-                                                                                                        class="rline activated"></span><span
-                                                                                                        class="rline activated"></span></span> -->
-                                                                                                <div
-                                                                                                    class="review-extra">
-                                                                                                    <!-- <span
-                                                                                                        class="review-description"><strong
-                                                                                                            class="meta-bold">8.8</strong>
-                                                                                                        dari
-                                                                                                        10</span><span
-                                                                                                        class="extra-meta meta-bold">Nilai
-                                                                                                        Bagus</span> -->
-                                                                                                </div>
-                                                                                            </div><span
-                                                                                                class="rb-bookmark bookmark-trigger"
-                                                                                                data-pid="1599">
-                                                                                                <!-- <i
-                                                                                                    data-title="Save it"
-                                                                                                    class="rbi rbi-bookmark"></i> -->
-                                                                                                    <!-- <i
-                                                                                                    data-title="Remove"
-                                                                                                    class="bookmarked-icon rbi rbi-bookmark-fill"></i> -->
-                                                                                                </span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        @endforeach
-
-                                                                         
-                                                                    </div>
-                                                                    <div
-                                                                        class="slider-pagination slider-pagination-top">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                                                   
+        <div class="row">
+            <h3 class="entry-title"> <a class="p-url" rel="bookmark" style="margin-left: 150px; margin-bottom: 40px;">Penghargaan / Galeri: </a></h3> 
+            
+            
+                                                               
         @include('layouts.utama.footer') 
-    </div>
+    
     <script>
         (function () {
             let currentMode = null;
@@ -31304,6 +31227,40 @@
     </script> --}}
     
     <script defer src="wp-content/cache/autoptimize/3/js/autoptimize_23f21e18a67393905ebd2f45fc9eab3f.js"></script>
+
+
+    import React. { useState } from 'react';
+    import './App.css';
+    function App() {
+
+        const imgs=[
+            {id:0,value:"https://wallpaperaccess.com/full/2637581.jpg"},
+            {id:1,value:"https://source.unsplash.com/user/c_v_r/1900x800"},
+            {id:2,value:"https://source.unsplash.com/user/c_v_r/100x100"},
+            {id:3,value:"https://source.unsplash.com/user/c_v_r/1900x700"},
+        ];
+        const [sliderData,setSliderData]=useState(imgs[0])
+        const handleClick=(index)=>{
+         console.log(index);
+         const slider=imgs[index];
+         setSliderData(slider);
+        }
+
+        return (
+            <div className="App">
+                <img src={sliderData.value} height="300" width="500" />
+                <div className='flex_row'>
+ 
+            {
+                imgs.map((data,i)=>
+                <img key={data.id} src={data.value} onClick={()=>handleClick(i)} height="70" width="100" />
+                )
+            }
+            </div>
+        </div>  
+        );
+    }
+export default App;
 </body>
 
 </html>

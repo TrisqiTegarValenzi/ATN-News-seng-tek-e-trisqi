@@ -125,6 +125,15 @@ class HalamanutamaController extends Controller
         $komentar = komentar::where('berita',$id)->where('parent', 0)->orderBy('created_at', 'desc')->limit(3)->get();
         $balas = komentar::where('berita',$id)->where('parent', 4)->orderBy('created_at', 'desc')->get();
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
+        if (Auth::check()) {
+        
+            $notif = Komentar::where('user_id', Auth::user()->id)
+            ->where('parent','!=', 0)->get();
+ 
+         //    dd($notif);
+         }else {
+             $notif = [];
+        }
 
 
         return view('category.berita isi.index', ['data' => $data, 'komentar' => $komentar, 'berita' => $berita, 'beritalaris' => $beritalaris,
@@ -157,7 +166,7 @@ class HalamanutamaController extends Controller
             'berita' => $id,
             'parent' => $request->parent,
             'user_id' => Auth::user()->id,
-        ]);
+4        ]);
         return redirect()->back();
     }
 }
