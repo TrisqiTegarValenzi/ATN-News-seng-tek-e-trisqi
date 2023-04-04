@@ -9,6 +9,7 @@
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="stylesheet" href="{{asset('css/batas.css')}}">
     <style media="all">
+        
         /*! This file is auto-generated */
         .wp-block-button__link {
             color: #fff;
@@ -30582,8 +30583,7 @@
         </div>
         <div class="row">
             <h3 class="entry-title"> <a class="p-url" rel="bookmark" style="margin-left: 150px; margin-bottom: 40px;">Penghargaan / Galeri: </a></h3> 
-            
-            
+           
                                                                
         @include('layouts.utama.footer') 
     
@@ -31220,47 +31220,8 @@
             }
         };
     </script>
-    {{-- <script>
-        setTimeout(function() {
-            location.reload();
-        }, 10000);
-    </script> --}}
-    
-    <script defer src="wp-content/cache/autoptimize/3/js/autoptimize_23f21e18a67393905ebd2f45fc9eab3f.js"></script>
-
-
-    import React. { useState } from 'react';
-    import './App.css';
-    function App() {
-
-        const imgs=[
-            {id:0,value:"https://wallpaperaccess.com/full/2637581.jpg"},
-            {id:1,value:"https://source.unsplash.com/user/c_v_r/1900x800"},
-            {id:2,value:"https://source.unsplash.com/user/c_v_r/100x100"},
-            {id:3,value:"https://source.unsplash.com/user/c_v_r/1900x700"},
-        ];
-        const [sliderData,setSliderData]=useState(imgs[0])
-        const handleClick=(index)=>{
-         console.log(index);
-         const slider=imgs[index];
-         setSliderData(slider);
-        }
-
-        return (
-            <div className="App">
-                <img src={sliderData.value} height="300" width="500" />
-                <div className='flex_row'>
- 
-            {
-                imgs.map((data,i)=>
-                <img key={data.id} src={data.value} onClick={()=>handleClick(i)} height="70" width="100" />
-                )
-            }
-            </div>
-        </div>  
-        );
-    }
-export default App;
+    <script defer src="wp-content/cache/autoptimize/3/js/autoptimize_23f21e18a67393905ebd2f45fc9eab3f.js">
+</script>
 </body>
 
 </html>
