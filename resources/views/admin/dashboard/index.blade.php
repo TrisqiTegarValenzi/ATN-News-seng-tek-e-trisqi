@@ -87,9 +87,9 @@
                             </div>
                             <div class="col-md-6 col-xl-3">
                                 <div class="card-box tilebox-one">
-                                    <i class="mdi mdi-message-settings-variant"></i>
-                                    <h6 class="text-muted text-uppercase mt-0">Aturan</h6>
-                                    <h3 class="my-3"><span data-plugin="counterup">{{$aturanCount}}</span></h3>
+                                    <i class="mdi mdi-message"></i>
+                                    <h6 class="text-muted text-uppercase mt-0">Iklan</h6>
+                                    <h3 class="my-3"><span data-plugin="counterup">{{$iklanCount}}</span></h3>
                                 </div>
                             </div>
                         </div>
