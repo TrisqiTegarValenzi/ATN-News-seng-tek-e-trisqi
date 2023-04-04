@@ -30240,13 +30240,13 @@
                 <div class="rb-container edge-padding">
                     <div class="search-header-inner">
                         <div class="search-header-content">
-                            <h1 class="search-title">Hasil Pencarian Anda...</h1>
+                            <h1 class="search-title">Kumpulan Tag {{$katakunci}}...</h1>
                         </div>
                       
                     </div>
                 </div>
             </header>
-            <div class="blog-wrap without-sidebar sticky-sidebar">
+            <div class="blog-wrap without-sidebar sticky-sidebar" style="margin-top: 10%">
                 <div class="rb-container edge-padding">
                     <div class="grid-container">
                         <div class="blog-content">
