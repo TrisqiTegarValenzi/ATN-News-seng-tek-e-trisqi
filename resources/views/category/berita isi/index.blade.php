@@ -25878,9 +25878,18 @@
                                                                 @if (Route::has('login'))
         
                                                                 @auth
+                                                                @if (Auth::user()->role_id != 4)
+                                                                <span class="meta-label" style="color: red">Hanya Akun Dengan Role Pembaca Yang Bisa Berkomentar !!!</span>
+                                                                <a href="{{url('isi_berita')}}">
+                                                                    <input type="submit" value="Kirim" disabled/>
+                                                                </a>
+                                                                {{-- <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" disabled> --}}
+                                                                @else
                                                                 <a href="{{url('isi_berita')}}">
                                                                     <input type="submit" value="Kirim" />
                                                                 </a>
+                                                                {{-- <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" > --}}
+                                                                @endif
                                                                 
 
                                                                 
@@ -25942,6 +25951,7 @@
                                                                         @if (Route::has('login'))
         
                                                                         @auth
+                                                                        
                                                                         <form action="/komentar/{{$data->id}}" method="post" id="balas-{{$row->id}}" class="mb-3" style="display: none">
                                                                             @csrf
                                                                             <input type="hidden" name="parent" value="{{$row->id}}">
@@ -25949,8 +25959,16 @@
                                                                             <textarea id="komentar" name="komentar" placeholder="Balas Komentar" cols="45" rows="8" class="mb-3 mt-5" required></textarea>
 
                                                                             
-                                                                            <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas">
-                    
+                                                                            @if (Auth::user()->role_id != 4)
+                                                                            <div class="">
+
+                                                                                <span class="meta-label" style="color: red">Hanya Akun Dengan Role Pembaca Yang Bisa Berkomentar !!!</span>
+                                                                            </div>
+
+                                                                            <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" disabled>
+                                                                            @else
+                                                                            <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" >
+                                                                            @endif
 
                                                                         </form>
                                                                         @else
@@ -26003,7 +26021,16 @@
                                                                                     <textarea id="komentar" name="komentar" placeholder="Balas Komentar" cols="45" rows="8" class="mb-3 mt-5" required></textarea>
         
                                                                                     
-                                                                                    <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas">
+                                                                                    @if (Auth::user()->role_id != 4)
+                                                                                    <div class="">
+
+                                                                                        <span class="meta-label" style="color: red">Hanya Akun Dengan Role Pembaca Yang Bisa Berkomentar !!!</span>
+                                                                                    </div>
+
+                                                                                    <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" disabled>
+                                                                                    @else
+                                                                                    <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" >
+                                                                                    @endif
                             
         
                                                                                 </form>
