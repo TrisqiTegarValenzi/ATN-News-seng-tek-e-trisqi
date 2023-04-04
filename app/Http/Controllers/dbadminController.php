@@ -10,6 +10,7 @@ use App\Models\Aturan;
 use App\Models\berita;
 use App\Models\Kategori;
 use App\Models\Kontak;
+use App\Models\sponsor;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,14 +18,14 @@ use Illuminate\Support\Facades\Schema;
 
 class dbadminController extends Controller
 {
-    public function index(KategoriBerita $kategoriBerita, GrafikBeritasChart $GrafikBeritasChart, tahunChart $tahunChart){
-        $aturanCount = Aturan::count();
+    public function index(Request $request,KategoriBerita $kategoriBerita, GrafikBeritasChart $GrafikBeritasChart, tahunChart $tahunChart){
+        $iklanCount = sponsor::where('status', 'aktif')->count();
         $kategoryCount = Kategori::count();
         $userCount = User::where('status', 'aktif')->count();
         $beritaCount = berita::where('status', 'diterima')->count();
         $kontak = Kontak::all();
         return view('admin.dashboard.index', ['kontak' => $kontak,
-        'aturanCount' => $aturanCount,
+        'iklanCount' => $iklanCount,
         'kategoryCount' => $kategoryCount,
         'userCount' => $userCount,
         'beritaCount' => $beritaCount,
