@@ -107,6 +107,13 @@
                                   <label for="exampleInputEmail1" class="form-label">Iklan Berakhir</label>
                                   <input type="date" name="akhir" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{old('iklan')}}">
                                 </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Pilih Jenis Paket</label>
+                                    <select name="paket" id="paket" class="form-select input" value="{{old('iklan')}}">
+                                    <option value="paket_hemat">Paket Hemat</option>
+                                    <option value="paket_super">Paket Super</option>
+                                    </select>
+                                  </div>
                                 
                                 <button type="submit" class="btn btn-primary">Kirim</button>
                               </form>
@@ -140,7 +147,7 @@
                         </div>
 
                         <!-- Modal Add Category -->
-                        <div class="modal fade none-border" id="add-category">
+                        {{-- <div class="modal fade none-border" id="add-category">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -181,7 +188,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                         <!-- END MODAL -->
                     </div>
                     <!-- end col-12 -->

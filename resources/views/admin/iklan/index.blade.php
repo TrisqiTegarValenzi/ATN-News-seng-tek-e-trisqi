@@ -94,6 +94,7 @@
                                                             <th>Foto</th>
                                                             <th>Iklan Dimulai</th>
                                                             <th>Iklan Berakhir</th>
+                                                            <th>Jenis Paket</th>
                                                             <th>Status</th>
                                                             <th>Aksi</th>
                                                         </tr>
@@ -111,6 +112,7 @@
                                                                 </td>
                                                                 <td>{{$row->mulai}}</td>
                                                                 <td>{{$row->akhir}}</td>
+                                                                <td>{{$row->paket}}</td>
                                                                 <td>{{$row->status}}</td>
                                                                 <td>
                                                                     <a href="/tampiliklan/{{ $row->id }}"

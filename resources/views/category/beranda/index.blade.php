@@ -30322,7 +30322,23 @@
                                                 <div class="ad-image">
                                                     <img loading="lazy" decoding="async"
                                                         src="{{ asset('fotoiklan/'. $row->foto)}}"
-                                                        alt="Ad image" width="128" height="10" />
+                                                        alt="Ad image" width="200" height="20" />
+                                                </div>
+                                                @endforeach
+                                                @foreach ($iklan as $row)
+                                                    
+                                                <div class="ad-image">
+                                                    <img loading="lazy" decoding="async"
+                                                        src="{{ asset('fotoiklan/'. $row->foto)}}"
+                                                        alt="Ad image" width="200" height="20" />
+                                                </div>
+                                                @endforeach
+                                                @foreach ($iklan as $row)
+                                                    
+                                                <div class="ad-image">
+                                                    <img loading="lazy" decoding="async"
+                                                        src="{{ asset('fotoiklan/'. $row->foto)}}"
+                                                        alt="Ad image" width="200" height="20" />
                                                 </div>
                                                 @endforeach
                                         </div>

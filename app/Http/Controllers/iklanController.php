@@ -38,11 +38,20 @@ class iklanController extends Controller
             'sponsor'=>'required',
             'deskripsi'=>'required',
             'foto'=>'required|mimes:jpg, jpeg',
+            'mulai'=>'required',
+            'akhir'=>'required',
+            
+
         ],[
             'sponsor.required'=>'Kolom iklan Wajib Diisi',
             'deskripsi.required'=>'Kolom Deskripsi Wajib Diisi',
             'foto.required'=>'Kolom Foto Wajib Diisi',
             'foto.mimes'=>'Foto Wajib Berformat JPG, JPEG',
+            'mulai.required'=>'Kolom Tanggal Mulai Wajib Diisi',
+            'akhir.required'=>'Kolom Tanggal Akhir Wajib Diisi',
+           
+
+
         ]);
 
        
@@ -57,6 +66,7 @@ class iklanController extends Controller
             'foto' => $foto_nama,
             'mulai' => $request->mulai,
             'akhir' => $request->akhir,
+            'paket' => $request->paket,
             'status' => 'aktif'
            ]);
        return redirect()->route('iklan')->with('success','Data Berhasil Di Tambahkan');
@@ -85,6 +95,7 @@ class iklanController extends Controller
         'deskripsi' => $request -> deskripsi,
         'mulai' => $request -> mulai,
         'akhir' => $request -> akhir,
+        'paket' => $request -> paket,
     ]);
         return redirect()->route('iklan')->with('success','Data Berhasil Di Update');
 
