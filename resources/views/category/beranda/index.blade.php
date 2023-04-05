@@ -8,18 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
     <link rel="stylesheet" href="{{asset('css/batas.css')}}">
+    {{-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     {{-- <link rel="stylesheet" href="{{asset('css/.css')}}"> --}}
     <style media="all">
-        #myCarousel {
-  max-width: 640px;
-  margin: 0 auto;
-}
-
-#myCarousel .f-carousel__slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
         /*! This file is auto-generated */
         .wp-block-button__link {
             color: #fff;
@@ -30591,34 +30584,46 @@
                 </section>
             </div>
         </div>
-        <div class="row">
-            <h3 class="entry-title"> <a class="p-url" rel="bookmark" style="margin-left: 150px; margin-bottom: 40px;">Penghargaan / Galeri: </a></h3> 
-            <div>
-                <div class="f-carousel" id="myCarousel">
-                  <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/31/192x144">
-                    <a href="https://lipsum.app/id/31/1920x1280" data-fancybox="gallery"><img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/31/640x480" /></a>
-                  </div>
-                  <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/35/192x144">
-                    <a href="https://lipsum.app/id/35/1920x1280" data-fancybox="gallery"><img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/35/640x480" /></a>
-                  </div>
-                  <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/34/192x144">
-                    <a href="https://lipsum.app/id/34/1920x1280" data-fancybox="gallery"><img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/34/640x480" /></a>
-                  </div>
-                  <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/60/192x144">
-                    <a href="https://lipsum.app/id/60/1920x1280" data-fancybox="gallery"><img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/60/640x480" /></a>
-                  </div>
-                  <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/33/192x144">
-                    <a href="https://lipsum.app/id/33/1920x1280" data-fancybox="gallery"><img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/33/640x480" /></a>
-                  </div>
-                  <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/59/192x144">
-                    <a href="https://lipsum.app/id/59/1920x1280" data-fancybox="gallery"><img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/59/640x480" /></a>
-                  </div>
-                  <div class="f-carousel__slide" data-thumb-src="https://lipsum.app/id/37/192x144">
-                    <a href="https://lipsum.app/id/37/1920x1280" data-fancybox="gallery"><img width="640" height="480" alt="" data-lazy-src="https://lipsum.app/id/37/640x480" /></a>
-                  </div>
+        <div class="" style="display: flex; justify-content:center; width: 100%">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 50%; " >
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="berita.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
                 </div>
-              </div>    
-              </div>                              
+              </div>
+              <div class="carousel-item">
+                <img src="berita2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="kuliner2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>    
+        </div>                       
         @include('layouts.utama.footer') 
     
     <script>
@@ -31254,9 +31259,10 @@
             }
         };
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script defer src="wp-content/cache/autoptimize/3/js/autoptimize_23f21e18a67393905ebd2f45fc9eab3f.js">
 </script>
-<script>
+{{-- <script>
 const container = document.getElementById("myCarousel");
 const options = { Dots: false };
 
@@ -31265,7 +31271,7 @@ new Carousel(container, options, { Thumbs });
 Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
-</script>
+</script> --}}
 </body>
 
 </html>
