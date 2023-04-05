@@ -26038,7 +26038,6 @@
                                                                             
                                                                                 @endauth
                                                                                 @endif
-
                                                                                 @foreach ($childs->childs as $childs2)
                                                                                 <div class="author-info-wrap" style="margin-left: 80px">
                                                                                     <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
@@ -26050,8 +26049,9 @@
                                                                                             {{$childs2->komentar}}
                                                                                             
                                                                                         </div>
-                                                                                    </div>
+                                                                                    </div>  
                                                                                 </div>
+                                                                               
                                                                                       
                                                                                 @endforeach
 
