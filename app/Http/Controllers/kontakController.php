@@ -54,7 +54,7 @@ class kontakController extends Controller
         ]);
     
         
-        return redirect()->route('kontak')->with('sukses', 'Berhasil Mengirim Pesan');
+        return redirect()->route('kontak')->with('sukses', 'Berhasil Mengirim Pesan')->with('gagal','Admin Tidak Dapat Mengirim Pesan!');
     }
 
 }
