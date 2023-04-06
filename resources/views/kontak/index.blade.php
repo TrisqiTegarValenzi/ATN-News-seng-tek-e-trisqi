@@ -28495,9 +28495,11 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                                                 @if (Route::has('login'))
                                                     @auth
                                                     @if (Auth::user()->role_id == 1)
+                                                    @if (Session::has('gagal'))
                                                 <div class="alert alert-danger mt-4" role="alert" style="margin-right: 250px; margin-left: 250px">
                                                   {{Session::get('gagal')}}
                                                 </div>
+                                                @endif
                                                     @elseif (Session::has('sukses'))
                                                 <div class="alert alert-success mt-4" role="alert" style="margin-right: 250px; margin-left: 250px">
                                                   {{Session::get('sukses')}}
