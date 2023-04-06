@@ -40,7 +40,7 @@ class HalamanutamaController extends Controller
         // $iklan1 = sponsor::limit(1)->skip(1)->orderBy('created_at', 'desc')->get();
 
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
-        $penghargaan = penghargaan::limit(3)->orderBy('created_at', 'desc')->get();
+        $penghargaan = penghargaan::orderBy('created_at', 'desc')->get();
 
         if (Auth::check()) {
         

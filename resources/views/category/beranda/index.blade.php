@@ -11,8 +11,10 @@
     {{-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
-    {{-- <link rel="stylesheet" href="{{asset('css/.css')}}"> --}}
+  
+    
     <style media="all">
+        
         /*! This file is auto-generated */
         .wp-block-button__link {
             color: #fff;
@@ -30601,45 +30603,57 @@
             </div>
         </div>
         <div class="" style="display: flex; justify-content:center; width: 100%">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 50%; " >
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 50%;">
+              <div class="carousel-indicators">
+                @foreach ($penghargaan as $index => $row)
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"></button>
+                @endforeach
+              </div>
+              <div class="carousel-inner">
+                @foreach ($penghargaan as $index => $row)
+                <div class="carousel-item @if($index == 0) active @endif">
+                  <img src="{{ asset('fotopenghargaan/' . $row->foto) }}" class="d-block w-100 object-fit-cover" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>{{$row->penghargaan}}</h5>
+                  </div>
+                </div>
+                @endforeach
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="berita.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>First slide label</h5>
-                  <p>Some representative placeholder content for the first slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="berita2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Second slide label</h5>
-                  <p>Some representative placeholder content for the second slide.</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="kuliner2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Third slide label</h5>
-                  <p>Some representative placeholder content for the third slide.</p>
-                </div>
-              </div>
+          </div>
+          
+          
+            <div class="tempe" style="display:flex; flex-wrap: wrap; justify-content: center;">
+              @foreach ($penghargaan as $index => $row)
+                <img src="{{ asset('fotopenghargaan/' . $row->foto) }}"
+                     class="d-block foto-penghargaan {{ $index == 0 ? 'active' : '' }}" 
+                     data-bs-target="#carouselExampleCaptions" 
+                     data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"
+                     alt="..." 
+                     style="max-width: 100px; max-height: 100px; margin: 5px; padding: 0; border: 3px solid transparent;">
+              @endforeach
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>    
-        </div>                       
+          </div>
+          
+          
+          
+            
+            
+            
+            
+            
+            
+              
+        
+        
         @include('layouts.utama.footer') 
     
     <script>
@@ -31278,6 +31292,24 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script defer src="wp-content/cache/autoptimize/3/js/autoptimize_23f21e18a67393905ebd2f45fc9eab3f.js">
 </script>
+<script>
+    // Ambil semua elemen foto yang berada pada class d-block
+    const fotos = document.querySelectorAll('.d-block');
+    
+    // Tambahkan event listener pada setiap foto
+    fotos.forEach(function(foto) {
+      foto.addEventListener('click', function() {
+        // Ambil index dari foto yang di klik
+        const index = Array.from(fotos).indexOf(foto);
+        
+        // Aktifkan slide pada corousel sesuai dengan index foto yang di klik
+        const corousel = document.getElementById('carouselExampleCaptions');
+        const bsCarousel = new bootstrap.Carousel(corousel);
+        bsCarousel.to(index);
+      });
+    });
+  </script>
+  
 {{-- <script>
 const container = document.getElementById("myCarousel");
 const options = { Dots: false };
