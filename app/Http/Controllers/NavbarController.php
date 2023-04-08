@@ -4,13 +4,17 @@ namespace App\Http\Controllers;
 
 use App\Models\berita;
 use App\Models\Kategori;
+use App\Models\Komentar;
 use App\Models\penghargaan;
 use App\Models\sosmed;
 use App\Models\sponsor;
+use App\Models\Notif;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class NavbarController extends Controller
 {
+    
     public function index($id)
     {
         $data = Kategori::find($id);
@@ -28,6 +32,17 @@ class NavbarController extends Controller
         $beritalaris = berita::where('status', 'diterima')->where('statususer', 'aman')->limit(5)->orderBy('view', 'desc')->get();
         $penghargaan = penghargaan::limit(3)->orderBy('created_at', 'desc')->get();
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
+        // $notif = Notif::orderBy('created_at', 'desc')->get();
+         if (Auth::check()) {
+        
+            $notif = Komentar::where('user_id', Auth::user()->id)->where('status', 'belum dibaca')->get();
+ 
+         //    dd($notif);
+         }else {
+             $notif = [];
+        }
+        
+
 
 
 
@@ -46,7 +61,17 @@ class NavbarController extends Controller
         'beritateratas2' => $beritateratas2,
         'penghargaan' => $penghargaan,
         'sosmed' => $sosmed,
-    
+        'notif' => $notif,
     ]);
+    }
+
+    public function baca($id){
+        $data = Komentar::find($id);
+        $data->update([
+            'status' => 'dibaca'
+        ]
+        );
+        return redirect()->route('/');
+
     }
 }

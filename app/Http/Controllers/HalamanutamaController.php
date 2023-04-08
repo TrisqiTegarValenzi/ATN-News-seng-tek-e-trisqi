@@ -11,11 +11,14 @@ use App\Models\sosmed;
 use App\Models\sponsor;
 use App\Models\tag;
 use App\Models\User;
+use App\Models\Notif;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class HalamanutamaController extends Controller
 {
+   
+
     public function index()
     {
         $user = User::where('status', 'aktif')->get();
@@ -44,13 +47,14 @@ class HalamanutamaController extends Controller
 
         if (Auth::check()) {
         
-            $notif = Komentar::where('user_id', Auth::user()->id)
-            ->where('parent','!=', 0)->get();
+            $notif = Komentar::where('user_id', Auth::user()->id)->where('status', 'belum dibaca')->get();
  
          //    dd($notif);
          }else {
              $notif = [];
         }
+
+       
 
         return view('category.beranda.index', ['berita' => $berita, 
         'berita1' => $berita1, 
@@ -85,10 +89,10 @@ class HalamanutamaController extends Controller
 
         $penghargaan = penghargaan::limit(3)->get();
 
+        
         if (Auth::check()) {
         
-            $notif = Komentar::where('user_id', Auth::user()->id)
-            ->where('parent','!=', 0)->get();
+            $notif = Komentar::where('user_id', Auth::user()->id)->where('status', 'belum dibaca')->get();
  
          //    dd($notif);
          }else {
@@ -125,15 +129,16 @@ class HalamanutamaController extends Controller
         $komentar = komentar::where('berita',$id)->where('parent', 0)->orderBy('created_at', 'desc')->limit(3)->get();
         $balas = komentar::where('berita',$id)->where('parent', 4)->orderBy('created_at', 'desc')->get();
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
-        if (Auth::check()) {
+        // $notif = Notif::orderBy('created_at', 'desc')->get();
+        // if (Auth::check()) {
         
-            $notif = Komentar::where('user_id', Auth::user()->id)
-            ->where('parent','!=', 0)->get();
+        //     $notif = Komentar::where('user_id', Auth::user()->id)
+        //     ->where('parent','!=', 0)->get();
  
-         //    dd($notif);
-         }else {
-             $notif = [];
-        }
+        //  //    dd($notif);
+        //  }else {
+        //      $notif = [];
+        // }
 
 
         return view('category.berita isi.index', ['data' => $data, 'komentar' => $komentar, 'berita' => $berita, 'beritalaris' => $beritalaris,
@@ -167,6 +172,12 @@ class HalamanutamaController extends Controller
             'parent' => $request->parent,
             'user_id' => Auth::user()->id,
         ]);
+        // $notif = Notif::create([
+        //     'user_id' => Auth::user()->id,
+        //     'komentar' => $request->komentar,
+        // ]);
         return redirect()->back();
-    }
+        }
+   
+    
 }

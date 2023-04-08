@@ -137,6 +137,8 @@ Route::middleware('auth')->group(function () {
         Route::get('dibanned', [daftaruserController::class, 'dibanned'])->name('dibanned');
         Route::post('/rebanned/{id}', [daftaruserController::class, 'rebanned'])->name('rebanned');
 
+        Route::post('/baca/{id}', [NavbarController::class, 'baca'])->name('baca');
+
 
 
         Route::get('penulis berita', [adminberitaController::class, 'dibuat'])->name('dibuat');
