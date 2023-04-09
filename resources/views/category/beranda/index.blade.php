@@ -30312,28 +30312,13 @@
                                     <div class="elementor-widget-container">
                                         <div class="ad-wrap ad-image-wrap">
                                             <h6 class="ad-description is-meta">- Disponsori -</h6>
-                                            @foreach ($iklan as $row)
-                                                    
-                                                <div class="ad-image">
-                                                    <img loading="lazy" decoding="async"
-                                                        src="{{ asset('fotoiklan/'. $row->foto)}}"
-                                                        alt="Ad image" width="200" height="20" />
-                                                </div>
-                                                @endforeach
+                                            
                                                 @foreach ($iklan as $row)
                                                     
                                                 <div class="ad-image">
                                                     <img loading="lazy" decoding="async"
                                                         src="{{ asset('fotoiklan/'. $row->foto)}}"
-                                                        alt="Ad image" width="200" height="20" />
-                                                </div>
-                                                @endforeach
-                                                @foreach ($iklan as $row)
-                                                    
-                                                <div class="ad-image">
-                                                    <img loading="lazy" decoding="async"
-                                                        src="{{ asset('fotoiklan/'. $row->foto)}}"
-                                                        alt="Ad image" width="200" height="20" />
+                                                        alt="Ad image" width="500" height="10" />
                                                 </div>
                                                 @endforeach
                                         </div>
@@ -30565,6 +30550,7 @@
                                     data-id="86b3bc1" data-element_type="widget"
                                     data-widget_type="foxiz-banner.default">
                                     <div class="elementor-widget-container">
+                                        <h6 class="ad-description is-meta">- Disponsori -</h6>
                                         @foreach ($iklan1 as $row)
                                             
                                         <div class="w-banner">

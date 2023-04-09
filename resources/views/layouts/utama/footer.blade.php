@@ -7,39 +7,27 @@
                         src="{{ asset('logoatn.png') }}
                         " alt="Technology" />
                 </div>
+                
                 <div class="footer-col">
                     <div id="nav_menu-2" class="widget w-sidebar rb-section clearfix widget_nav_menu">
                         <div class="block-h widget-heading heading-layout-10">
-                            <div class="heading-inner">
-                                <h4 class="heading-title"><span>Penghargaan</span></h4>
+                            <div class="sm-50" style="display:flex;">
+                                <h4 class="heading-title"><span>Website ini menyediakan berbagai macam berita memuat informasi yang relevan </span></h4>
+                                <div class="mb-3 row">
+                                    <label for="privasi">
+                                        <a href="{{url('privasi')}}">Kebijakan & Privasi </a>
+                                    </label>                        
+                                </div>
+                                <div class="mb-3 row">
+                                    <label for="kontak">
+                                        <a href="{{url('kontak')}}">Hubungi Kami </a>
+                                    </label>                        
+                                </div>
                             </div>
                         </div>
-                        @foreach ($penghargaan as $row)
-                            <div style="display: flex">
-
-                                <img src="{{ asset('fotopenghargaan/' . $row->foto) }}" alt=""
-                                    style="width: 50px;float: left;margin-bottom: 5px; margin:10px">
-                                {{-- <div class="">{{$row->penghargaan}}</div> --}}
-                            </div>
-                        @endforeach
                     </div>
                 </div>
-                <div class="footer-col">
-                    <div id="nav_menu-2" class="widget w-sidebar rb-section clearfix widget_nav_menu">
-                        <div class="block-h widget-heading heading-layout-10">
-                            <div class="heading-inner">
-                                <h4 class="heading-title"><span>Penghargaan</span></h4>
-                            </div>
-                        </div>
-                        @foreach ($penghargaan as $row)
-                            <div style="display: flex">
 
-                                {{-- <img src="{{ asset('fotopenghargaan/'.$row->foto)}}" alt="" style="width: 50px;float: left;margin-bottom: 5px; margin:10px"> --}}
-                                <div class="" style="margin-bottom: 30px">{{ $row->penghargaan }}</div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
 
                 @foreach ($sosmed as $row)
                 <div class="footer-col">

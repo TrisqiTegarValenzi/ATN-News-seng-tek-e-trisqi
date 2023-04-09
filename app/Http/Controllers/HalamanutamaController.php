@@ -38,8 +38,8 @@ class HalamanutamaController extends Controller
         // $navbar5 = berita::where('status', 'diterima')->where('kategori_id', 2)->limit(5)->orderBy('view', 'desc')->get();
         $kategori = Kategori::limit(5)->orderBy('created_at', 'desc')->get();
         $kategori2 = Kategori::limit(10)->orderBy('created_at', 'desc')->skip(5)->get();
-        $iklan = sponsor::where('status', 'aktif')->limit(1)->inRandomOrder()->get();
-        $iklan1 = sponsor::where('status', 'aktif')->limit(1)->inRandomOrder()->get();
+        $iklan = sponsor::where('status', 'aktif')->where('paket', 'paket_hemat')->limit(1)->inRandomOrder()->get();
+        $iklan1 = sponsor::where('status', 'aktif')->where('paket', 'paket_super')->limit(1)->inRandomOrder()->get();
         // $iklan1 = sponsor::limit(1)->skip(1)->orderBy('created_at', 'desc')->get();
 
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
