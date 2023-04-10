@@ -32895,15 +32895,14 @@
                                         data-widget_type="foxiz-ad-image.default">
                                         <div class="elementor-widget-container">
                                             <div class="ad-wrap ad-image-wrap">
-                                                <h6 class="ad-description is-meta">
-                                                    - Disponsori -
-                                                </h6>
+                                                <h6 class="ad-description is-meta">- Disponsori -</h6>
+                                            
                                                 @foreach ($iklan as $row)
                                                     
                                                 <div class="ad-image">
                                                     <img loading="lazy" decoding="async"
                                                         src="{{ asset('fotoiklan/'. $row->foto)}}"
-                                                        alt="Ad image" width="128" height="10" />
+                                                        alt="Ad image" width="500" height="10" />
                                                 </div>
                                                 @endforeach
 
@@ -32991,6 +32990,7 @@
                                 data-id="86b3bc1" data-element_type="widget"
                                 data-widget_type="foxiz-banner.default">
                                 <div class="elementor-widget-container">
+                                    <h6 class="ad-description is-meta">- Disponsori -</h6>
                                     @foreach ($iklan1 as $row)
                                         
                                     <div class="w-banner">
@@ -33006,7 +33006,6 @@
                                         </div>
                                     </div>
                                     @endforeach
-
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-4a9eadc elementor-invisible elementor-widget elementor-widget-foxiz-heading"

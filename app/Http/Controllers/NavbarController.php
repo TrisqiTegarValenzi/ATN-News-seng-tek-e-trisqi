@@ -27,8 +27,8 @@ class NavbarController extends Controller
         $kategori2 = Kategori::limit(10)->orderBy('created_at', 'desc')->skip(5)->get();
         $berita3 = berita::where('kategori_id', $id)->limit(8)->where('status', 'diterima')->where('statususer', 'aman')->orderBy('updated_at', 'desc')->get();
         $navbar1 = berita::where('status', 'diterima')->where('kategori_id', $id)->where('statususer', 'aman')->limit(5)->orderBy('view', 'desc')->get();
-        $iklan = sponsor::limit(1)->orderBy('created_at', 'desc')->get();
-        $iklan1 = sponsor::limit(1)->skip(1)->orderBy('created_at', 'desc')->get();
+        $iklan = sponsor::where('status', 'aktif')->where('paket', 'paket_hemat')->limit(1)->inRandomOrder()->get();
+        $iklan1 = sponsor::where('status', 'aktif')->where('paket', 'paket_super')->limit(1)->inRandomOrder()->get();
         $beritalaris = berita::where('status', 'diterima')->where('statususer', 'aman')->limit(5)->orderBy('view', 'desc')->get();
         $penghargaan = penghargaan::limit(3)->orderBy('created_at', 'desc')->get();
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
