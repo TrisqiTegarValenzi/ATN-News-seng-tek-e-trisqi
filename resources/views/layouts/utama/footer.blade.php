@@ -41,7 +41,7 @@
                             @foreach ($kategori as $row)
                                 <div class="heading-inner">
 
-                                    <a href="/kontak">{{$row->name}}</a>
+                                    <a href="/isikategori/{{ $row->id }}">{{$row->name}}</a>
                                 </div>
                             @endforeach
 
