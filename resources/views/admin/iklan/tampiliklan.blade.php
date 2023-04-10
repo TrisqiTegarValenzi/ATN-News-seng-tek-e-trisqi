@@ -99,9 +99,9 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Pilih Jenis Paket</label>
-                                        <select name="paket" id="paket" class="form-select input" value="{{old('sponsor')}}">
-                                        <option value="paket_hemat">Paket Hemat</option>
-                                        <option value="paket_super">Paket Super</option>
+                                        <select name="paket" id="paket" class="form-select input" value="{{ $data->paket }}">
+                                        <option value="paket_hemat" <?php echo ($data['paket'] == 'paket_hemat') ? 'selected="selected"' : '' ?>>Paket Hemat</option>
+                                        <option value="paket_super" <?php echo ($data['paket'] == 'paket_super') ? 'selected="selected"' : '' ?>>Paket Super</option>
                                         </select>
                                       </div>
                                     
