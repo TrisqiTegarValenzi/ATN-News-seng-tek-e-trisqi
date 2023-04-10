@@ -46,6 +46,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('info', function(){
+    return phpinfo();
+});
+
 Route::middleware('only_guest')->group(function () {
     Route::get('login', [AuthController::class, 'login'])->name('login');
     Route::post('login', [AuthController::class, 'authenticating']);
