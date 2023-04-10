@@ -12,6 +12,7 @@ use App\Models\sponsor;
 use App\Models\tag;
 use App\Models\User;
 use App\Models\Notif;
+use App\Notifications\CommentReplied;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -54,6 +55,10 @@ class HalamanutamaController extends Controller
              $notif = [];
         }
 
+    //     $comment = Komentar::find($id);
+    // $user = $comment->user;
+    // dd($comment);
+    // $user->notify(new CommentReplied($comment));
        
 
         return view('category.beranda.index', ['berita' => $berita, 
