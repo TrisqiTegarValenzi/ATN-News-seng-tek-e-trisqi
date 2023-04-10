@@ -9,6 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="profile" href="https://gmpg.org/xfn/11" />
     <link rel="stylesheet" href="{{asset('css/batas.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
     <style media="all">
         @charset "UTF-8";
 
@@ -33028,77 +33030,49 @@
         </div>
     </div>
     </div>
-    <div class="post-slider swiper-container pre-load"
-                                                    data-play="1" data-speed="3000" >
-                                                                    <div class="swiper-wrapper">
-                                                                        @foreach ($penghargaan as $beritas)
-                                                                        <div class="p-wrap p-highlight p-overlay-1 swiper-slide"
-                                                                            data-pid="1599">
-                                                                            <div class="overlay-holder">
-                                                                                <div class="p-featured"> <a
-                                                                                        class="p-flink"
-                                                                                        href="/isi_berita/{{ $beritas->id }}"
-                                                                                        title="{{$beritas->judul}}">
-                                                                                        <img width="200" height="150"
-                                                                                            src="{{asset('fotopenghargaan/'. $beritas->foto)}}"
-                                                                                            class="featured-img wp-post-image"
-                                                                                            alt="" decoding="async"
-                                                                                            loading="lazy" /> </a></div>
-                                                                                <div class="overlay-wrap">
-                                                                                    <div
-                                                                                        class="overlay-inner p-content overlay-text">
-                                                                                        <div class="p-categories p-top">
-
-                                                                                        </div>
-                                                                                        <h2 class="entry-title"> <a
-                                                                                                class="p-url"
-                                                                                                href="/isi_berita/{{ $beritas->id }}"
-                                                                                                rel="bookmark">{{ $beritas->judul }}</a>
-                                                                                        </h2>
-                                                                                        <div
-                                                                                            class="review-meta is-meta is-rstyle-1 type-score has-bookmark">
-                                                                                            <div
-                                                                                                class="review-meta-inner">
-                                                                                                <!-- <span
-                                                                                                    class="rline-wrap"><span
-                                                                                                        class="rline activated"></span><span
-                                                                                                        class="rline activated"></span><span
-                                                                                                        class="rline activated"></span><span
-                                                                                                        class="rline activated"></span><span
-                                                                                                        class="rline activated"></span></span> -->
-                                                                                                <div
-                                                                                                    class="review-extra">
-                                                                                                    <!-- <span
-                                                                                                        class="review-description"><strong
-                                                                                                            class="meta-bold">8.8</strong>
-                                                                                                        dari
-                                                                                                        10</span><span
-                                                                                                        class="extra-meta meta-bold">Nilai
-                                                                                                        Bagus</span> -->
-                                                                                                </div>
-                                                                                            </div><span
-                                                                                                class="rb-bookmark bookmark-trigger"
-                                                                                                data-pid="1599">
-                                                                                                <!-- <i
-                                                                                                    data-title="Save it"
-                                                                                                    class="rbi rbi-bookmark"></i> -->
-                                                                                                    <!-- <i
-                                                                                                    data-title="Remove"
-                                                                                                    class="bookmarked-icon rbi rbi-bookmark-fill"></i> -->
-                                                                                                </span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        @endforeach
-
-                                                                         
-                                                                    </div>
-                                                                    <div
-                                                                        class="slider-pagination slider-pagination-top">
-                                                                    </div>
-                                                                   </div> 
+    <div class="heading-inner" style="display: flex; justify-content:center; margin-bottom:4%" >
+        <h3 class="heading-title"><span>Penghargaan / Galeri</span></h3>
+    </div>
+    <div class="" style="display: flex; justify-content:center; width: 100%">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 80%;">
+          <div class="carousel-indicators">
+            @foreach ($penghargaan as $index => $row)
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"></button>
+            @endforeach
+          </div>
+          <div class="carousel-inner">
+            @foreach ($penghargaan as $index => $row)
+            <div class="carousel-item @if($index == 0) active @endif">
+              <img src="{{ asset('fotopenghargaan/' . $row->foto) }}" class="d-block w-100 object-fit-cover" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>{{$row->penghargaan}}</h5>
+              </div>
+            </div>
+            @endforeach
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      
+      
+        <div class="tempe" style="display:flex; flex-wrap: wrap; justify-content: center; margin-bottom:15px">
+          @foreach ($penghargaan as $index => $row)
+            <img src="{{ asset('fotopenghargaan/' . $row->foto) }}"
+                 class="d-block foto-penghargaan {{ $index == 0 ? 'active' : '' }}" 
+                 data-bs-target="#carouselExampleCaptions" 
+                 data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"
+                 alt="..." 
+                 style="max-width: 100px; max-height: 100px; margin: 5px; padding: 0; border: 3px solid transparent;">
+          @endforeach
+        </div>
+      </div>
     @include('layouts.utama.footer')
     
     </div>
@@ -33678,8 +33652,28 @@
             },
         };
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script defer src="wp-content/cache/autoptimize/3/js/autoptimize_23f21e18a67393905ebd2f45fc9eab3f.js">
+</script>
     <script defer
         src="../../wp-content/cache/autoptimize/3/js/autoptimize_23f21e18a67393905ebd2f45fc9eab3f.js"></script>
+        <script>
+            // Ambil semua elemen foto yang berada pada class d-block
+            const fotos = document.querySelectorAll('.d-block');
+            
+            // Tambahkan event listener pada setiap foto
+            fotos.forEach(function(foto) {
+              foto.addEventListener('click', function() {
+                // Ambil index dari foto yang di klik
+                const index = Array.from(fotos).indexOf(foto);
+                
+                // Aktifkan slide pada corousel sesuai dengan index foto yang di klik
+                const corousel = document.getElementById('carouselExampleCaptions');
+                const bsCarousel = new bootstrap.Carousel(corousel);
+                bsCarousel.to(index);
+              });
+            });
+          </script>
 </body>
 
 </html>

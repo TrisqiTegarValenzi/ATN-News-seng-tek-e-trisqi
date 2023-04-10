@@ -22,6 +22,11 @@ class iklanController extends Controller
         foreach ($expired_data as $expired) {
             $expired->update(['status' => 'tidak aktif']);
         }
+
+        $expireddata = sponsor::where('akhir', '>', date('Y-m-d'))->get();
+        foreach ($expireddata as $expired) {
+            $expired->update(['status' => 'aktif']);
+        }
     
         $kontak = Kontak::all();
         return view('admin.iklan.index',['data' => $data, 'kontak' =>$kontak]);
