@@ -137,7 +137,7 @@
                                                           <td style="font-weight: bold;"><a href="/isi/{{ $row->id }}" style="color:black">{{ $row->judul }}</a></td>
                                                           <td><a href="/isi/{{ $row->id }}"><i class="mdi mdi-eye"></i></a></td>
                                                       
-                                                        <td>
+                                                        <td class="text-center">
                                                           <form onsubmit="return confirm('Yakin Ingin Menerima Berita Ini?')" class="d-inline" action="/terimaberita/{{ $row->id }}" method="POST" enctype="multipart/form-data">
                                                               @csrf
                                                               <button type="submit" name="submit"
