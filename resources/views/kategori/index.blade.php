@@ -32900,10 +32900,10 @@
                                                 @foreach ($iklan as $row)
                                                     
                                                 <div class="ad-image">
-                                                    <img loading="lazy" decoding="async"
-                                                        src="{{ asset('fotoiklan/'. $row->foto)}}"
-                                                        alt="Ad image" width="500" height="10" />
+                                                    <img loading="lazy" decoding="async" src="{{ asset('fotoiklan/'. $row->foto)}}" alt="Ad image" width="800" style="height: 70px; object-fit: cover;" />
                                                 </div>
+                                                
+                                                
                                                 @endforeach
 
                                             </div>
