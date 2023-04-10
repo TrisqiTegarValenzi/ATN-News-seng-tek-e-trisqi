@@ -86,7 +86,7 @@
                                             <div class="mb-3 row">
                                                 <label for="jenis" class="col-sm-2 col-form-label">Alasan Berita Ditolak</label>
                                                 <div class="col-sm-10">
-                                                    <input type="text" class="form-control" name='ditolak'>
+                                                    <input type="text" class="form-control" name='ditolak' required>
                                                 </div>
                                             </div>
                                             <div class="mb-3 row">

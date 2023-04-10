@@ -83,7 +83,7 @@
                                     <br>
                                     <h3 class="text-center mb-4">Data Berita Dibuat</h3>
                                     <div class="row col-12 ">
-                                        <form class="d-flex" action="{{ url('dibuat_editor') }}" method="get">
+                                        <form class="d-flex" action="{{ url('daftare') }}" method="get">
                                             <input class="form-control me-1" type="search" name="katakunci"
                                                 value="{{ Request::get('katakunci') }}"
                                                 placeholder="Masukkan kata kunci" aria-label="Search">
