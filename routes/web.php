@@ -268,6 +268,9 @@ Route::middleware('auth')->group(function () {
 });
 
 //halaman utama
+
+// Route::post('/baca/{id}', [komentarController::class, 'baca'])->name('komentar.baca');
+
 Route::get('/', [HalamanutamaController::class, 'index'])->name('/');
 Route::get('/isi_berita/{id}', [HalamanutamaController::class, 'isi'])->name('isi_berita');
 

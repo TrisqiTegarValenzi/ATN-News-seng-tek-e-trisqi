@@ -26869,6 +26869,26 @@
             })
         })
     </script>
+    {{-- <script>
+        $(document).ready(function() {
+    $('a.p-url').click(function(e) {
+        e.preventDefault();
+        var komentarId = $(this).closest('.p-wrap').find('.p-content').attr('data-komentar-id');
+        $.ajax({
+        url: '/baca/' + komentarId,
+        type: 'POST',
+        data: {
+            _token: '{{ csrf_token() }}'
+        },
+        success: function(data) {
+            // Tambahkan kelas CSS "dibaca" pada elemen yang sesuai
+            $('.p-content[data-komentar-id="' + komentarId + '"]').addClass('dibaca');
+        }
+        });
+    });
+    });
+
+  </script> --}}
     <script>
         $(document).ready(function () {
             $('.balaskomen1').click(function () {

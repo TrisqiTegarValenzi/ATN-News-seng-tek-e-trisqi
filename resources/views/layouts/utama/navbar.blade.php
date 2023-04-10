@@ -115,17 +115,23 @@
                                    
                                     @foreach ($notif as $row)
                                     @foreach ($row->childs as $childs)
-                                    <form action="/baca/{{ $childs->id }}" method="post">
+                                    {{-- @foreach ($childs->childs as $childs2) --}}
+                                    <form action="" method="post">
                                         <div class="p-wrap p-small p-list-small-2" data-pid="1599">
 
-                                            <div class="p-content">
-                                                <h5 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $childs->berita }}" rel="bookmark">{{$childs->nama}} Membalas Komentar Anda '{{$childs->komentar}}'</a></h5>
-
-                                            </div>
+                                            <div class="p-content" >
+                                                <h5 class="entry-title">
+                                                  <a class="p-url" href="/isi_berita/{{ $row->berita }}" rel="bookmark">
+                                                    {{ $childs->nama }} Membalas Komentar Anda '{{ $childs->komentar }}'
+                                                  </a>
+                                                </h5>
+                                              </div>
+                                              
 
                                         </div>
                                     </form>
                                     @endforeach
+                                    {{-- @endforeach --}}
                                     @endforeach
 
 

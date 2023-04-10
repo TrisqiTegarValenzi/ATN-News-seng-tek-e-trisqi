@@ -30589,10 +30589,10 @@
             </div>
         </div>
         <div class="heading-inner" style="display: flex; justify-content:center; margin-bottom:4%" >
-            <h3 class="heading-title"><span>Penghargaan</span></h3>
+            <h3 class="heading-title"><span>Penghargaan / Galeri</span></h3>
         </div>
         <div class="" style="display: flex; justify-content:center; width: 100%">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 50%;">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 80%;">
               <div class="carousel-indicators">
                 @foreach ($penghargaan as $index => $row)
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"></button>
@@ -30620,7 +30620,7 @@
           </div>
           
           
-            <div class="tempe" style="display:flex; flex-wrap: wrap; justify-content: center;">
+            <div class="tempe" style="display:flex; flex-wrap: wrap; justify-content: center; margin-bottom:15px">
               @foreach ($penghargaan as $index => $row)
                 <img src="{{ asset('fotopenghargaan/' . $row->foto) }}"
                      class="d-block foto-penghargaan {{ $index == 0 ? 'active' : '' }}" 
@@ -31298,6 +31298,7 @@
       });
     });
   </script>
+  
   
 {{-- <script>
 const container = document.getElementById("myCarousel");

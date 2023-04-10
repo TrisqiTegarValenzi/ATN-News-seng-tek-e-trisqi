@@ -105,6 +105,9 @@ class HalamanutamaController extends Controller
             'view' => $data ->view+1
         ]);
 
+       
+
+
         $tag = tag::where('berita_id', $data->id)->get();
         // $tag = tag::where('id_berita',$id)-get();
         $tagstring = '';
