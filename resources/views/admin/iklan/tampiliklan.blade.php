@@ -99,7 +99,7 @@
                                     </div>
                                     <div class="mb-3">
                                         <label for="exampleInputEmail1" class="form-label">Pilih Jenis Paket</label>
-                                        <select name="paket" id="paket" class="form-select input" value="{{old('iklan')}}">
+                                        <select name="paket" id="paket" class="form-select input" value="{{old('sponsor')}}">
                                         <option value="paket_hemat">Paket Hemat</option>
                                         <option value="paket_super">Paket Super</option>
                                         </select>

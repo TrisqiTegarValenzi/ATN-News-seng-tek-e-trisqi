@@ -93,7 +93,7 @@
                                         </svg>
                                     </div>
                                     <a style="margin-left: 10px;" href="https://wa.me/+62{{ $row->wa }}"
-                                        target="_blank">{{ $row->wa }}</a>
+                                        target="_blank">0{{ $row->wa }}</a>
                                 </div>
 
 
