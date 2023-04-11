@@ -21,7 +21,7 @@ use App\Events\CommentReplied;
 
 class HalamanutamaController extends Controller
 {
-   
+
 
     public function index()
     {
@@ -50,65 +50,67 @@ class HalamanutamaController extends Controller
         $penghargaan = penghargaan::orderBy('created_at', 'desc')->get();
 
         if (Auth::check()) {
-        
+
             $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
- 
+
             // dd($notif);
-         }else {
-             $notif = [];
+        } else {
+            $notif = [];
         }
 
 
-       
 
-        return view('category.beranda.index', ['berita' => $berita, 
-        'berita1' => $berita1, 
-        'berita2' => $berita2, 
-        'berita3' => $berita3, 
-        'berita4' => $berita4,
-        'berita5' => $berita5,
-        'berita6' => $berita6,
-        'berita7' => $berita7,
-        'navbar1' => $navbar1,
-        'kategori' => $kategori,
-        'kategori2' => $kategori2,
-        'iklan' => $iklan,
-        'penghargaan' => $penghargaan,
-        'iklan1' => $iklan1,
-        'sosmed' => $sosmed,
-        'user' => $user,
-        'notif' => $notif,
-        // 'navbar2' => $navbar2,
-        // 'navbar3' => $navbar3,
-        // 'navbar4' => $navbar4,
-        // 'navbar5' => $navbar5,
-    ]);
+
+        return view('category.beranda.index', [
+            'berita' => $berita,
+            'berita1' => $berita1,
+            'berita2' => $berita2,
+            'berita3' => $berita3,
+            'berita4' => $berita4,
+            'berita5' => $berita5,
+            'berita6' => $berita6,
+            'berita7' => $berita7,
+            'navbar1' => $navbar1,
+            'kategori' => $kategori,
+            'kategori2' => $kategori2,
+            'iklan' => $iklan,
+            'penghargaan' => $penghargaan,
+            'iklan1' => $iklan1,
+            'sosmed' => $sosmed,
+            'user' => $user,
+            'notif' => $notif,
+            // 'navbar2' => $navbar2,
+            // 'navbar3' => $navbar3,
+            // 'navbar4' => $navbar4,
+            // 'navbar5' => $navbar5,
+        ]);
     }
-    public function isi($id){
-        
+    public function isi($id)
+    {
+
         $berita = berita::where('status', 'diterima')->where('statususer', 'aman')->limit(5)->orderBy('created_at', 'desc')->get();
         $kategori = Kategori::limit(5)->orderBy('created_at', 'desc')->get();
         $kategori2 = Kategori::limit(10)->orderBy('created_at', 'desc')->skip(5)->get();
         $beritalaris = berita::where('status', 'diterima')->where('statususer', 'aman')->limit(5)->orderBy('view', 'desc')->get();
-        
+
 
         $penghargaan = penghargaan::limit(3)->get();
 
-        
+
         if (Auth::check()) {
-        
+
             $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
 
- 
-         //    dd($notif);
-         }else {
-             $notif = [];
+
+            //    dd($notif);
+        } else {
+            $notif = [];
         }
 
-        
+
         $data = berita::find($id);
         $data->update([
-            'view' => $data ->view+1
+            'view' => $data->view + 1
         ]);
 
         // $idn = Notification::pluck('id');
@@ -118,90 +120,90 @@ class HalamanutamaController extends Controller
         //     'is_read' => 1,
         // ]);
 
-       
+
 
 
         $tag = tag::where('berita_id', $data->id)->get();
         // $tag = tag::where('id_berita',$id)-get();
         $tagstring = '';
-        foreach($tag as $item){
-            if($tagstring != ''){
-                $tagstring = $tagstring.',';
+        foreach ($tag as $item) {
+            if ($tagstring != '') {
+                $tagstring = $tagstring . ',';
             }
-            $tagstring = $tagstring.$item->tag;
+            $tagstring = $tagstring . $item->tag;
         }
         $keywoard = keywoard::where('berita_id', $data->id)->get();
         // $tag = tag::where('id_berita',$id)-get();
         $keywoardstring = '';
-        foreach($keywoard as $itemk){
-            if($keywoardstring != ''){
-                $keywoardstring = $keywoardstring.',';
+        foreach ($keywoard as $itemk) {
+            if ($keywoardstring != '') {
+                $keywoardstring = $keywoardstring . ',';
             }
-            $keywoardstring = $keywoardstring.$itemk->keywoard;
+            $keywoardstring = $keywoardstring . $itemk->keywoard;
         }
         // $y = $tag->implode(', ', $tag);
         // dd($keywoardstring);
-        
-        $komentar = komentar::where('berita',$id)->where('parent', 0)->orderBy('created_at', 'desc')->limit(3)->get();
-        $balas = komentar::where('berita',$id)->where('parent', 4)->orderBy('created_at', 'desc')->get();
+
+        $komentar = komentar::where('berita', $id)->where('parent', 0)->orderBy('created_at', 'desc')->limit(3)->get();
+        $balas = komentar::where('berita', $id)->where('parent', 4)->orderBy('created_at', 'desc')->get();
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
         // $notif = Notif::orderBy('created_at', 'desc')->get();
         // if (Auth::check()) {
-        
+
         //     $notif = Komentar::where('user_id', Auth::user()->id)
         //     ->where('parent','!=', 0)->get();
- 
+
         //  //    dd($notif);
         //  }else {
         //      $notif = [];
         // }
 
 
-        return view('category.berita isi.index', ['data' => $data, 'komentar' => $komentar, 'berita' => $berita, 'beritalaris' => $beritalaris,
-        'kategori' => $kategori,
-        'kategori2' => $kategori2,
-        'penghargaan' => $penghargaan,
-        'balas' => $balas,
-        'tag' => $tag,
-        'tagstring' => $tagstring,
-        'keywoard' => $keywoard,
-        'keywoardstring' => $keywoardstring,
-        'sosmed' => $sosmed,
-        'notif' => $notif,
-    ]);
-
-       
+        return view('category.berita isi.index', [
+            'data' => $data, 'komentar' => $komentar, 'berita' => $berita, 'beritalaris' => $beritalaris,
+            'kategori' => $kategori,
+            'kategori2' => $kategori2,
+            'penghargaan' => $penghargaan,
+            'balas' => $balas,
+            'tag' => $tag,
+            'tagstring' => $tagstring,
+            'keywoard' => $keywoard,
+            'keywoardstring' => $keywoardstring,
+            'sosmed' => $sosmed,
+            'notif' => $notif,
+        ]);
     }
-    public function komentar(Request $request, $id){
+    public function komentar(Request $request, $id)
+    {
         // validasi data input
         $request->validate([
             'komentar' => 'required|max:70'
-        ],[
+        ], [
             'komentar.required' => 'Komentar Wajib Diisi',
             'komentar.max' => 'Komentar Maksimal 70 Karakter',
         ]);
-    
+
         // simpan data komentar baru ke dalam database
         $komentar = Komentar::create([
             'nama' => Auth::user()->username,
-            'komentar' => $request->komentar, 
+            'komentar' => $request->komentar,
             'berita' => $id,
             'parent' => $request->parent,
             'user_id' => Auth::user()->id,
             // 'induk_user' => $request->induk_user, 
 
-            
+
         ]);
-    
+
         // buat notifikasi baru
         $notification = new Notification([
             'user_id' => Auth::user()->id,
             'comment_id' => $komentar->id, // simpan ID komentar
-            'message' => 'Membalas Komentar Anda', 
+            'message' => 'Membalas Komentar Anda',
             'induk_user' => $request->induk_user,
             'berita' =>  $id,
         ]);
-    
+
         // simpan notifikasi ke dalam database
         if (!$notification->save()) {
             return response()->json([
@@ -209,15 +211,17 @@ class HalamanutamaController extends Controller
                 'message' => 'Gagal menyimpan data'
             ], 500);
         }
-    
+
         return redirect()->back();
     }
-//     public function setIsRead($id)
-// {
-//     $item = Notification::find($id);
-//     $item->is_read = 1;
-//     $item->save();
-// }
-   
-    
+    public function baca($id)
+    {
+        $item = Notification::find($id);
+        $item->is_read = 1;
+        $id_b =  $item->berita;
+        $item->save();
+
+        return redirect()->route('isi_berita', ['id' => $id_b]);
+        // return redirect()->route('isi_berita/'.$id_b);
+    }
 }

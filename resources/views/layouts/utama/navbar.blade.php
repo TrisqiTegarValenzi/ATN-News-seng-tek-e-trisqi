@@ -96,7 +96,7 @@
     <div class="wnav-holder header-dropdown-outer">
         <a href="#" class="dropdown-trigger notification-icon" data-notification="1819">
             <span class="notification-icon-inner" data-title="Notifkasi">
-                <span class="notification-icon-svg"> </span> <span class="notification-info"></span>    
+                <span class="notification-icon-svg"> </span> <span class="notification-info"></span>
                 <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
             </span> </a>
 
@@ -112,7 +112,7 @@
                             <div id="uid_notification" class="block-wrap block-small block-list block-list-small-2 short-pagination rb-columns rb-col-1 p-middle">
                                 <div class="block-inner">
 
-                                   
+
                                     @foreach ($notif as $row)
                                     {{-- @foreach ($row->childs as $childs) --}}
                                     {{-- @foreach ($childs->childs as $childs2) --}}
@@ -121,13 +121,16 @@
 
                                             <div class="p-content">
                                                 <h5 class="entry-title">
-                                                  <a class="p-url" href="/isi_berita/{{ $row->berita }}" id="link-{{ $row->id }}" rel="bookmark">
-                                                    {{ $row->users->username }} {{$row->message}} '{{ $row->komentar->komentar }}'
-                                                  </a>
+                                                    <a class="p-url" href="/baca/{{ $row->id }}" id="link-{{ $row->id }}" rel="bookmark">
+                                                        {{ $row->users->username }} {{$row->message}} '{{ $row->komentar->komentar }}'
+                                                    </a>
+                                             
+                                                    
+                                                   
                                                 </h5>
-                                              </div>
-                                              
-                                              
+                                            </div>
+
+
 
                                         </div>
                                     </form>
