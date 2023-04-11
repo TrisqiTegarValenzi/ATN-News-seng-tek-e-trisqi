@@ -93,7 +93,10 @@
                                 </div>
                                 <div class="mb-3">
                                   <label for="exampleInputEmail1" class="form-label">Masukkan Foto</label>
+                                  <div class="col-sm-10">
+                                  <label for="foto" class="">Ukuran Foto: Minimal (1000 x 600)</label>
                                   <input type="file" name="foto" class="form-control">
+                                  </div>
                                 </div>
                                 <div class="mb-3">
                                   <label for="exampleInputEmail1" class="form-label">Tanggal</label>

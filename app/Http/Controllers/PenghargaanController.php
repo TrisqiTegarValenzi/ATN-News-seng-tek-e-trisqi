@@ -33,11 +33,13 @@ class PenghargaanController extends Controller
             
             'penghargaan'=>'required',
             'foto'=>'required|mimes:jpg, jpeg, png',
+            'foto' => 'dimensions:min_width=1000,min_height=600',
             'tanggal'=>'required',
         ],[
             'penghargaan.required'=>'Kolom Penghargaan Wajib Diisi',
             'foto.required'=>'Kolom Foto Wajib Diisi',
             'foto.mimes'=>'Foto Wajib Berformat JPG, JPEG & PNG',
+            'foto.dimensions' => 'Sesuaikan Ukuran Foto',       
             'tanggal.required'=>'Kolom Tanggal Wajib Diisi',
         ]);
         $foto_file = $request->file('foto');

@@ -30591,7 +30591,7 @@
         <div class="heading-inner" style="display: flex; justify-content:center; margin-bottom:4%">
             <h3 class="heading-title"><span>Penghargaan / Galeri</span></h3>
         </div>
-        <div class="" style="display: flex; justify-content:center; width: 100%"> 
+        <div class="container" style="display: flex; justify-content:center; width: 65%"> 
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 80%;">
               <div class="carousel-indicators">
                 @foreach ($penghargaan as $index => $row)
