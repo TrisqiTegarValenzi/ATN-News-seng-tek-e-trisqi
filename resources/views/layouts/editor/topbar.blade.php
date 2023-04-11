@@ -110,7 +110,7 @@
 
     <!-- LOGO -->
     <div class="logo-box">
-        <a href="index.html" class="logo text-center logo-dark">
+        <a href="/" class="logo text-center logo-dark">
             <span class="logo-lg">
                 <!-- <img src="assets/images/logo-light.png/" alt="" height="22"> -->
                 <span class="logo-lg-text-dark">ATN News</span>
