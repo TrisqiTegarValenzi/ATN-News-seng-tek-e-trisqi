@@ -65,13 +65,13 @@ class NavbarController extends Controller
     ]);
     }
 
-    public function baca($id){
-        $data = Komentar::find($id);
-        $data->update([
-            'status' => 'dibaca'
-        ]
-        );
-        return redirect()->route('/');
+    // public function baca($id){
+    //     $data = Komentar::find($id);
+    //     $data->update([
+    //         'status' => 'dibaca'
+    //     ]
+    //     );
+    //     return redirect()->route('/');
 
-    }
+    // }
 }

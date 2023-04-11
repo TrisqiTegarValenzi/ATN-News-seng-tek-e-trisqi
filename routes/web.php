@@ -300,5 +300,8 @@ Route::post('kontak', [kontakController::class, 'create'])->name('kontak');
 
 Route::get('isi/{id}', [isiController::class, 'index'])->name('isi');
 
+Route::get('baca/{id}', [HalamanutamaController::class, 'baca'])->name('baca');
+
+
 
 
