@@ -30314,8 +30314,7 @@
                                             <h6 class="ad-description is-meta">- Disponsori -</h6>
                                             
                                                 @foreach ($iklan as $row)
-                                                    
-                                                <div class="ad-image">
+                                                <div class="ad-image"> <a class="p-flink" title="{{ $row->sponsor }}"> </a>
                                                     <img loading="lazy" decoding="async" src="{{ asset('fotoiklan/'. $row->foto)}}" alt="Ad image" width="800" style="height: 70px; object-fit: cover;" />
                                                 </div>
                                                 
@@ -30551,16 +30550,17 @@
                                     data-widget_type="foxiz-banner.default">
                                     <div class="elementor-widget-container">
                                         <h6 class="ad-description is-meta">- Disponsori -</h6>
+                                       
                                         @foreach ($iklan1 as $row)
                                             
-                                        <div class="w-banner">
+                                        <div class="w-banner"> <a class="p-flink" title="{{ $row->sponsor }}"> </a> > 
                                             <div class="banner-bg"> <img loading="lazy" decoding="async"
-                                                    data-mode="default"
+                                                    data-mode="default" 
                                                     src="{{ asset('fotoiklan/'. $row->foto)}}"
                                                     alt="banner" width="400" height="600"> <img loading="lazy"
                                                     decoding="async" data-mode="dark"
                                                     src="{{ asset('fotoiklan/'. $row->foto)}}" alt="banner"
-                                                    width="600" height="900"></div>
+                                                    width="600" height="900"> </div>
                                             <div class="w-banner-content">
                                                 
                                             </div>
@@ -30588,22 +30588,24 @@
                 </section>
             </div>
         </div>
-        <div class="heading-inner" style="display: flex; justify-content:center; margin-bottom:4%" >
+        <div class="heading-inner" style="display: flex; justify-content:center; margin-bottom:4%">
             <h3 class="heading-title"><span>Penghargaan / Galeri</span></h3>
         </div>
-        <div class="" style="display: flex; justify-content:center; width: 100%">
+        <div class="" style="display: flex; justify-content:center; width: 100%"> 
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 80%;">
               <div class="carousel-indicators">
                 @foreach ($penghargaan as $index => $row)
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"></button>
+                <a class="p-flink" title="{{ $row->penghargaan }}"> </a>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"> </button>
                 @endforeach
               </div>
               <div class="carousel-inner">
                 @foreach ($penghargaan as $index => $row)
                 <div class="carousel-item @if($index == 0) active @endif">
+                    <a class="p-flink" title="{{ $row->penghargaan }}"> </a>
                   <img src="{{ asset('fotopenghargaan/' . $row->foto) }}" class="d-block w-100 object-fit-cover" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>{{$row->penghargaan}}</h5>
+                    <h5>{{ $row->penghargaan }}</h5>
                   </div>
                 </div>
                 @endforeach
