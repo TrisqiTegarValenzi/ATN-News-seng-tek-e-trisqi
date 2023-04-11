@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\CommentReplied as EventsCommentReplied;
 use App\Models\berita;
 use App\Models\Kategori;
 use App\Models\keywoard;
@@ -12,9 +13,11 @@ use App\Models\sponsor;
 use App\Models\tag;
 use App\Models\User;
 use App\Models\Notif;
-use App\Notifications\CommentReplied;
+use App\Models\Notification;
+// use App\Notifications\CommentReplied;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Events\CommentReplied;
 
 class HalamanutamaController extends Controller
 {
@@ -48,17 +51,14 @@ class HalamanutamaController extends Controller
 
         if (Auth::check()) {
         
-            $notif = Komentar::where('user_id', Auth::user()->id)->where('status', 'belum dibaca')->get();
+            $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
  
-         //    dd($notif);
+            // dd($notif);
          }else {
              $notif = [];
         }
 
-    //     $comment = Komentar::find($id);
-    // $user = $comment->user;
-    // dd($comment);
-    // $user->notify(new CommentReplied($comment));
+
        
 
         return view('category.beranda.index', ['berita' => $berita, 
@@ -97,7 +97,8 @@ class HalamanutamaController extends Controller
         
         if (Auth::check()) {
         
-            $notif = Komentar::where('user_id', Auth::user()->id)->where('status', 'belum dibaca')->get();
+            $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
+
  
          //    dd($notif);
          }else {
@@ -109,6 +110,13 @@ class HalamanutamaController extends Controller
         $data->update([
             'view' => $data ->view+1
         ]);
+
+        // $idn = Notification::pluck('id');
+        // // dd($idn);
+        // $read = Notification::find($idn);
+        // $read->update([
+        //     'is_read' => 1,
+        // ]);
 
        
 
@@ -165,27 +173,51 @@ class HalamanutamaController extends Controller
        
     }
     public function komentar(Request $request, $id){
-        
-        $data = berita::all();
+        // validasi data input
         $request->validate([
             'komentar' => 'required|max:70'
         ],[
             'komentar.required' => 'Komentar Wajib Diisi',
             'komentar.max' => 'Komentar Maksimal 70 Karakter',
         ]);
-        $komentar = komentar::create([
+    
+        // simpan data komentar baru ke dalam database
+        $komentar = Komentar::create([
             'nama' => Auth::user()->username,
             'komentar' => $request->komentar, 
             'berita' => $id,
             'parent' => $request->parent,
             'user_id' => Auth::user()->id,
+            // 'induk_user' => $request->induk_user, 
+
+            
         ]);
-        // $notif = Notif::create([
-        //     'user_id' => Auth::user()->id,
-        //     'komentar' => $request->komentar,
-        // ]);
-        return redirect()->back();
+    
+        // buat notifikasi baru
+        $notification = new Notification([
+            'user_id' => Auth::user()->id,
+            'comment_id' => $komentar->id, // simpan ID komentar
+            'message' => 'Membalas Komentar Anda', 
+            'induk_user' => $request->induk_user,
+            'berita' =>  $id,
+        ]);
+    
+        // simpan notifikasi ke dalam database
+        if (!$notification->save()) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Gagal menyimpan data'
+            ], 500);
         }
+    
+        return redirect()->back();
+    }
+//     public function setIsRead($id)
+// {
+//     $item = Notification::find($id);
+//     $item->is_read = 1;
+//     $item->save();
+// }
    
     
 }

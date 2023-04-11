@@ -277,6 +277,7 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/', [HalamanutamaController::class, 'index'])->name('/');
 Route::get('/isi_berita/{id}', [HalamanutamaController::class, 'isi'])->name('isi_berita');
+// Route::get('/set_is_read/{id}', [HalamanutamaController::class, 'setIsRead'])->name('setIsRead');
 
 Route::post('/komentar/{id}', [HalamanutamaController::class, 'komentar'])->name('komentar');
 

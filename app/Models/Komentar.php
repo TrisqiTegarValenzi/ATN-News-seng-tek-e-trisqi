@@ -15,8 +15,8 @@ class Komentar extends Model
     {
         return $this->hasMany(Komentar::class, 'parent');
     }
-    public function notifikasi()
+    public function notif()
     {
-        return $this->hasMany(Notifikasi::class);
+        return $this->hasMany(Notification::class);
     }
 }

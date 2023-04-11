@@ -25955,6 +25955,7 @@
                                                                         <form action="/komentar/{{$data->id}}" method="post" id="balas-{{$row->id}}" class="mb-3" style="display: none">
                                                                             @csrf
                                                                             <input type="hidden" name="parent" value="{{$row->id}}">
+                                                                            <input type="hidden" name="induk_user" value="{{$row->user_id}}">
                                                                             
                                                                             <textarea id="komentar" name="komentar" placeholder="Balas Komentar" cols="45" rows="8" class="mb-3 mt-5" required></textarea>
 
@@ -26898,6 +26899,26 @@
             })
         })
     </script>
+    <script>
+        $(document).ready(function() {
+          $('a.p-url').click(function(event) {
+            event.preventDefault(); // prevent default behavior of the link
+            var linkId = $(this).attr('id'); // get the id of the clicked link
+            var id = linkId.split('-')[1]; // extract the id value
+            $.ajax({
+              type: "POST",
+              url: "/set_is_read/" + id,
+              success: function(data) {
+                // update the UI if necessary
+              },
+              error: function() {
+                // handle error if necessary
+              }
+            });
+          });
+        });
+        </script>
+        
 </body>
  
 </html>

@@ -31298,6 +31298,26 @@
       });
     });
   </script>
+  <script>
+    $(document).ready(function() {
+      $('a.p-url').click(function(event) {
+        event.preventDefault(); // prevent default behavior of the link
+        var linkId = $(this).attr('id'); // get the id of the clicked link
+        var id = linkId.split('-')[1]; // extract the id value
+        $.ajax({
+          type: "POST",
+          url: "/set_is_read/" + id,
+          success: function(data) {
+            // update the UI if necessary
+          },
+          error: function() {
+            // handle error if necessary
+          }
+        });
+      });
+    });
+    </script>
+    
   
   
 {{-- <script>

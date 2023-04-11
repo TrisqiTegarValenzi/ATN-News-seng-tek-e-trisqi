@@ -114,23 +114,24 @@
 
                                    
                                     @foreach ($notif as $row)
-                                    @foreach ($row->childs as $childs)
+                                    {{-- @foreach ($row->childs as $childs) --}}
                                     {{-- @foreach ($childs->childs as $childs2) --}}
                                     <form action="" method="post">
                                         <div class="p-wrap p-small p-list-small-2" data-pid="1599">
 
-                                            <div class="p-content" >
+                                            <div class="p-content">
                                                 <h5 class="entry-title">
-                                                  <a class="p-url" href="/isi_berita/{{ $row->berita }}" rel="bookmark">
-                                                    {{ $childs->nama }} Membalas Komentar Anda '{{ $childs->komentar }}'
+                                                  <a class="p-url" href="/isi_berita/{{ $row->berita }}" id="link-{{ $row->id }}" rel="bookmark">
+                                                    {{ $row->users->username }} {{$row->message}} '{{ $row->komentar->komentar }}'
                                                   </a>
                                                 </h5>
                                               </div>
                                               
+                                              
 
                                         </div>
                                     </form>
-                                    @endforeach
+                                    {{-- @endforeach --}}
                                     {{-- @endforeach --}}
                                     @endforeach
 
