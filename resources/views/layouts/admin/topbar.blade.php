@@ -35,36 +35,6 @@
                                 </div>
                             </a>
                             @endforeach
-                            <!-- <a href="#">
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-2.jpg" class="rounded-circle" alt=""></div>
-                                    <p class="inbox-item-author">Tomaslau</p>
-                                    <p class="inbox-item-text text-truncate">
-                                        Saya sudah menyelesaikannya! Sampai jumpa...</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-3.jpg" class="rounded-circle" alt=""></div>
-                                    <p class="inbox-item-author">Stillnotdavid</p>
-                                    <p class="inbox-item-text text-truncate">Tema ini luar biasa!</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-4.jpg" class="rounded-circle" alt=""></div>
-                                    <p class="inbox-item-author">Kurafire</p>
-                                    <p class="inbox-item-text text-truncate">Senang berkenalan dengan Anda</p>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-5.jpg" class="rounded-circle" alt=""></div>
-                                    <p class="inbox-item-author">Shahedk</p>
-                                    <p class="inbox-item-text text-truncate">Hai! disana aku tersedia...</p>
-
-                                </div>
-                            </a> -->
                         </div> <!-- end inbox-widget -->
 
                     </div>

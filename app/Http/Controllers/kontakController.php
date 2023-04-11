@@ -6,6 +6,7 @@ use App\Models\berita;
 use App\Models\Kategori;
 use App\Models\Kontak;
 use App\Models\penghargaan;
+use App\Models\Role;
 use App\Models\sosmed;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -46,15 +47,19 @@ class kontakController extends Controller
             'pesan.required' => 'Pesan Wajib Diisi',
             
         ]);
-        Kontak::create([
-            'name' => Auth::user()->username,
-            'email' => Auth::user()->email,
-            'judul' => $request -> judul,
-            'pesan' => $request -> pesan
-        ]);
-    
+        if(Auth::user()->role_id == 1){
+            return redirect()->route('kontak')->with('gagal','Admin Tidak Dapat Mengirim Pesan!');
+        }
+        else{
+            Kontak::create([
+                'name' => Auth::user()->username,
+                'email' => Auth::user()->email,
+                'judul' => $request -> judul,
+                'pesan' => $request -> pesan
+            ]);
+            return redirect()->route('kontak')->with('sukses','Berhasil Mengirim Pesan!');
+        }
         
-        return redirect()->route('kontak')->with('sukses', 'Berhasil Mengirim Pesan')->with('gagal','Admin Tidak Dapat Mengirim Pesan!');
     }
 
 }
