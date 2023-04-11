@@ -80,10 +80,10 @@
                                     <label for="exampleInputEmail1" class="form-label">Iklan</label>
                                     <input type="text" name="sponsor" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->sponsor}}">
                                   </div>
-                                  <div class="mb-3">
+                                  {{-- <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Deskripsi</label>
                                     <input type="text" name="deskripsi" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{ $data->deskripsi}}">
-                                  </div>
+                                  </div> --}}
                                   <div class="mb-3">
                                       <label for="exampleInputEmail1" class="form-label">Foto</label>
                                       <br><img src="{{ asset('fotoiklan/'.$data->foto)}}" alt="" style="width: 120px;float: left;margin-bottom: 5px;"></br>

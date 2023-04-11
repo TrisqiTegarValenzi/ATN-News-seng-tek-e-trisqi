@@ -91,10 +91,10 @@
                                   <label for="exampleInputEmail1" class="form-label">Iklan</label>
                                   <input type="text" name="sponsor" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{old('iklan')}}">
                                 </div>
-                                <div class="mb-3">
+                                {{-- <div class="mb-3">
                                   <label for="exampleInputEmail1" class="form-label">Deskripsi</label>
                                   <input type="text" name="deskripsi" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="{{old('iklan')}}">
-                                </div>
+                                </div> --}}
                                 <div class="mb-3">
                                     <label for="exampleInputEmail1" class="form-label">Masukkan Foto</label>
                                     <input type="file" name="foto" class="form-control">
