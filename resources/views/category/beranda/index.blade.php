@@ -30591,6 +30591,17 @@
         <div class="heading-inner" style="display: flex; justify-content:center; margin-bottom:4%">
             <h3 class="heading-title"><span>Penghargaan / Galeri</span></h3>
         </div>
+        @foreach ( $des as $row ) 
+        <center><div class="container">
+            <div class="row">
+        <div class="col-sm-50" >
+            <div class="elementor-widget-container">
+                <p class="container" style="margin-top: 15px ; margin-left:100%; font-size: 14px; font-style: italic">{!!$row->isi!!}</p>
+            </div>           
+            @endforeach
+        </div>
+    </div>
+    </div></center>
         <div class="container" style="display: flex; justify-content:center; width: 65%"> 
             <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 80%;">
               <div class="carousel-indicators">

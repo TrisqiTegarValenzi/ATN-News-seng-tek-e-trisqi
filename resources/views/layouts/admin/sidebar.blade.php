@@ -80,6 +80,13 @@
                         <span> Sosial Media </span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{url('deskripsi_penghargaan')}}">
+                        <i class="mdi mdi-book-open
+                        \f1b3"></i>
+                        <span> Deskripsi Penghargaan </span>
+                    </a>
+                </li>
             </ul>
 
         </div>

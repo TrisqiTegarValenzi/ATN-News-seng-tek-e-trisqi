@@ -32,6 +32,8 @@ use App\Http\Controllers\searchController;
 use App\Http\Controllers\sponsorController;
 use App\Http\Controllers\tagController;
 use App\Http\Controllers\tolakController;
+use App\Http\Controllers\deskripsiController;
+
 use GuzzleHttp\Psr7\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -79,10 +81,13 @@ Route::middleware('auth')->group(function () {
 
         Route::get('tampilprivasi', [PrivasiController::class, 'tampilprivasi'])->name('tampilprivasi');
 
+        //deskripsi penghargaan
+        Route::get('/deskripsi_penghargaan', [deskripsiController::class, 'deskripsi_penghargaan'])->name('deskripsi_penghargaan');
+        Route::post('/insert_deskripsi', [deskripsiController::class, 'insert'])->name('insert_deskripsi');
+
+        Route::get('tampildeskripsi', [deskripsiController::class, 'tampildeskripsi'])->name('tampildeskripsi');
+
         //kontak
-
-
-
         Route::get('pesan', [dbadminController::class, 'pindex']);
         Route::get('/deleteall', [dbadminController::class, 'deleteall'])->name('deleteall');
 
@@ -300,7 +305,7 @@ Route::post('kontak', [kontakController::class, 'create'])->name('kontak');
 
 Route::get('isi/{id}', [isiController::class, 'index'])->name('isi');
 
-Route::get('baca/{id}', [HalamanutamaController::class, 'baca'])->name('baca');
+Route::get('bacas/{id}', [HalamanutamaController::class, 'bacas'])->name('bacas');
 
 
 

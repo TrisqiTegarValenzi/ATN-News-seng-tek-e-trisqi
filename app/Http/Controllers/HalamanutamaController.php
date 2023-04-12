@@ -14,6 +14,7 @@ use App\Models\tag;
 use App\Models\User;
 use App\Models\Notif;
 use App\Models\Notification;
+use App\Models\deskripsi;
 // use App\Notifications\CommentReplied;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -45,7 +46,7 @@ class HalamanutamaController extends Controller
         $iklan = sponsor::where('status', 'aktif')->where('paket', 'paket_hemat')->limit(1)->inRandomOrder()->get();
         $iklan1 = sponsor::where('status', 'aktif')->where('paket', 'paket_super')->limit(1)->inRandomOrder()->get();
         // $iklan1 = sponsor::limit(1)->skip(1)->orderBy('created_at', 'desc')->get();
-
+        $des = deskripsi::all();
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
         $penghargaan = penghargaan::orderBy('created_at', 'desc')->get();
 
@@ -79,6 +80,7 @@ class HalamanutamaController extends Controller
             'sosmed' => $sosmed,
             'user' => $user,
             'notif' => $notif,
+            'des' => $des,
             // 'navbar2' => $navbar2,
             // 'navbar3' => $navbar3,
             // 'navbar4' => $navbar4,
