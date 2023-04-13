@@ -102,7 +102,7 @@
                                         <div class="mb-3">
                                             <label for="exampleInputEmail1" class="form-label">Foto</label>
                                             <input type="file" name="fotokat" class="form-control"
-                                                id="exampleInputEmail1" aria-describedby="emailHelp">
+                                                id="exampleInputEmail1" aria-describedby="emailHelp" required>
                                         </div>
                                         <button type="submit" class="btn btn-primary">Kirim</button>
                                     </form>

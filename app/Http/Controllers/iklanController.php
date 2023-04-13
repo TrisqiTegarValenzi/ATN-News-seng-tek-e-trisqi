@@ -41,7 +41,6 @@ class iklanController extends Controller
     public function insertiklan(Request $request){
         $request->validate([
             'sponsor'=>'required',
-            'deskripsi'=>'required',
             'foto'=>'required|mimes:jpg, jpeg',
             'mulai'=>'required',
             'akhir'=>'required',
@@ -49,7 +48,6 @@ class iklanController extends Controller
 
         ],[
             'sponsor.required'=>'Kolom iklan Wajib Diisi',
-            'deskripsi.required'=>'Kolom Deskripsi Wajib Diisi',
             'foto.required'=>'Kolom Foto Wajib Diisi',
             'foto.mimes'=>'Foto Wajib Berformat JPG, JPEG',
             'mulai.required'=>'Kolom Tanggal Mulai Wajib Diisi',
