@@ -1,4 +1,4 @@
- <!-- Topbar Start -->
+<!-- Topbar Start -->
  <div class="navbar-custom">
     <ul class="list-unstyled topnav-menu float-right mb-0">
 
@@ -6,7 +6,7 @@
             <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown"
                 href="#" role="button" aria-haspopup="false" aria-expanded="false">
                 <img src="assets/images/users/avatar-1.jpg" alt="user-image" class="rounded-circle">
-                <span class="d-none d-sm-inline-block ml-1 font-weight-medium">ATN PENULIS</span>
+                <span class="d-none d-sm-inline-block ml-1 font-weight-medium">RAWR PENULIS</span>
 
             </a>
             <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
@@ -47,7 +47,7 @@
         <a href="index.html" class="logo text-center logo-dark">
             <span class="logo-lg">
                 <!-- <img src="assets/images/logo-light.png/" alt="" height="22"> -->
-                <span class="logo-lg-text-dark">ATN News</span>
+                <span class="logo-lg-text-dark">RAWR News</span>
             </span>
             <span class="logo-sm">
                 <!-- <span class="logo-lg-text-dark">U</span> -->

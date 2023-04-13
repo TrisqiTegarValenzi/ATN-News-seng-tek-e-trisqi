@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Calendar | ATN News - Responsive Bootstrap 4 Admin Dashboard</title>
+    <title>Tambah Penghargaan | RAWR News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Responsive bootstrap 4 admin template" name="description" />
     <meta content="Coderthemes" name="author" />
@@ -57,7 +57,7 @@
                             <div class="page-title-box">
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">ATN News</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">RAWR News</a></li>
                                         <li class="breadcrumb-item active">Penghargaan</li>
                                     </ol>
                                 </div>
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="mb-3">
                                   <label for="exampleInputEmail1" class="form-label">Masukkan Foto</label>
-                                  <div class="col-sm-10">
+                                  <div class="col-sm-20">
                                   <label for="foto" class="">Ukuran Foto: Minimal (1000 x 600)</label>
                                   <input type="file" name="foto" class="form-control">
                                   </div>
@@ -192,7 +192,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        2016 - 2019 &copy; ATN News theme by <a href="#">Coderthemes</a>
+                        &copy; RAWR Admin 
                     </div>
                 </div>
             </div>

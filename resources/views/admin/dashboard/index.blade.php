@@ -4,7 +4,7 @@
 <!-- Mirrored from coderthemes.com/ATN News/layouts/vertical/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:30:19 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Beranda | ATN News </title>
+        <title>Beranda | RAWR News </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Responsive bootstrap 4 admin template" name="description" />
         <meta content="Coderthemes" name="author" />
@@ -51,7 +51,7 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">ATN News</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">RAWR News</a></li>
                                             <li class="breadcrumb-item active">Beranda</li>
                                         </ol>
                                     </div>
@@ -142,7 +142,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
-                                 &copy; ATN Admin
+                                 &copy; RAWR Admin
                             </div>
                         </div>
                     </div>

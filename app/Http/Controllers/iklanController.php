@@ -65,7 +65,6 @@ class iklanController extends Controller
 
         $data = sponsor::create([
             'sponsor' => $request->sponsor,
-            'deskripsi' => $request->deskripsi,
             'foto' => $foto_nama,
             'mulai' => $request->mulai,
             'akhir' => $request->akhir,
