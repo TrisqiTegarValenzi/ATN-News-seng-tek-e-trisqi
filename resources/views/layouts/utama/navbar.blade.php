@@ -103,7 +103,15 @@
         <div class="header-dropdown notification-dropdown">
 
             <div class="notification-popup light-scheme">
-                <div class="notification-header"> <span class="h4">Notifikasi</span> </div>
+                <div class="notification-header"> <span class="h4">Notifikasi
+
+                        <a href="/baca_semua" class="text-white" class="margin-left: 50%;">
+                            <small>Baca Semua</small>
+                        </a>
+
+                    </span>
+
+                </div>
 
                 <div class="notification-content">
                     <div class="scroll-holder">
@@ -112,41 +120,60 @@
                             <div id="uid_notification" class="block-wrap block-small block-list block-list-small-2 short-pagination rb-columns rb-col-1 p-middle">
                                 <div class="block-inner">
 
-
+                                
                                     @foreach ($notif as $row)
                                     {{-- @foreach ($row->childs as $childs) --}}
                                     {{-- @foreach ($childs->childs as $childs2) --}}
-                                    <form action="" method="post">
-                                        <div class="p-wrap p-small p-list-small-2" data-pid="1599">
 
-                                            <div class="p-content">
-                                                <h5 class="entry-title">
-                                                    <a class="p-url" href="/baca/{{ $row->id }}" id="link-{{ $row->id }}" rel="bookmark">
-                                                        {{ $row->users->username }} {{$row->message}} '{{ $row->komentar->komentar }}'
-                                                    </a>
-                                             
-                                                    
-                                                   
-                                                </h5>
-                                            </div>
-
-
-
+                                    <div class="p-wrap p-small p-list-small-2" data-pid="1599">
+                                        <label for="privasi">
+                                            <input type="checkbox" name="privasi" id="termsCheck">
+                                        </label>
+                                        <div class="p-content">
+                                            <h5 class="entry-title" class="margin-left: 10%;">
+                                                <a class="p-url" href="/baca/{{ $row->id }}" id="link-{{ $row->id }}" rel="bookmark">
+                                                    {{ $row->users->username }} {{$row->message}} '{{ $row->komentar->komentar }}'
+                                                </a>
+                                                <!-- <form action="/baca_semua" method="post">
+                                                    @csrf
+                                                    <div class="col-sm-10"><button type="submit" id="submitBtn" disabled>SIMPAN</button></div>
+                                            </h5>
+                                            </form> -->
+                                                
                                         </div>
-                                    </form>
+                                    </div>
+                                    
                                     {{-- @endforeach --}}
                                     {{-- @endforeach --}}
                                     @endforeach
-
-
+                                    <form action="/baca_semua" method="post">
+                                                    @csrf
+                                                    <div class="col-sm-10"><button type="submit" id="submitBtn" disabled>SIMPAN</button></div>
+                                            </h5>
+                                            </form>
+                                    
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script>
+            const termsCheck = document.querySelector('#termsCheck');
+            const submitBtn = document.querySelector('#submitBtn');
+
+            // Memeriksa checkbox setiap kali diperbarui
+            termsCheck.addEventListener('change', function() {
+                if (this.checked) {
+                    // Checkbox dicentang, aktifkan tombol submit
+                    submitBtn.removeAttribute('disabled');
+                } else {
+                    // Checkbox tidak dicentang, nonaktifkan tombol submit
+                    submitBtn.setAttribute('disabled', true);
+                }
+            });
+        </script>
     </div>
     @endif
     @endauth

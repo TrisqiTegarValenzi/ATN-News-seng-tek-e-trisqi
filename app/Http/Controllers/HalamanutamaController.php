@@ -19,6 +19,7 @@ use App\Models\deskripsi;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Events\CommentReplied;
+use Illuminate\Support\Facades\Schema;
 
 class HalamanutamaController extends Controller
 {
@@ -225,5 +226,14 @@ class HalamanutamaController extends Controller
 
         return redirect()->route('isi_berita', ['id' => $id_b]);
         // return redirect()->route('isi_berita/'.$id_b);
+    }
+
+    public function baca_semua(Request $request){
+        $ids = [40, 60, 15, 110];
+        Notification::whereIn("id",$ids)
+        ->update([
+            'is_read' => 1,
+        ]);
+        return redirect()->back();
     }
 }

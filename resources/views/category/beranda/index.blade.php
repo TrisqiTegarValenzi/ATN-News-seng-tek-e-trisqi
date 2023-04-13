@@ -31343,6 +31343,12 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 </script> --}}
+</script>
+        <script>
+        setTimeout(function(){
+       location.reload();
+        }, 10000);
+</script>
 </body>
 
 </html>
