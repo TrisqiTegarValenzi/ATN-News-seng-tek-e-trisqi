@@ -12,7 +12,7 @@
                     <div id="nav_menu-3" class="widget w-sidebar rb-section clearfix widget_nav_menu">
                         <div class="block-h widget-heading heading-layout-10">
                             <div class="heading-inner" style="margin-bottom:7px">
-                                <h4 class="heading-title"><span>ATN News</span></h4>
+                                <h4 class="heading-title"><span>RAWR News</span></h4>
                             </div>
                             <div class="heading-inner">
 

@@ -4,7 +4,7 @@
 <!-- Mirrored from coderthemes.com/ATN News/layouts/vertical/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:31:56 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Calendar | ATN News - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>Calendar | RAWR News - Responsive Bootstrap 4 Admin Dashboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Responsive bootstrap 4 admin template" name="description" />
         <meta content="Coderthemes" name="author" />
@@ -72,7 +72,7 @@
                                 <div class="page-title-box">
                                     <div class="page-title-right">
                                         <ol class="breadcrumb m-0">
-                                            <li class="breadcrumb-item"><a href="javascript: void(0);">ATN News</a></li>
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">RAWR News</a></li>
                                             <li class="breadcrumb-item active">Edit Berita</li>
                                         </ol>
                                     </div>
@@ -253,7 +253,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
-                                2016 - 2019 &copy; ATN News theme by <a href="#">Coderthemes</a>
+                                2016 - 2019 &copy; RAWR News theme by <a href="#">Coderthemes</a>
                             </div>
                         </div>
                     </div>
