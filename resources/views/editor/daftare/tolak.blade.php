@@ -4,7 +4,7 @@
 <!-- Mirrored from coderthemes.com/ATN News/layouts/vertical/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:31:56 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Calendar | RAWR News - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>Tolak Berita | RAWR News</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Responsive bootstrap 4 admin template" name="description" />
         <meta content="Coderthemes" name="author" />
