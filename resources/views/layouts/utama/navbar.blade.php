@@ -106,7 +106,7 @@
                 <div class="notification-header"> <span class="h4">Notifikasi
 
                         <a href="/baca_all" class="text-white" class="margin-left: 50%;">
-                            <small>Baca Semua</small>
+                            <small>Baca Semuaa</small>
                         </a>
 
                     </span>
@@ -182,7 +182,7 @@
                 alert(str);
             }
             </script> -->
-        <script>
+        <!-- <script>
             document.getElementById("cancel-select-all-btn").addEventListener("click", function() {
                 var checkboxes = document.querySelectorAll("input[type=checkbox]");
                 for (var i = 0; i < checkboxes.length; i++) {
@@ -199,7 +199,7 @@
                     checkboxes[i].checked = true;
                 }
             });
-        </script>
+        </script> -->
 
 
         <!-- // $("#myCheckbox").on("change", function() {
