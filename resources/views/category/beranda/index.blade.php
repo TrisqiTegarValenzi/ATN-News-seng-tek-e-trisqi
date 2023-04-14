@@ -29998,7 +29998,7 @@
                                     <div class="logo-wrap is-image-logo site-branding">
                                         <a href="#" class="logo" title="Technology">
                                             <img class="logo-default" data-mode="default" height="60" width="92"
-                                                src="{{asset('logoatn.png')}}
+                                                src="{{asset('logorawr.png')}}
                                                     " alt="Technology" />
                                         </a>
                                     </div>
@@ -30595,7 +30595,7 @@
         <center><div class="container">
             <div class="row">
         <div class="col-sm-50" >
-            <div class="elementor-widget-container">
+            <div class="elementor-widget-container mb-2">
                 <p class="container" style="margin-top: 15px ; margin-left:100%; font-size: 14px; font-style: italic">{!!$row->isi!!}</p>
             </div>           
             @endforeach

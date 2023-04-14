@@ -5,7 +5,7 @@
                 {{--  --}}
                 <div class="mobile-logo-wrap is-image-logo site-branding">
                     <img class="logo-default" data-mode="default" height="60" width="92"
-                    src="{{asset('logoatn.png')}}
+                    src="{{asset('logorawr.png')}}
                         " alt="Technology" />
                 </div>
             </div>
