@@ -228,42 +228,27 @@ class HalamanutamaController extends Controller
         // return redirect()->route('isi_berita/'.$id_b);
     }
 
-    public function baca_semua(Request $request, $id){
-        // $selectIds = $request->input('notif');
-        // $item = Notification::whereIn('id', $selectIds)->get();
-        // $item->is_read = 1;
-        // $id_b =  $item->berita;
+    public function baca_semua($id){
         
-        // if (isset($item) && count($item) > 0) {
-        // }else {
-        //     $item = [];
-        // }
-
-        // $item->save();
-        // return redirect()->route('/', ['id' => $id_b]);
-
-        // $ids = $request->id;
-        // Notification::whereIn('id',$ids)
-        // ->update([
-        //     'is_read' => 1,
-        // ]);
 
         $item = Notification::find($id);
         $item->is_read = 1;
         $id_b =  $item->berita;
         $item->save();
 
-        // if ($request->has('myCheckbox')) {
-        //     foreach ($request->myCheckbox as $item) {
-        //         Notification::find($item)->update([
-        //             'is_read' => 1,
-        //         ]);
-        //     }
-        //     return redirect()->back()->with('success', 'Promo Berhasil Diterima');
-        // } else {
-        //     return redirect()->back()->with('error', 'Tidak ada promo yang dipilih');
-        // }
+        return redirect()->route('/', ['id' => $id_b]);
+    }
 
-        return redirect()->back();
+    public function baca_all(){
+        
+
+        $item = Notification::request([
+            'is_read' = 1,
+        ]);
+        $item->is_read = 1;
+        $id_b =  $item->berita;
+        $item->save();
+
+        return redirect()->route('/', ['id' => $id_b]);
     }
 }

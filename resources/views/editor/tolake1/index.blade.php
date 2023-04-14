@@ -132,7 +132,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            &copy; RAWR Penulis<a href="#"></a>
+                            &copy; RAWR Editor<a href="#"></a>
                         </div>
                     </div>
                 </div>

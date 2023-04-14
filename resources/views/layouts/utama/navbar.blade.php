@@ -105,7 +105,7 @@
             <div class="notification-popup light-scheme">
                 <div class="notification-header"> <span class="h4">Notifikasi
 
-                        <a href="/baca_semua" class="text-white" class="margin-left: 50%;">
+                        <a href="/baca_all" class="text-white" class="margin-left: 50%;">
                             <small>Baca Semua</small>
                         </a>
 
@@ -126,20 +126,21 @@
                                     {{-- @foreach ($childs->childs as $childs2) --}}
 
                                     <div class="p-wrap p-small p-list-small-2" data-pid="1599">
-                                        <form action="/baca_semua/{{ $row->id }}" method="post">
-                                            @csrf
-                                            <a href="/baca_semua/{{ $row->id }}">
-                                            <input type="checkbox" >
-                                            </a>
-                                        </form>
 
-                                        
-                                            <!-- <a href="/baca_semua/{{ $row->id }}">
+                                        <a href="/baca_semua/{{ $row->id }}">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                                                <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                            </svg>
+                                        </a>
+
+
+
+                                        <!-- <a href="/baca_semua/{{ $row->id }}">
                                             <input type="checkbox" name="notif">                                        
                                             </a> -->
-                                       
+
                                         <!-- <input type="checkbox" name="notif" onclick=""> -->
-                                       
+
 
                                         <div class="p-content">
                                             <h5 class="entry-title" class="margin-left: 10%;">
@@ -182,14 +183,14 @@
             }
             </script> -->
         <script>
-                document.getElementById("cancel-select-all-btn").addEventListener("click", function() {
-                    var checkboxes = document.querySelectorAll("input[type=checkbox]");
-                    for (var i = 0; i < checkboxes.length; i++) {
-                        checkboxes[i].checked = false;
-                    }
-                });
-                </script>
-        
+            document.getElementById("cancel-select-all-btn").addEventListener("click", function() {
+                var checkboxes = document.querySelectorAll("input[type=checkbox]");
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].checked = false;
+                }
+            });
+        </script>
+
 
         <script>
             document.getElementById("select-all-btn").addEventListener("click", function() {
@@ -198,8 +199,8 @@
                     checkboxes[i].checked = true;
                 }
             });
-            </script>
-            
+        </script>
+
 
         <!-- // $("#myCheckbox").on("change", function() {
         // // Ketika status checkbox berubah, ambil ID-nya

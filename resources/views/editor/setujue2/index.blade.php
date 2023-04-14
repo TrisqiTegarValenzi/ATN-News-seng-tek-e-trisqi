@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Berita Penulis | ATN News</title>
+    <title>Berita Editor | ATN News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Responsive bootstrap 4 admin template" name="description" />
     <meta content="Coderthemes" name="author" />
@@ -196,7 +196,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    &copy; ATN Penulis <a href="#"></a>
+                    &copy; ATN Editor <a href="#"></a>
                 </div>
             </div>
         </div>
