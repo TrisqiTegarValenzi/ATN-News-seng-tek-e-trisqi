@@ -126,18 +126,20 @@
                                     {{-- @foreach ($childs->childs as $childs2) --}}
 
                                     <div class="p-wrap p-small p-list-small-2" data-pid="1599">
-                                        <!-- <form action="/baca_semua" method="post">
-                                            @csrf
-                                            <input type="checkbox" name="myCheckbox" id="myCheckbox">
-                                        </form> -->
-
-                                        <!-- <form action="/baca_semua/{{ $row->id }}" method="post">
+                                        <form action="/baca_semua/{{ $row->id }}" method="post">
                                             @csrf
                                             <a href="/baca_semua/{{ $row->id }}">
-                                            <input type="checkbox" name="notif">                                        
+                                            <input type="checkbox" >
                                             </a>
-                                        </form> -->
-                                        <input type="checkbox" name="notif" onclick="">
+                                        </form>
+
+                                        
+                                            <!-- <a href="/baca_semua/{{ $row->id }}">
+                                            <input type="checkbox" name="notif">                                        
+                                            </a> -->
+                                       
+                                        <!-- <input type="checkbox" name="notif" onclick=""> -->
+                                       
 
                                         <div class="p-content">
                                             <h5 class="entry-title" class="margin-left: 10%;">
@@ -156,7 +158,7 @@
                                     {{-- @endforeach --}}
                                     {{-- @endforeach --}}
                                     @endforeach
-                                    <!-- <div class="col-sm-10"><button type="submit" name="select-all-btn">SIMPAN</button></div>
+                                    <!-- <div class="col-sm-10"><button type="submit" name="select-all-btn">pilih</button></div>
                                     <div class="col-sm-10"><button type="submit" name="cancel-select-all-btn">batal</button></div> -->
                                     <!-- <form action="/baca_semua/{{ $row->id }}" method="post">
                                         @csrf
@@ -174,12 +176,12 @@
                 </div>
             </div>
         </div>
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             function getClick(str) {
                 alert(str);
             }
-            </script>
-        <!-- <script>
+            </script> -->
+        <script>
                 document.getElementById("cancel-select-all-btn").addEventListener("click", function() {
                     var checkboxes = document.querySelectorAll("input[type=checkbox]");
                     for (var i = 0; i < checkboxes.length; i++) {
@@ -196,7 +198,7 @@
                     checkboxes[i].checked = true;
                 }
             });
-            </script> -->
+            </script>
             
 
         <!-- // $("#myCheckbox").on("change", function() {
