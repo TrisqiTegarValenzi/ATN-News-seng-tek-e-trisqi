@@ -2,7 +2,8 @@
     <div class="footer-inner footer-has-bg">
         <div class="footer-columns rb-columns is-gap-25 rb-container edge-padding footer-4c">
             <div class="block-inner">
-                <div class="footer-col" style="display: flex">
+                
+                <div class="footer-col">
                     <img class="logo-default" data-mode="default" height="60" width="180"
                         src="{{ asset('logorawr.png') }}
                         " alt="Technology" />
