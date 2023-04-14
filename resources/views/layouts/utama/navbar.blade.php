@@ -120,15 +120,25 @@
                             <div id="uid_notification" class="block-wrap block-small block-list block-list-small-2 short-pagination rb-columns rb-col-1 p-middle">
                                 <div class="block-inner">
 
-                                
+
                                     @foreach ($notif as $row)
                                     {{-- @foreach ($row->childs as $childs) --}}
                                     {{-- @foreach ($childs->childs as $childs2) --}}
 
                                     <div class="p-wrap p-small p-list-small-2" data-pid="1599">
-                                        <label for="privasi">
-                                            <input type="checkbox" name="privasi" id="termsCheck">
-                                        </label>
+                                        <!-- <form action="/baca_semua" method="post">
+                                            @csrf
+                                            <input type="checkbox" name="myCheckbox" id="myCheckbox">
+                                        </form> -->
+
+                                        <!-- <form action="/baca_semua/{{ $row->id }}" method="post">
+                                            @csrf
+                                            <a href="/baca_semua/{{ $row->id }}">
+                                            <input type="checkbox" name="notif">                                        
+                                            </a>
+                                        </form> -->
+                                        <input type="checkbox" name="notif" onclick="getClick(this.value)">
+
                                         <div class="p-content">
                                             <h5 class="entry-title" class="margin-left: 10%;">
                                                 <a class="p-url" href="/baca/{{ $row->id }}" id="link-{{ $row->id }}" rel="bookmark">
@@ -139,19 +149,24 @@
                                                     <div class="col-sm-10"><button type="submit" id="submitBtn" disabled>SIMPAN</button></div>
                                             </h5>
                                             </form> -->
-                                                
+
                                         </div>
                                     </div>
-                                    
+
                                     {{-- @endforeach --}}
                                     {{-- @endforeach --}}
                                     @endforeach
-                                    <form action="/baca_semua" method="post">
-                                                    @csrf
-                                                    <div class="col-sm-10"><button type="submit" id="submitBtn" disabled>SIMPAN</button></div>
-                                            </h5>
-                                            </form>
-                                    
+                                    <!-- <div class="col-sm-10"><button type="submit" name="select-all-btn">SIMPAN</button></div>
+                                    <div class="col-sm-10"><button type="submit" name="cancel-select-all-btn">batal</button></div> -->
+                                    <!-- <form action="/baca_semua/{{ $row->id }}" method="post">
+                                        @csrf
+                                    <div class="col-sm-10"><button type="submit" >SIMPAN</button></div>
+                                    </form> -->
+
+                                    <!-- <div class="col-sm-10"><button type="submit" id="submitBtn" disabled>SIMPAN</button></div>
+                                            </h5> -->
+
+
                                 </div>
                             </div>
                         </div>
@@ -159,21 +174,76 @@
                 </div>
             </div>
         </div>
-        <script>
-            const termsCheck = document.querySelector('#termsCheck');
-            const submitBtn = document.querySelector('#submitBtn');
+        <script type="text/javascript">
+            function getClick(str) {
+                alert(str);
+            }
+            </script>
+        <!-- <script>
+                document.getElementById("cancel-select-all-btn").addEventListener("click", function() {
+                    var checkboxes = document.querySelectorAll("input[type=checkbox]");
+                    for (var i = 0; i < checkboxes.length; i++) {
+                        checkboxes[i].checked = false;
+                    }
+                });
+                </script>
+        
 
-            // Memeriksa checkbox setiap kali diperbarui
-            termsCheck.addEventListener('change', function() {
-                if (this.checked) {
-                    // Checkbox dicentang, aktifkan tombol submit
-                    submitBtn.removeAttribute('disabled');
-                } else {
-                    // Checkbox tidak dicentang, nonaktifkan tombol submit
-                    submitBtn.setAttribute('disabled', true);
+        <script>
+            document.getElementById("select-all-btn").addEventListener("click", function() {
+                var checkboxes = document.querySelectorAll("input[type=checkbox]");
+                for (var i = 0; i < checkboxes.length; i++) {
+                    checkboxes[i].checked = true;
                 }
             });
-        </script>
+            </script> -->
+            
+
+        <!-- // $("#myCheckbox").on("change", function() {
+        // // Ketika status checkbox berubah, ambil ID-nya
+        // if ($(this).is(":checked")) {
+        // var id = $(this).attr("id");
+        // console.log("ID checkbox yang dicentang: " + id);
+        // // Lakukan sesuatu dengan ID yang ditemukan
+        // }
+        // });
+
+        // // Ambil ID menggunakan jQuery
+        // var id = $("#id").val();
+
+        // Lakukan sesuatu dengan ID yang diambil
+        // $.ajax({
+        // url: "/baca_semua/" + id,
+        // method: "POST",
+        // success: function(response) {
+        // // Lakukan sesuatu setelah mendapatkan respons
+        // },
+        // error: function(jqXHR, textStatus, errorThrown) {
+        // console.log(textStatus + ": " + errorThrown);
+        // }
+        // });
+
+        // const termsCheck = document.querySelector('#termsCheck');
+        // const submitBtn = document.querySelector('#submitBtn');
+
+        // // Memeriksa checkbox setiap kali diperbarui
+        // termsCheck.addEventListener('change', function() {
+        // if (this.checked) {
+        // // Checkbox dicentang, aktifkan tombol submit
+        // submitBtn.removeAttribute('disabled');
+        // } else {
+        // // Checkbox tidak dicentang, nonaktifkan tombol submit
+        // submitBtn.setAttribute('disabled', true);
+        // }
+        // }); -->
+        <!-- </script> -->
+        <!-- <script>
+            // // Ambil ID menggunakan JavaScript murni
+            // var element = document.getElementById("id");
+            // var id = element.value;
+
+            // // Lakukan sesuatu dengan ID yang diambil
+        </script> -->
     </div>
     @endif
     @endauth

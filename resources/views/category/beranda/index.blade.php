@@ -31344,11 +31344,11 @@ Fancybox.bind("[data-fancybox]", {
 });
 </script> --}}
 </script>
-        <script>
+        <!-- <script>
         setTimeout(function(){
        location.reload();
         }, 10000);
-</script>
+</script> -->
 </body>
 
 </html>

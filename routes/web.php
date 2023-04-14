@@ -306,7 +306,7 @@ Route::post('kontak', [kontakController::class, 'create'])->name('kontak');
 Route::get('isi/{id}', [isiController::class, 'index'])->name('isi');
 
 Route::get('baca/{id}', [HalamanutamaController::class, 'baca'])->name('baca');
-Route::post('/baca_semua', [HalamanutamaController::class, 'baca_semua'])->name('baca_semua');
+Route::post('/baca_semua/{id}', [HalamanutamaController::class, 'baca_semua'])->name('baca_semua');
 
 
 
