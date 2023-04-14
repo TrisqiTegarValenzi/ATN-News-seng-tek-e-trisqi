@@ -28168,7 +28168,7 @@
                                     <div class="logo-wrap is-image-logo site-branding">
                                         <a href="#" class="logo" title="Technology">
                                             <img class="logo-default" data-mode="default" height="60" width="92"
-                                                src="{{asset('logoatn.png')}}
+                                                src="{{asset('logorawr.png')}}
                                                     " alt="Technology" />
                                         </a>
                                     </div>
@@ -28244,7 +28244,7 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                                     {{--  --}}
                                     <div class="mobile-logo-wrap is-image-logo site-branding">
                                         <img class="logo-default" data-mode="default" height="60" width="92"
-                                        src="{{asset('logoatn.png')}}
+                                        src="{{asset('logorawr.png')}}
                                             " alt="Technology" />
                                     </div>
                                 </div>

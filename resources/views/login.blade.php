@@ -31,7 +31,7 @@
                                     
                                     <div class="text-center">
                                         <div class="my-3">
-                                                <span><img width="100" src="{{asset('logoatn.png')}}" alt=""></span>
+                                                <span><img width="100" src="{{asset('logorawr.png')}}" alt=""></span>
                                         </div>
                                         <h5 class="text-muted text-uppercase py-3 font-16">Masuk</h5>
                                     </div>

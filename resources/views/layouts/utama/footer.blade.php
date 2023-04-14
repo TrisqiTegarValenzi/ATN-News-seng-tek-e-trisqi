@@ -4,7 +4,7 @@
             <div class="block-inner">
                 <div class="footer-col" style="display: flex">
                     <img class="logo-default" data-mode="default" height="60" width="180"
-                        src="{{ asset('logoatn.png') }}
+                        src="{{ asset('logorawr.png') }}
                         " alt="Technology" />
                 </div>
 
