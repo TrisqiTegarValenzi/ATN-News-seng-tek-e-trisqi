@@ -137,7 +137,7 @@
                                             <input type="checkbox" name="notif">                                        
                                             </a>
                                         </form> -->
-                                        <input type="checkbox" name="notif" onclick="getClick(this.value)">
+                                        <input type="checkbox" name="notif" onclick="">
 
                                         <div class="p-content">
                                             <h5 class="entry-title" class="margin-left: 10%;">
