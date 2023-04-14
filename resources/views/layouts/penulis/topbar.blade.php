@@ -113,7 +113,7 @@
         <a href="/" class="logo text-center logo-dark">
             <span class="logo-lg">
                 <!-- <img src="assets/images/logo-light.png/" alt="" height="22"> -->
-                <span class="logo-lg-text-dark">ATN News</span>
+                <span class="logo-lg-text-dark">RAWR News</span>
             </span>
             <span class="logo-sm">
                 <!-- <span class="logo-lg-text-dark">U</span> -->

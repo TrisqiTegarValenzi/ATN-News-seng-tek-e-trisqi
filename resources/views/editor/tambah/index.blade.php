@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Tambah Berita | RAWR News - Responsive Bootstrap 4 Admin Dashboard</title>
+    <title>Tambah Berita | RAWR News</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Responsive bootstrap 4 admin template" name="description" />
     <meta content="Coderthemes" name="author" />
@@ -259,7 +259,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            &copy; RAWR Editor <a href="#"></a>
+                            &copy; RAWR Editor
                         </div>
                     </div>
                 </div>

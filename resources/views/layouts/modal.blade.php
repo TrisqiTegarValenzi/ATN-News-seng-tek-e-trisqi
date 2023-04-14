@@ -14,7 +14,7 @@
                     <center>
 
                         @if (Auth::user()->foto == 'profile.jpg')
-                            <img src="profile.jpg" width="100" height="100" style="border-radius: 50%;">
+                            <img src="{{ asset('profile.jpg')}}" width="100" height="100" style="border-radius: 50%;">
                         @else
                             <img src="{{ asset('storage/' . Auth::user()->foto) }}" width="100" height="100"
                                 style="border-radius: 50%;">
