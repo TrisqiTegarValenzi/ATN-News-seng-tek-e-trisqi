@@ -307,6 +307,8 @@ Route::get('isi/{id}', [isiController::class, 'index'])->name('isi');
 
 Route::get('baca/{id}', [HalamanutamaController::class, 'baca'])->name('baca');
 Route::get('/baca_semua/{id}', [HalamanutamaController::class, 'baca_semua'])->name('baca_semua');
+Route::get('/baca_all', [HalamanutamaController::class, 'baca_all'])->name('baca_all');
+
 
 
 

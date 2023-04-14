@@ -251,4 +251,11 @@ class HalamanutamaController extends Controller
 
     //     return redirect()->route('/', ['id' => $id_b]);
     // }
+    public function baca_all(){
+        $data = Notification::all();
+        foreach ($data as $row){
+            $row->update(['is_read' => 1]);
+        }
+        return redirect()->route('/');
+        }
 }
