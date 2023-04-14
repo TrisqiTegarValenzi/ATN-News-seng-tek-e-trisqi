@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Daftar Penulis | ATN News - Responsive Bootstrap 4 Admin Dashboard</title>
+    <title>Daftar Penulis | RAWR News - Responsive Bootstrap 4 Admin Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Responsive bootstrap 4 admin template" name="description" />
     <meta content="Coderthemes" name="author" />
@@ -58,7 +58,7 @@
                             <div class="page-title-box">
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="javascript: void(0);">ATN News</a></li>
+                                        <li class="breadcrumb-item"><a href="javascript: void(0);">RAWR News</a></li>
                                         <li class="breadcrumb-item active">Daftar Penulis</li>
                                     </ol>
                                 </div>
@@ -172,7 +172,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-12">
-                            &copy; ATN Admin
+                            &copy; RAWR Admin
                         </div>
                     </div>
                 </div>
