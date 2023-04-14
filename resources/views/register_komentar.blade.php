@@ -4,7 +4,7 @@
 <!-- Mirrored from coderthemes.com/uplon/layouts/vertical/pages-register.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Feb 2023 09:15:50 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Register | Uplon - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>Daftar | RAWR NEWS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Responsive bootstrap 4 admin template" name="description" />
         <meta content="Coderthemes" name="author" />

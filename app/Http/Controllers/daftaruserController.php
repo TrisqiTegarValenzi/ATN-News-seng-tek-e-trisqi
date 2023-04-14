@@ -11,7 +11,8 @@ use Illuminate\Support\Facades\DB;
 
 class daftaruserController extends Controller
 {
-   
+    
+
     public function delete($id){
         //dd($request->all());
         $data = User::find($id);
@@ -39,6 +40,7 @@ class daftaruserController extends Controller
     }
     public function dibanned(Request $request)
     {   
+        
         $data = User::query()
         ->with('Role')
         ->where("status", "banned")
