@@ -52,7 +52,7 @@ class iklanController extends Controller
             'foto.mimes'=>'Foto Wajib Berformat JPG, JPEG & PNG',
             'mulai.required'=>'Kolom Tanggal Mulai Wajib Diisi',
             'akhir.required'=>'Kolom Tanggal Akhir Wajib Diisi',
-            'akhir.after_or_equal'=>'Tanggal Telah Berakhir',
+            'akhir.after_or_equal'=>'Data Tanggal Yang diamasukkan Telah Berakhir',
            
 
 
