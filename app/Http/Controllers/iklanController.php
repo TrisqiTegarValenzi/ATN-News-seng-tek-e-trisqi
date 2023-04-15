@@ -42,8 +42,8 @@ class iklanController extends Controller
         $request->validate([
             'sponsor'=>'required',
             'foto'=>'required|mimes:jpg, jpeg, png',
-            'mulai'=>'required',
-            'akhir'=>'required',
+            'mulai'=>'required|date',
+            'akhir'=>'required|date|after_or_equal:mulai',
             
 
         ],[
@@ -52,6 +52,7 @@ class iklanController extends Controller
             'foto.mimes'=>'Foto Wajib Berformat JPG, JPEG & PNG',
             'mulai.required'=>'Kolom Tanggal Mulai Wajib Diisi',
             'akhir.required'=>'Kolom Tanggal Akhir Wajib Diisi',
+            'akhir.after_or_equal'=>'Tanggal Telah Berakhir',
            
 
 
@@ -62,7 +63,7 @@ class iklanController extends Controller
         $foto_ekstensi = $foto_file->extension();
         $foto_nama = date('ymdhis').".".$foto_ekstensi;
         $foto_file->move(public_path('fotoiklan'), $foto_nama);
-
+    
         $data = sponsor::create([
             'sponsor' => $request->sponsor,
             'foto' => $foto_nama,
