@@ -10,11 +10,10 @@
     <link rel="stylesheet" href="{{asset('css/batas.css')}}">
     {{-- <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script> --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  
-    
+
     <style media="all">
-        
         /*! This file is auto-generated */
         .wp-block-button__link {
             color: #fff;
@@ -28577,15 +28576,11 @@
     <title>RAWR News</title>
     <meta name='robots' content='max-image-preview:large' />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts"
-        href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap"
-        crossorigin><noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts" href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap" crossorigin><noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap">
     </noscript>
     <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Feed" href="feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Comments Feed"
-        href="comments/feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Comments Feed" href="comments/feed/index.html" />
     <meta name="description" content="Foxiz Theme Demos">
     <script type="application/ld+json">
         {
@@ -28606,7 +28601,7 @@
             }
         };
         /*! This file is auto-generated */
-        ! function (e, a, t) {
+        ! function(e, a, t) {
             var n, r, o, i = a.createElement("canvas"),
                 p = i.getContext && i.getContext("2d");
 
@@ -28621,9 +28616,9 @@
                 t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t)
             }
             for (o = Array("flag", "emoji"), t.supports = {
-                everything: !0,
-                everythingExceptFlag: !0
-            }, r = 0; r < o.length; r++) t.supports[o[r]] = function (e) {
+                    everything: !0,
+                    everythingExceptFlag: !0
+                }, r = 0; r < o.length; r++) t.supports[o[r]] = function(e) {
                 if (p && p.fillText) switch (p.textBaseline = "top", p.font = "600 32px Arial", e) {
                     case "flag":
                         return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]);
@@ -28632,11 +28627,11 @@
                 }
                 return !1
             }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]);
-            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () {
+            t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function() {
                 t.DOMReady = !0
-            }, t.supports.everything || (n = function () {
+            }, t.supports.everything || (n = function() {
                 t.readyCallback()
-            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () {
+            }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function() {
                 "complete" === a.readyState && t.readyCallback()
             })), (e = t.source || {}).concatemoji ? c(e.concatemoji) : e.wpemoji && e.twemoji && (c(e.twemoji), c(e.wpemoji)))
         }(window, document, window._wpemojiSettings);
@@ -29829,10 +29824,8 @@
     <meta name="generator" content="WordPress 6.1.1" />
     <link rel="canonical" href="index.html" />
     <link rel='shortlink' href='index.html' />
-    <link rel="alternate" type="application/json+oembed"
-        href="wp-json/oembed/1.0/embed8520.json?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="wp-json/oembed/1.0/embedcd36?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2F&amp;format=xml" />
+    <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed8520.json?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embedcd36?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2F&amp;format=xml" />
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -29863,14 +29856,10 @@
     </script>
 </head>
 
-<body
-    class="home page-template-default page page-id-1465 wp-embed-responsive elementor-default elementor-kit-3 elementor-page elementor-page-1465 menu-ani-1 hover-ani-1 is-rm-1 is-hd-1 is-backtop none-m-backtop is-mstick sync-bookmarks"
-    data-theme="default"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0"
-        focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+<body class="home page-template-default page page-id-1465 wp-embed-responsive elementor-default elementor-kit-3 elementor-page elementor-page-1465 menu-ani-1 hover-ani-1 is-rm-1 is-hd-1 is-backtop none-m-backtop is-mstick sync-bookmarks" data-theme="default"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-dark-grayscale">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 0.49803921568627" />
                     <feFuncG type="table" tableValues="0 0.49803921568627" />
@@ -29880,12 +29869,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-grayscale">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 1" />
                     <feFuncG type="table" tableValues="0 1" />
@@ -29895,12 +29882,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-purple-yellow">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
                     <feFuncG type="table" tableValues="0 1" />
@@ -29910,12 +29895,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-blue-red">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 1" />
                     <feFuncG type="table" tableValues="0 0.27843137254902" />
@@ -29925,12 +29908,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-midnight">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 0" />
                     <feFuncG type="table" tableValues="0 0.64705882352941" />
@@ -29940,12 +29921,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-magenta-yellow">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.78039215686275 1" />
                     <feFuncG type="table" tableValues="0 0.94901960784314" />
@@ -29955,12 +29934,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-purple-green">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
                     <feFuncG type="table" tableValues="0 1" />
@@ -29970,12 +29947,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-blue-orange">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.098039215686275 1" />
                     <feFuncG type="table" tableValues="0 0.66274509803922" />
@@ -29987,8 +29962,7 @@
         </defs>
     </svg>
     <div class="site-outer">
-        <header id="site-header"
-            class="header-wrap rb-section header-set-1 header-1 header-wrapper style-shadow has-quick-menu">
+        <header id="site-header" class="header-wrap rb-section header-set-1 header-1 header-wrapper style-shadow has-quick-menu">
             <div id="navbar-outer" class="navbar-outer">
                 <div id="sticky-holder" class="sticky-holder">
                     <div class="navbar-wrap">
@@ -29997,33 +29971,31 @@
                                 <div class="navbar-left">
                                     <div class="logo-wrap is-image-logo site-branding">
                                         <a href="#" class="logo" title="Technology">
-                                            <img class="logo-default" data-mode="default" height="60" width="92"
-                                                src="{{asset('logorawr.png')}}
+                                            <img class="logo-default" data-mode="default" height="60" width="92" src="{{asset('logorawr.png')}}
                                                     " alt="Technology" />
                                         </a>
                                     </div>
                                     @include('layouts.utama.navbar')
 
                                     <div class="wnav-holder w-header-search header-dropdown-outer">
-                                        <a href="#" data-title="Search"
-                                            class="icon-holder header-element search-btn search-trigger">
+                                        <a href="#" data-title="Search" class="icon-holder header-element search-btn search-trigger">
                                             <span class="search-icon-svg"></span>
                                         </a>
                                         <div class="header-dropdown">
                                             <div class="header-search-form live-search-form">
-                                               
+
                                                 <form action="{{url('search')}}" method="get" class="rb-search-form" style="display: flex">
                                                     <input class="form-control me-1" type="search" name="katakunci" value="{{ Request::get('katakunci') }}" placeholder="Masukkan kata kunci" aria-label="Search">
                                                     <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="color: black" viewBox="0 0 16 16">
-                                                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                                    </svg></button>
+                                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                        </svg></button>
                                                 </form>
                                                 <span class="live-search-animation rb-loader"></span>
                                                 <div class="live-search-response"></div>
                                             </div>
                                         </div>
                                     </div>
-                                  
+
                                 </div>
                             </div>
                         </div>
@@ -30036,59 +30008,34 @@
         </header>
         <div class="site-wrap">
             <div data-elementor-type="wp-page" data-elementor-id="1465" class="elementor elementor-1465">
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-467e77c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="467e77c" data-element_type="section"
-                    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-467e77c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="467e77c" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                     <div class="elementor-container elementor-column-gap-no">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1bfd813"
-                            data-id="1bfd813" data-element_type="column">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1bfd813" data-id="1bfd813" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                                <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-49a1f42 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                                    data-id="49a1f42" data-element_type="section">
+                                <section class="elementor-section elementor-inner-section elementor-element elementor-element-49a1f42 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="49a1f42" data-element_type="section">
                                     <div class="elementor-container elementor-column-gap-custom">
-                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-08344ab"
-                                            data-id="08344ab" data-element_type="column">
+                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-08344ab" data-id="08344ab" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-707005c elementor-widget elementor-widget-foxiz-overlay-1"
-                                                    data-id="707005c" data-element_type="widget"
-                                                    data-widget_type="foxiz-overlay-1.default">
+                                                <div class="elementor-element elementor-element-707005c elementor-widget elementor-widget-foxiz-overlay-1" data-id="707005c" data-element_type="widget" data-widget_type="foxiz-overlay-1.default">
                                                     <div class="elementor-widget-container">
-                                                        <div id="uid_707005c"
-                                                            class="block-wrap block-overlay overlay-1 light-overlay-scheme p-gradient ecat-bg-2 ecat-size-big">
+                                                        <div id="uid_707005c" class="block-wrap block-overlay overlay-1 light-overlay-scheme p-gradient ecat-bg-2 ecat-size-big">
                                                             <div class="block-inner">
-                                                                <div class="post-slider swiper-container pre-load"
-                                                                    data-play="1" data-speed="5000">
+                                                                <div class="post-slider swiper-container pre-load" data-play="1" data-speed="5000">
                                                                     <div class="swiper-wrapper">
                                                                         @foreach ($berita as $row)
-                                                                        <div class="p-wrap p-highlight p-overlay-1 swiper-slide"
-                                                                            data-pid="1599">
+                                                                        <div class="p-wrap p-highlight p-overlay-1 swiper-slide" data-pid="1599">
                                                                             <div class="overlay-holder">
-                                                                                <div class="p-featured"> <a
-                                                                                        class="p-flink"
-                                                                                        href="/isi_berita/{{ $row->id }}"
-                                                                                        title="{{$row->judul}}">
-                                                                                        <img width="615" height="410"
-                                                                                            src="{{asset('foto/'. $row->foto)}}"
-                                                                                            class="featured-img wp-post-image"
-                                                                                            alt="" decoding="async"
-                                                                                            loading="lazy" /> </a></div>
+                                                                                <div class="p-featured"> <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
+                                                                                        <img width="615" height="410" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" /> </a></div>
                                                                                 <div class="overlay-wrap">
-                                                                                    <div
-                                                                                        class="overlay-inner p-content overlay-text">
+                                                                                    <div class="overlay-inner p-content overlay-text">
                                                                                         <div class="p-categories p-top">
 
                                                                                         </div>
-                                                                                        <h2 class="entry-title"> <a
-                                                                                                class="p-url"
-                                                                                                href="/isi_berita/{{ $row->id }}"
-                                                                                                rel="bookmark">{{ $row->judul }}</a>
+                                                                                        <h2 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{ $row->judul }}</a>
                                                                                         </h2>
-                                                                                        <div
-                                                                                            class="review-meta is-meta is-rstyle-1 type-score has-bookmark">
-                                                                                            <div
-                                                                                                class="review-meta-inner">
+                                                                                        <div class="review-meta is-meta is-rstyle-1 type-score has-bookmark">
+                                                                                            <div class="review-meta-inner">
                                                                                                 <!-- <span
                                                                                                     class="rline-wrap"><span
                                                                                                         class="rline activated"></span><span
@@ -30096,8 +30043,7 @@
                                                                                                         class="rline activated"></span><span
                                                                                                         class="rline activated"></span><span
                                                                                                         class="rline activated"></span></span> -->
-                                                                                                <div
-                                                                                                    class="review-extra">
+                                                                                                <div class="review-extra">
                                                                                                     <!-- <span
                                                                                                         class="review-description"><strong
                                                                                                             class="meta-bold">8.8</strong>
@@ -30106,16 +30052,14 @@
                                                                                                         class="extra-meta meta-bold">Nilai
                                                                                                         Bagus</span> -->
                                                                                                 </div>
-                                                                                            </div><span
-                                                                                                class="rb-bookmark bookmark-trigger"
-                                                                                                data-pid="1599">
+                                                                                            </div><span class="rb-bookmark bookmark-trigger" data-pid="1599">
                                                                                                 <!-- <i
                                                                                                     data-title="Save it"
                                                                                                     class="rbi rbi-bookmark"></i> -->
-                                                                                                    <!-- <i
+                                                                                                <!-- <i
                                                                                                     data-title="Remove"
                                                                                                     class="bookmarked-icon rbi rbi-bookmark-fill"></i> -->
-                                                                                                </span>
+                                                                                            </span>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -30123,10 +30067,9 @@
                                                                         </div>
                                                                         @endforeach
 
-                                                                         
+
                                                                     </div>
-                                                                    <div
-                                                                        class="slider-pagination slider-pagination-top">
+                                                                    <div class="slider-pagination slider-pagination-top">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -30135,52 +30078,30 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0d1cf89"
-                                            data-id="0d1cf89" data-element_type="column">
+                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-0d1cf89" data-id="0d1cf89" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-aa80c64 elementor-widget elementor-widget-foxiz-grid-box-1"
-                                                    data-id="aa80c64" data-element_type="widget"
-                                                    data-widget_type="foxiz-grid-box-1.default">
+                                                <div class="elementor-element elementor-element-aa80c64 elementor-widget elementor-widget-foxiz-grid-box-1" data-id="aa80c64" data-element_type="widget" data-widget_type="foxiz-grid-box-1.default">
                                                     <div class="elementor-widget-container">
-                                                        <div id="uid_aa80c64"
-                                                            class="block-wrap block-grid block-grid-box-1 rb-columns rb-col-1 rb-tcol-1 rb-mcol-1 is-gap-20 light-scheme">
+                                                        <div id="uid_aa80c64" class="block-wrap block-grid block-grid-box-1 rb-columns rb-col-1 rb-tcol-1 rb-mcol-1 is-gap-20 light-scheme">
                                                             <div class="block-inner">
                                                                 @foreach ($berita1 as $row)
-                                                                    
-                                                                <div class="p-wrap p-grid p-box p-grid-box-1 box-bg"
-                                                                data-pid="1565">
-                                                                <div class="grid-box">
-                                                                    <div class="feat-holder overlay-text">
-                                                                        <div class="p-featured"> <a class="p-flink"
-                                                                                href="/isi_berita/{{ $row->id }}"
-                                                                                title="{{$row->judul}}">
-                                                                                <img width="420" height="280"
-                                                                                    src="{{asset('foto/'. $row->foto)}}"
-                                                                                    class="featured-img wp-post-image"
-                                                                                    alt="" decoding="async"
-                                                                                    loading="lazy" /> </a>
-                                                                            <aside
-                                                                                class="p-format-overlay format-style-bottom">
-                                                                                <span
-                                                                                    class="p-format format-video"><i
-                                                                                        class="rbi rbi-video"></i></span>
-                                                                            </aside>
+
+                                                                <div class="p-wrap p-grid p-box p-grid-box-1 box-bg" data-pid="1565">
+                                                                    <div class="grid-box">
+                                                                        <div class="feat-holder overlay-text">
+                                                                            <div class="p-featured"> <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
+                                                                                    <img width="420" height="280" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" /> </a>
+                                                                                <aside class="p-format-overlay format-style-bottom">
+                                                                                    <span class="p-format format-video"><i class="rbi rbi-video"></i></span>
+                                                                                </aside>
+                                                                            </div>
+                                                                        </div>
+                                                                        <h3 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{ $row->judul }}</a></h3>
+                                                                        <div class="p-meta has-bookmark">
+                                                                            <div class="meta-inner is-meta"> <span class="meta-el meta-read"><i class="rbi rbi-watch"></i></span></div> <span class="rb-bookmark bookmark-trigger" data-pid="1565"></i><i data-title="Remove" class="bookmarked-icon rbi rbi-bookmark-fill"></i></span>
                                                                         </div>
                                                                     </div>
-                                                                    <h3 class="entry-title"> <a class="p-url"
-                                                                            href="/isi_berita/{{ $row->id }}"
-                                                                            rel="bookmark">{{ $row->judul }}</a></h3>
-                                                                    <div class="p-meta has-bookmark">
-                                                                        <div class="meta-inner is-meta"> <span
-                                                                                class="meta-el meta-read"><i
-                                                                                    class="rbi rbi-watch"></i></span></div> <span
-                                                                            class="rb-bookmark bookmark-trigger"
-                                                                            data-pid="1565"></i><i
-                                                                                data-title="Remove"
-                                                                                class="bookmarked-icon rbi rbi-bookmark-fill"></i></span>
-                                                                    </div>
                                                                 </div>
-                                                            </div>
                                                                 @endforeach
 
                                                             </div>
@@ -30189,35 +30110,20 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a04d314"
-                                            data-id="a04d314" data-element_type="column">
+                                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-a04d314" data-id="a04d314" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-57d9544 elementor-widget elementor-widget-foxiz-overlay-2"
-                                                    data-id="57d9544" data-element_type="widget"
-                                                    data-widget_type="foxiz-overlay-2.default">
+                                                <div class="elementor-element elementor-element-57d9544 elementor-widget elementor-widget-foxiz-overlay-2" data-id="57d9544" data-element_type="widget" data-widget_type="foxiz-overlay-2.default">
                                                     <div class="elementor-widget-container">
-                                                        <div id="uid_57d9544"
-                                                            class="block-wrap block-overlay block-overlay-2 light-overlay-scheme p-gradient rb-columns rb-col-1 rb-tcol-1 rb-mcol-1 is-gap-7">
+                                                        <div id="uid_57d9544" class="block-wrap block-overlay block-overlay-2 light-overlay-scheme p-gradient rb-columns rb-col-1 rb-tcol-1 rb-mcol-1 is-gap-7">
                                                             <div class="block-inner">
-                                                                @foreach ($berita2 as $row)  
-                                                                <div class="p-wrap p-overlay p-overlay-2"
-                                                                    data-pid="1563">
+                                                                @foreach ($berita2 as $row)
+                                                                <div class="p-wrap p-overlay p-overlay-2" data-pid="1563">
                                                                     <div class="overlay-holder">
-                                                                        <div class="p-featured"> <a class="p-flink"
-                                                                                href="/isi_berita/{{ $row->id }}"
-                                                                                title="{{$row->judul}}">
-                                                                                <img width="420" height="280"
-                                                                                    src="{{asset('foto/'. $row->foto)}}"
-                                                                                    class="featured-img wp-post-image"
-                                                                                    alt="" decoding="async"
-                                                                                    loading="lazy" /> </a></div>
+                                                                        <div class="p-featured"> <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
+                                                                                <img width="420" height="280" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" /> </a></div>
                                                                         <div class="overlay-wrap">
-                                                                            <div
-                                                                                class="p-content overlay-inner overlay-text">
-                                                                                <h4 class="entry-title"> <a
-                                                                                        class="p-url"
-                                                                                        href="/isi_berita/{{ $row->id }}"
-                                                                                        rel="bookmark">{{$row->judul}}</a></h4>
+                                                                            <div class="p-content overlay-inner overlay-text">
+                                                                                <h4 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{$row->judul}}</a></h4>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -30232,39 +30138,23 @@
                                         </div>
                                     </div>
                                 </section>
-                                <section
-                                    class="elementor-section elementor-inner-section elementor-element elementor-element-e55358e elementor-section-full_width elementor-section-height-default elementor-section-height-default"
-                                    data-id="e55358e" data-element_type="section">
+                                <section class="elementor-section elementor-inner-section elementor-element elementor-element-e55358e elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="e55358e" data-element_type="section">
                                     <div class="elementor-container elementor-column-gap-custom">
-                                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3431afd"
-                                            data-id="3431afd" data-element_type="column">
+                                        <div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-3431afd" data-id="3431afd" data-element_type="column">
                                             <div class="elementor-widget-wrap elementor-element-populated">
-                                                <div class="elementor-element elementor-element-e3e39d6 elementor-widget elementor-widget-foxiz-grid-box-1"
-                                                    data-id="e3e39d6" data-element_type="widget"
-                                                    data-widget_type="foxiz-grid-box-1.default">
+                                                <div class="elementor-element elementor-element-e3e39d6 elementor-widget elementor-widget-foxiz-grid-box-1" data-id="e3e39d6" data-element_type="widget" data-widget_type="foxiz-grid-box-1.default">
                                                     <div class="elementor-widget-container">
-                                                        <div id="uid_e3e39d6"
-                                                            class="block-wrap block-grid block-grid-box-1 rb-columns rb-col-4 rb-tcol-2 rb-mcol-2 is-gap-7 ecat-bg-2">
-                                                            
+                                                        <div id="uid_e3e39d6" class="block-wrap block-grid block-grid-box-1 rb-columns rb-col-4 rb-tcol-2 rb-mcol-2 is-gap-7 ecat-bg-2">
+
                                                             <div class="block-inner">
                                                                 @foreach ($berita3 as $row)
-                                                                <div class="p-wrap p-grid p-box p-grid-box-1 box-bg"
-                                                                    data-pid="1559">
+                                                                <div class="p-wrap p-grid p-box p-grid-box-1 box-bg" data-pid="1559">
                                                                     <div class="grid-box">
                                                                         <div class="feat-holder overlay-text">
-                                                                            <div class="p-featured"> <a class="p-flink"
-                                                                                    href="/isi_berita/{{ $row->id }}"
-                                                                                    title="{{$row->judul}}">
-                                                                                    <img width="420" height="280"
-                                                                                        src="{{asset('foto/'. $row->foto)}}"
-                                                                                        class="featured-img wp-post-image"
-                                                                                        alt="" decoding="async"
-                                                                                        loading="lazy" /> </a>
-                                                                                <aside
-                                                                                    class="p-format-overlay format-style-bottom">
-                                                                                    <span
-                                                                                        class="p-format format-radio"><i
-                                                                                            class="rbi rbi-audio"></i></span>
+                                                                            <div class="p-featured"> <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
+                                                                                    <img width="420" height="280" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" /> </a>
+                                                                                <aside class="p-format-overlay format-style-bottom">
+                                                                                    <span class="p-format format-radio"><i class="rbi rbi-audio"></i></span>
                                                                                 </aside>
                                                                             </div>
                                                                             <div class="p-categories p-top">
@@ -30274,16 +30164,14 @@
                                                                                     rel="category">Berita Teknologi</a> -->
                                                                             </div>
                                                                         </div>
-                                                                        <h4 class="entry-title"> <a class="p-url"
-                                                                                href="/isi_berita/{{ $row->id }}"
-                                                                                rel="bookmark">
-                                                                               {{$row->judul}}</a></h4>
+                                                                        <h4 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">
+                                                                                {{$row->judul}}</a></h4>
                                                                         <div class="p-meta has-bookmark">
-                                                                            
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            
+
                                                                 @endforeach
                                                             </div>
 
@@ -30298,28 +30186,19 @@
                         </div>
                     </div>
                 </section>
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-9c1da3e elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="9c1da3e" data-element_type="section"
-                    data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-9c1da3e elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="9c1da3e" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
                     <div class="elementor-container elementor-column-gap-custom">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ae5a849"
-                            data-id="ae5a849" data-element_type="column">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ae5a849" data-id="ae5a849" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-3dbcdda elementor-widget elementor-widget-foxiz-ad-image"
-                                    data-id="3dbcdda" data-element_type="widget"
-                                    data-widget_type="foxiz-ad-image.default">
+                                <div class="elementor-element elementor-element-3dbcdda elementor-widget elementor-widget-foxiz-ad-image" data-id="3dbcdda" data-element_type="widget" data-widget_type="foxiz-ad-image.default">
                                     <div class="elementor-widget-container">
                                         <div class="ad-wrap ad-image-wrap">
                                             <h6 class="ad-description is-meta">- Disponsori -</h6>
-                                            
-                                                @foreach ($iklan as $row)
-                                                <div class="ad-image"> <a class="p-flink" title="{{ $row->sponsor }}"> </a>
-                                                    <img loading="lazy" decoding="async" src="{{ asset('fotoiklan/'. $row->foto)}}" alt="Ad image" width="800" style="height: 70px; object-fit: cover;" />
-                                                </div>
-                                                
-                                                
-                                                @endforeach
+
+                                            <div class="ad-image" id="iklan_atas"> <a class="p-flink" title=""> </a>
+                                                <img loading="lazy" decoding="async" src="{{asset('fotoiklan/'. $iklan->foto)}}" alt="Ad image" width="800" style="height: 70px; object-fit: cover;" />
+                                            </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -30328,19 +30207,11 @@
                     </div>
                 </section>
 
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-970a442 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="970a442" data-element_type="section"
-                    data-settings="{&quot;animation&quot;:&quot;none&quot;}">
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-970a442 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="970a442" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;none&quot;}">
                     <div class="elementor-container elementor-column-gap-custom">
-                        <div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-7d1ef53 elementor-invisible"
-                            data-id="7d1ef53" data-element_type="column"
-                            data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+                        <div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-7d1ef53 elementor-invisible" data-id="7d1ef53" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-f396043 elementor-invisible elementor-widget elementor-widget-foxiz-heading"
-                                    data-id="f396043" data-element_type="widget"
-                                    data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}"
-                                    data-widget_type="foxiz-heading.default">
+                                <div class="elementor-element elementor-element-f396043 elementor-invisible elementor-widget elementor-widget-foxiz-heading" data-id="f396043" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="foxiz-heading.default">
                                     <div class="elementor-widget-container">
                                         <div id="uid_f396043" class="block-h heading-layout-1">
                                             <div class="heading-inner">
@@ -30349,127 +30220,22 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-7a4c608 elementor-widget elementor-widget-foxiz-overlay-1"
-                                data-id="7a4c608" data-element_type="widget"
-                                data-widget_type="foxiz-overlay-1.default">
-                                <div class="elementor-widget-container">
-                                    <div id="uid_7a4c608"
-                                        class="block-wrap block-overlay overlay-1 light-overlay-scheme p-gradient ecat-bg-2 ecat-size-big">
-                                        <div class="block-inner">
-                                            @foreach ($berita4 as $row)
-                                                
-                                            <div class="p-wrap p-highlight p-overlay-1" data-pid="1512">
-                                                <div class="overlay-holder">
-                                                    <div class="p-featured"> <a class="p-flink"
-                                                            href="/isi_berita/{{ $row->id }}"
-                                                            title="{{$row->judul}}"> <img
-                                                                width="860" height="573"
-                                                                src="{{asset('foto/'. $row->foto)}}"
-                                                                class="featured-img wp-post-image" alt=""
-                                                                decoding="async" loading="lazy" /> </a></div>
-                                                    <div class="overlay-wrap">
-                                                        <div class="overlay-inner p-content overlay-text">
-                                                            <!-- <div class="p-categories p-top"><a
-                                                                    class="p-category category-id-2"
-                                                                    href="category/technology/index.html"
-                                                                    rel="category">Teknologi</a></div> -->
-                                                            <h2 class="entry-title"> <a class="p-url"
-                                                                    href="/isi_berita/{{ $row->id }}"
-                                                                    rel="bookmark">{{$row->judul}}</a></h2>
-                                                            <div class="p-meta has-bookmark">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            @endforeach
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                                <div class="elementor-element elementor-element-aecf33f elementor-widget elementor-widget-foxiz-list-box-1"
-                                    data-id="aecf33f" data-element_type="widget"
-                                    data-widget_type="foxiz-list-box-1.default">
+                                <div class="elementor-element elementor-element-7a4c608 elementor-widget elementor-widget-foxiz-overlay-1" data-id="7a4c608" data-element_type="widget" data-widget_type="foxiz-overlay-1.default">
                                     <div class="elementor-widget-container">
-                                        <div id="uid_aecf33f"
-                                            class="block-wrap block-big block-list block-list-box-1 ecat-bg-2 featured-right">
+                                        <div id="uid_7a4c608" class="block-wrap block-overlay overlay-1 light-overlay-scheme p-gradient ecat-bg-2 ecat-size-big">
                                             <div class="block-inner">
-                                                @foreach ($berita5 as $row)
-                                                    
-                                            <div class="p-wrap p-list p-box p-list-1 p-list-box-1 box-bg"
-                                                data-pid="1515">
-                                                <div class="list-box">
-                                                    <div class="list-holder">
-                                                        <div class="list-feat-holder">
-                                                            <div class="feat-holder overlay-text">
-                                                                <div class="p-featured"> <a class="p-flink"
-                                                                        href="/isi_berita/{{ $row->id }}"
-                                                                        title="{{$row->judul}}">
-                                                                        <img width="420" height="280"
-                                                                            src="{{asset('foto/'. $row->foto)}}"
-                                                                            class="featured-img wp-post-image"
-                                                                            alt="" decoding="async"
-                                                                            loading="lazy" /> </a></div>
-                                                                <!-- <div class="p-categories p-top"><a
-                                                                        class="p-category category-id-2"
-                                                                        href="category/technology/index.html"
-                                                                        rel="category">Teknologi</a></div> -->
-                                                            </div>
-                                                        </div>
-                                                        <div class="p-content">
-                                                            <h3 class="entry-title"> <a class="p-url"
-                                                                    href="/isi_berita/{{ $row->id }}"
-                                                                    rel="bookmark">{{$row->judul}}</a></h3>
-                                                            <div class="ellipsis entry-summary"><a class="p-url"
-                                                                href="/isi_berita/{{ $row->id }}"
-                                                                rel="bookmark">{!!$row->isi!!}</a><span>&hellip;</span></div>
-                                                            <div class="sponsor-meta meta-text">
-                                                                <div class="sponsor-inner"> <span
-                                                                        class="sponsor-icon">
-                                                                        <!-- <i
-                                                                            class="rbi rbi-notification"></i> -->
-                                                                        </span>
-                                                                </div> 
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            @endforeach
+                                                @foreach ($berita4 as $row)
 
-
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-7a4c608 elementor-widget elementor-widget-foxiz-overlay-1"
-                                    data-id="7a4c608" data-element_type="widget"row
-                                    data-widget_type="foxiz-overlay-1.default">
-                                    <div class="elementor-widget-container">
-                                        <div id="uid_7a4c608"
-                                            class="block-wrap block-overlay overlay-1 light-overlay-scheme p-gradient ecat-bg-2 ecat-size-big">
-                                            <div class="block-inner">
-                                                @foreach ($berita6 as $row)
-                                                    
                                                 <div class="p-wrap p-highlight p-overlay-1" data-pid="1512">
                                                     <div class="overlay-holder">
-                                                        <div class="p-featured"> <a class="p-flink"
-                                                                href="/isi_berita/{{ $row->id }}"
-                                                                title="{{$row->judul}}"> <img
-                                                                    width="860" height="573"
-                                                                    src="{{asset('foto/'. $row->foto)}}"
-                                                                    class="featured-img wp-post-image" alt=""
-                                                                    decoding="async" loading="lazy" /> </a></div>
+                                                        <div class="p-featured"> <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}"> <img width="860" height="573" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" /> </a></div>
                                                         <div class="overlay-wrap">
                                                             <div class="overlay-inner p-content overlay-text">
                                                                 <!-- <div class="p-categories p-top"><a
-                                                                        class="p-category category-id-2"
-                                                                        href="category/technology/index.html"
-                                                                        rel="category">Teknologi</a></div> -->
-                                                                <h2 class="entry-title"> <a class="p-url"
-                                                                        href="/isi_berita/{{ $row->id }}"
-                                                                        rel="bookmark">{{$row->judul}}</a></h2>
+                                                                    class="p-category category-id-2"
+                                                                    href="category/technology/index.html"
+                                                                    rel="category">Teknologi</a></div> -->
+                                                                <h2 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{$row->judul}}</a></h2>
                                                                 <div class="p-meta has-bookmark">
                                                                 </div>
                                                             </div>
@@ -30482,29 +30248,87 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-9262f1d elementor-widget elementor-widget-foxiz-list-box-1"
-                                    data-id="9262f1d" data-element_type="widget"
-                                    data-widget_type="foxiz-list-box-1.default">
+                                <div class="elementor-element elementor-element-aecf33f elementor-widget elementor-widget-foxiz-list-box-1" data-id="aecf33f" data-element_type="widget" data-widget_type="foxiz-list-box-1.default">
                                     <div class="elementor-widget-container">
-                                        <div id="uid_9262f1d"
-                                            class="block-wrap block-big block-list block-list-box-1 ecat-bg-2 featured-right">
+                                        <div id="uid_aecf33f" class="block-wrap block-big block-list block-list-box-1 ecat-bg-2 featured-right">
                                             <div class="block-inner">
-                                                    @foreach ($berita7 as $row)
-                                                        
-                                                <div class="p-wrap p-list p-box p-list-1 p-list-box-1 box-bg"
-                                                    data-pid="1515">
+                                                @foreach ($berita5 as $row)
+
+                                                <div class="p-wrap p-list p-box p-list-1 p-list-box-1 box-bg" data-pid="1515">
                                                     <div class="list-box">
                                                         <div class="list-holder">
                                                             <div class="list-feat-holder">
                                                                 <div class="feat-holder overlay-text">
-                                                                    <div class="p-featured"> <a class="p-flink"
-                                                                            href="/isi_berita/{{ $row->id }}"
-                                                                            title="{{$row->judul}}">
-                                                                            <img width="420" height="280"
-                                                                                src="{{asset('foto/'. $row->foto)}}"
-                                                                                class="featured-img wp-post-image"
-                                                                                alt="" decoding="async"
-                                                                                loading="lazy" /> </a></div>
+                                                                    <div class="p-featured"> <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
+                                                                            <img width="420" height="280" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" /> </a></div>
+                                                                    <!-- <div class="p-categories p-top"><a
+                                                                        class="p-category category-id-2"
+                                                                        href="category/technology/index.html"
+                                                                        rel="category">Teknologi</a></div> -->
+                                                                </div>
+                                                            </div>
+                                                            <div class="p-content">
+                                                                <h3 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{$row->judul}}</a></h3>
+                                                                <div class="ellipsis entry-summary"><a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{!!$row->isi!!}</a><span>&hellip;</span></div>
+                                                                <div class="sponsor-meta meta-text">
+                                                                    <div class="sponsor-inner"> <span class="sponsor-icon">
+                                                                            <!-- <i
+                                                                            class="rbi rbi-notification"></i> -->
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @endforeach
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-7a4c608 elementor-widget elementor-widget-foxiz-overlay-1" data-id="7a4c608" data-element_type="widget" row data-widget_type="foxiz-overlay-1.default">
+                                    <div class="elementor-widget-container">
+                                        <div id="uid_7a4c608" class="block-wrap block-overlay overlay-1 light-overlay-scheme p-gradient ecat-bg-2 ecat-size-big">
+                                            <div class="block-inner">
+                                                @foreach ($berita6 as $row)
+
+                                                <div class="p-wrap p-highlight p-overlay-1" data-pid="1512">
+                                                    <div class="overlay-holder">
+                                                        <div class="p-featured"> <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}"> <img width="860" height="573" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" /> </a></div>
+                                                        <div class="overlay-wrap">
+                                                            <div class="overlay-inner p-content overlay-text">
+                                                                <!-- <div class="p-categories p-top"><a
+                                                                        class="p-category category-id-2"
+                                                                        href="category/technology/index.html"
+                                                                        rel="category">Teknologi</a></div> -->
+                                                                <h2 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{$row->judul}}</a></h2>
+                                                                <div class="p-meta has-bookmark">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                @endforeach
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-9262f1d elementor-widget elementor-widget-foxiz-list-box-1" data-id="9262f1d" data-element_type="widget" data-widget_type="foxiz-list-box-1.default">
+                                    <div class="elementor-widget-container">
+                                        <div id="uid_9262f1d" class="block-wrap block-big block-list block-list-box-1 ecat-bg-2 featured-right">
+                                            <div class="block-inner">
+                                                @foreach ($berita7 as $row)
+
+                                                <div class="p-wrap p-list p-box p-list-1 p-list-box-1 box-bg" data-pid="1515">
+                                                    <div class="list-box">
+                                                        <div class="list-holder">
+                                                            <div class="list-feat-holder">
+                                                                <div class="feat-holder overlay-text">
+                                                                    <div class="p-featured"> <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
+                                                                            <img width="420" height="280" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" /> </a></div>
                                                                     <!-- <div class="p-categories p-top"><a
                                                                             class="p-category category-id-2"
                                                                             href="category/technology/index.html"
@@ -30512,19 +30336,14 @@
                                                                 </div>
                                                             </div>
                                                             <div class="p-content">
-                                                                <h3 class="entry-title"> <a class="p-url"
-                                                                        href="/isi_berita/{{ $row->id }}"
-                                                                        rel="bookmark">{{$row->judul}}</a></h3>
-                                                                <div class="ellipsis entry-summary"><a class="p-url"
-                                                                    href="/isi_berita/{{ $row->id }}"
-                                                                    rel="bookmark">{!!$row->isi!!}</a><span>&hellip;</span></div>
+                                                                <h3 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{$row->judul}}</a></h3>
+                                                                <div class="ellipsis entry-summary"><a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{!!$row->isi!!}</a><span>&hellip;</span></div>
                                                                 <div class="sponsor-meta meta-text">
-                                                                    <div class="sponsor-inner"> <span
-                                                                            class="sponsor-icon">
+                                                                    <div class="sponsor-inner"> <span class="sponsor-icon">
                                                                             <!-- <i
                                                                                 class="rbi rbi-notification"></i> -->
-                                                                            </span>
-                                                                    </div> 
+                                                                        </span>
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -30542,124 +30361,110 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6c530d1 rb-sticky is-sidebar"
-                            data-id="6c530d1" data-element_type="column">
+                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6c530d1 rb-sticky is-sidebar" data-id="6c530d1" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-86b3bc1 elementor-widget elementor-widget-foxiz-banner"
-                                    data-id="86b3bc1" data-element_type="widget"
-                                    data-widget_type="foxiz-banner.default">
+                                <div class="elementor-element elementor-element-86b3bc1 elementor-widget elementor-widget-foxiz-banner" data-id="86b3bc1" data-element_type="widget" data-widget_type="foxiz-banner.default">
                                     <div class="elementor-widget-container">
                                         <h6 class="ad-description is-meta">- Disponsori -</h6>
-                                       
-                                        @foreach ($iklan1 as $row)
-                                            
-                                        <div class="w-banner"> <a class="p-flink" title="{{ $row->sponsor }}"> </a> > 
-                                            <div class="banner-bg"> <img loading="lazy" decoding="async"
-                                                    data-mode="default" 
-                                                    src="{{ asset('fotoiklan/'. $row->foto)}}"
-                                                    alt="banner" width="400" height="600"> <img loading="lazy"
-                                                    decoding="async" data-mode="dark"
-                                                    src="{{ asset('fotoiklan/'. $row->foto)}}" alt="banner"
-                                                    width="600" height="900"> </div>
+
+
+                                        <div class="w-banner" id="iklan_bawah">
+                                            <a class="p-flink" title=""></a>
+                                            <div class="banner-bg">
+                                                <img loading="lazy" decoding="async" data-mode="dark" src="{{asset('fotoiklan/'. $iklan1->foto)}}" alt="banner" width="600" height="900">
+                                            </div>
                                             <div class="w-banner-content">
-                                                
+
                                             </div>
                                         </div>
-                                        @endforeach
 
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-4a9eadc elementor-invisible elementor-widget elementor-widget-foxiz-heading"
-                                    data-id="4a9eadc" data-element_type="widget"
-                                    data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}"
-                                    data-widget_type="foxiz-heading.default">
+                                <div class="elementor-element elementor-element-4a9eadc elementor-invisible elementor-widget elementor-widget-foxiz-heading" data-id="4a9eadc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="foxiz-heading.default">
                                     <div class="elementor-widget-container">
                                         <div id="uid_4a9eadc" class="block-h heading-layout-1">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
             </div>
         </div>
-        <div class="heading-inner" style="display: flex; justify-content:center; margin-bottom:4%">
-            <h3 class="heading-title"><span>Penghargaan / Galeri</span></h3>
-        </div>
-        @foreach ( $des as $row ) 
-        <center><div class="container">
-            <div class="row">
-        <div class="col-sm-50" >
-            <div class="elementor-widget-container mb-2">
-                <p class="container" style="margin-top: 15px ; margin-left:100%; font-size: 14px; font-style: italic">{!!$row->isi!!}</p>
-            </div>           
-            @endforeach
-        </div>
     </div>
-    </div></center>
-        <div class="container" style="display: flex; justify-content:center; width: 65%"> 
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 80%;">
-              <div class="carousel-indicators">
+    </div>
+    </section>
+    </div>
+    </div>
+    <div class="heading-inner" style="display: flex; justify-content:center; margin-bottom:4%">
+        <h3 class="heading-title"><span>Penghargaan / Galeri</span></h3>
+    </div>
+    @foreach ( $des as $row )
+    <center>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-50">
+                    <div class="elementor-widget-container mb-2">
+                        <p class="container" style="margin-top: 15px ; margin-left:100%; font-size: 14px; font-style: italic">{!!$row->isi!!}</p>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+    </center>
+    <div class="container" style="display: flex; justify-content:center; width: 65%">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 80%;">
+            <div class="carousel-indicators">
                 @foreach ($penghargaan as $index => $row)
                 <a class="p-flink" title="{{ $row->penghargaan }}"> </a>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"> </button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $index }}" @if($index==0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"> </button>
                 @endforeach
-              </div>
-              <div class="carousel-inner">
+            </div>
+            <div class="carousel-inner">
                 @foreach ($penghargaan as $index => $row)
                 <div class="carousel-item @if($index == 0) active @endif">
                     <a class="p-flink" title="{{ $row->penghargaan }}"> </a>
-                  <img src="{{ asset('fotopenghargaan/' . $row->foto) }}" class="d-block w-100 object-fit-cover" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>{{ $row->penghargaan }}</h5>
-                  </div>
+                    <img src="{{ asset('fotopenghargaan/' . $row->foto) }}" class="d-block w-100 object-fit-cover" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>{{ $row->penghargaan }}</h5>
+                    </div>
                 </div>
                 @endforeach
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          </div>
-          
-          
-            <div class="tempe" style="display:flex; flex-wrap: wrap; justify-content: center; margin-bottom:15px">
-              @foreach ($penghargaan as $index => $row)
-                <img src="{{ asset('fotopenghargaan/' . $row->foto) }}"
-                     class="d-block foto-penghargaan {{ $index == 0 ? 'active' : '' }}" 
-                     data-bs-target="#carouselExampleCaptions" 
-                     data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"
-                     alt="..." 
-                     style="max-width: 100px; max-height: 100px; margin: 5px; padding: 0; border: 3px solid transparent;">
-              @endforeach
-            </div>
-          </div>
-          
-          
-          
-            
-            
-            
-            
-            
-            
-              
-        
-        
-        @include('layouts.utama.footer') 
-    
+            </button>
+        </div>
+    </div>
+
+
+    <div class="tempe" style="display:flex; flex-wrap: wrap; justify-content: center; margin-bottom:15px">
+        @foreach ($penghargaan as $index => $row)
+        <img src="{{ asset('fotopenghargaan/' . $row->foto) }}" class="d-block foto-penghargaan {{ $index == 0 ? 'active' : '' }}" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $index }}" @if($index==0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}" alt="..." style="max-width: 100px; max-height: 100px; margin: 5px; padding: 0; border: 3px solid transparent;">
+        @endforeach
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    @include('layouts.utama.footer')
+
     <script>
-        (function () {
+        (function() {
             let currentMode = null;
             let darkModeID = 'D_foxiz.themeruby.com_tech';
             if (navigator.cookieEnabled) {
@@ -30938,7 +30743,7 @@
             </svg> </a>
     </div> -->
     <script>
-        (function () {
+        (function() {
             function maybePrefixUrlField() {
                 if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
                     this.value = "http://" + this.value;
@@ -31101,25 +30906,16 @@
         <div class="logo-popup-outer">
             <div class="logo-popup">
                 <div class="login-popup-header">
-                    <div class="logo-popup-logo"> <img loading="lazy" decoding="async"
-                            src="wp-content/uploads/sites/3/2022/02/login.png" alt="" height="200" width="200"></div>
+                    <div class="logo-popup-logo"> <img loading="lazy" decoding="async" src="wp-content/uploads/sites/3/2022/02/login.png" alt="" height="200" width="200"></div>
                     <span class="logo-popup-heading h3">Welcome Back!</span>
                     <p class="logo-popup-description is-meta">Sign in to your account</p>
                 </div>
                 <div class="user-form">
-                    <form name="popup-form" id="popup-form" action="https://foxiz.themeruby.com/tech/wp-login.php"
-                        method="post">
-                        <p class="login-username"> <label for="user_login">Username or Email Address</label> <input
-                                type="text" name="log" id="user_login" autocomplete="username" class="input" value=""
-                                size="20" /></p>
-                        <p class="login-password"> <label for="user_pass">Password</label> <input type="password"
-                                name="pwd" id="user_pass" autocomplete="current-password" class="input" value=""
-                                size="20" /></p>
-                        <p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme"
-                                    value="forever" /> Remember Me</label></p>
-                        <p class="login-submit"> <input type="submit" name="wp-submit" id="wp-submit"
-                                class="button button-primary" value="Log In" /> <input type="hidden" name="redirect_to"
-                                value="https://foxiz.themeruby.com/tech" /></p>
+                    <form name="popup-form" id="popup-form" action="https://foxiz.themeruby.com/tech/wp-login.php" method="post">
+                        <p class="login-username"> <label for="user_login">Username or Email Address</label> <input type="text" name="log" id="user_login" autocomplete="username" class="input" value="" size="20" /></p>
+                        <p class="login-password"> <label for="user_pass">Password</label> <input type="password" name="pwd" id="user_pass" autocomplete="current-password" class="input" value="" size="20" /></p>
+                        <p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label></p>
+                        <p class="login-submit"> <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Log In" /> <input type="hidden" name="redirect_to" value="https://foxiz.themeruby.com/tech" /></p>
                     </form>
                 </div>
                 <div class="user-form-footer is-meta"> <a href="wp-loginc2b6.html?action=lostpassword">Lost your
@@ -31293,47 +31089,28 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script defer src="wp-content/cache/autoptimize/3/js/autoptimize_23f21e18a67393905ebd2f45fc9eab3f.js">
-</script>
-<script>
-    // Ambil semua elemen foto yang berada pada class d-block
-    const fotos = document.querySelectorAll('.d-block');
-    
-    // Tambahkan event listener pada setiap foto
-    fotos.forEach(function(foto) {
-      foto.addEventListener('click', function() {
-        // Ambil index dari foto yang di klik
-        const index = Array.from(fotos).indexOf(foto);
-        
-        // Aktifkan slide pada corousel sesuai dengan index foto yang di klik
-        const corousel = document.getElementById('carouselExampleCaptions');
-        const bsCarousel = new bootstrap.Carousel(corousel);
-        bsCarousel.to(index);
-      });
-    });
-  </script>
-  <script>
-    $(document).ready(function() {
-      $('a.p-url').click(function(event) {
-        event.preventDefault(); // prevent default behavior of the link
-        var linkId = $(this).attr('id'); // get the id of the clicked link
-        var id = linkId.split('-')[1]; // extract the id value
-        $.ajax({
-          type: "POST",
-          url: "/set_is_read/" + id,
-          success: function(data) {
-            // update the UI if necessary
-          },
-          error: function() {
-            // handle error if necessary
-          }
-        });
-      });
-    });
     </script>
-    
-  
-  
-{{-- <script>
+    <script>
+        // Ambil semua elemen foto yang berada pada class d-block
+        const fotos = document.querySelectorAll('.d-block');
+
+        // Tambahkan event listener pada setiap foto
+        fotos.forEach(function(foto) {
+            foto.addEventListener('click', function() {
+                // Ambil index dari foto yang di klik
+                const index = Array.from(fotos).indexOf(foto);
+
+                // Aktifkan slide pada corousel sesuai dengan index foto yang di klik
+                const corousel = document.getElementById('carouselExampleCaptions');
+                const bsCarousel = new bootstrap.Carousel(corousel);
+                bsCarousel.to(index);
+            });
+        });
+    </script>
+
+
+
+    {{-- <script>
 const container = document.getElementById("myCarousel");
 const options = { Dots: false };
 
@@ -31343,12 +31120,79 @@ Fancybox.bind("[data-fancybox]", {
   // Your custom options
 });
 </script> --}}
-</script>
-        <!-- <script>
+    </script>
+
+
+    <script>
+        function sponsor(posisi = "atas") {
+            // Kirim request AJAX ke endpoint /refresh-data
+            $.ajax({
+                url: "/iklan",
+                type: "GET",
+                dataType: "json",
+                success: function(response) {
+                    // Perbarui isi elemen dengan data yang diterima
+                    if (posisi == "bawah") {
+                        $("#iklan_bawah img").removeAttr('src');
+                        $("#iklan_bawah img").attr('src', "fotoiklan/" + response.iklan_bawah.foto);
+
+                    } else {
+                        $("#iklan_atas img").removeAttr('src');
+                        $("#iklan_atas img").attr('src', "fotoiklan/" + response.iklan_atas.foto);
+
+                    }
+                },
+                error: function(request, status, error) {
+                    console.log("System error");
+                }
+            });
+        }
+
+
+        setInterval(function() {
+            sponsor('atas');
+        }, 5000);
+
+
+        setInterval(function() {
+            sponsor('bawah');
+        }, 8000);
+    </script>
+    <!-- <script>
         setTimeout(function(){
        location.reload();
         }, 10000);
 </script> -->
+    <!-- <script>
+    $(document).ready(function() {
+    setInterval(function() {
+        $.ajax({
+            url: '{{ route('/') }}',
+            dataType: 'data',
+            success: function(response) {
+                $('#iklan').html(response);
+            }
+        });
+    }, 5000);
+});
+</script> -->
+    <!-- <script>
+        setInterval(function() {
+            $.ajax({
+                url: '/',
+                type: 'GET',
+                dataType: 'json',
+                success: function(iklan, iklan1) {
+                    // lakukan sesuatu dengan data yang diterima
+                    console.log(iklan, iklan1);
+                },
+                error: function(xhr, status, error) {
+                    // tampilkan pesan error jika terjadi kesalahan
+                    console.error(status + ': ' + error);
+                }
+            });
+        }, 5000); // interval 5 detik
+    </script> -->
 </body>
 
 </html>

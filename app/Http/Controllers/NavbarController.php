@@ -9,6 +9,7 @@ use App\Models\penghargaan;
 use App\Models\sosmed;
 use App\Models\sponsor;
 use App\Models\Notif;
+use App\Models\Notification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -33,14 +34,11 @@ class NavbarController extends Controller
         $penghargaan = penghargaan::limit(3)->orderBy('created_at', 'desc')->get();
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
         // $notif = Notif::orderBy('created_at', 'desc')->get();
-         if (Auth::check()) {
-        
-            $notif = Komentar::where('user_id', Auth::user()->id)->where('status', 'belum dibaca')->get();
- 
-         //    dd($notif);
-         }else {
-             $notif = [];
-        }
+        $notif = [];
+        if (Auth::check()) {
+            $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        } 
         
 
 

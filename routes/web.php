@@ -35,6 +35,7 @@ use App\Http\Controllers\tolakController;
 use App\Http\Controllers\deskripsiController;
 
 use GuzzleHttp\Psr7\Request;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -308,6 +309,15 @@ Route::get('isi/{id}', [isiController::class, 'index'])->name('isi');
 Route::get('baca/{id}', [HalamanutamaController::class, 'baca'])->name('baca');
 Route::get('/baca_semua/{id}', [HalamanutamaController::class, 'baca_semua'])->name('baca_semua');
 Route::get('/baca_all', [HalamanutamaController::class, 'baca_all'])->name('baca_all');
+
+
+
+// Route::get("/baca_all", function (Request $request){
+//     DB::table("notifications")->update([
+//         "is_read" => 1
+//     ]);
+//     return redirect()->back();
+// })
 
 
 

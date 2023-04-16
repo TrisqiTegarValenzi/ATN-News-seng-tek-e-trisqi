@@ -13,12 +13,12 @@
     <meta name="author" content="{{$data->users->username}}}">
     {{-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
     <link rel="profile" href="https://gmpg.org/xfn/11" />
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> --}}
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
     <style media="all">
         @charset "UTF-8";
 
-      
+
 
         .wp-block-archives-dropdown label {
             display: block;
@@ -24620,70 +24620,62 @@
     </style>
     <title>
         ATN News || {{$data->judul}}
-
-
     </title>
     <meta name="robots" content="max-image-preview:large" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts"
-        href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap"
-        crossorigin />
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts" href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap" crossorigin />
     <noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap" />
     </noscript>
     <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Feed" href="../feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Comments Feed"
-        href="../comments/feed/index.html" />
-    <meta name="description"
-        content="If you’re just moving up into your first mirrorless camera from a smartphone, you’ll appreciate the X-T200‘s bright, responsive 3.5-inch touchscreen. It allows shooters to quickly and easily access menus, settings, and shooting modes. But, it’s not totally reliant on its screen." />
-    <link rel="alternate" type="application/rss+xml"
-        title="Technology &raquo; Best Fujifilm Cameras for Every Photographer Comments Feed" href="feed/index.html" />
+    <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Comments Feed" href="../comments/feed/index.html" />
+    <meta name="description" content="If you’re just moving up into your first mirrorless camera from a smartphone, you’ll appreciate the X-T200‘s bright, responsive 3.5-inch touchscreen. It allows shooters to quickly and easily access menus, settings, and shooting modes. But, it’s not totally reliant on its screen." />
+    <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Best Fujifilm Cameras for Every Photographer Comments Feed" href="feed/index.html" />
     <link rel="pingback" href="../xmlrpc.php" />
     <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Organization",
-                "legalName": "Technology",
-                "url": "https://foxiz.themeruby.com/tech/"
-            }
-        </script>
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "legalName": "Technology",
+            "url": "https://foxiz.themeruby.com/tech/"
+        }
+    </script>
     <script>
         window._wpemojiSettings = {
-            baseUrl:
-                "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
+            baseUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
             ext: ".png",
             svgUrl: "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/",
             svgExt: ".svg",
             source: {
-                concatemoji:
-                    "https:\/\/foxiz.themeruby.com\/tech\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1",
+                concatemoji: "https:\/\/foxiz.themeruby.com\/tech\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.1.1",
             },
         };
         /*! This file is auto-generated */
-        !(function (e, a, t) {
+        !(function(e, a, t) {
             var n,
                 r,
                 o,
                 i = a.createElement("canvas"),
                 p = i.getContext && i.getContext("2d");
+
             function s(e, t) {
                 var a = String.fromCharCode,
                     e =
-                        (p.clearRect(0, 0, i.width, i.height),
-                            p.fillText(a.apply(this, e), 0, 0),
-                            i.toDataURL());
+                    (p.clearRect(0, 0, i.width, i.height),
+                        p.fillText(a.apply(this, e), 0, 0),
+                        i.toDataURL());
                 return (
                     p.clearRect(0, 0, i.width, i.height),
                     p.fillText(a.apply(this, t), 0, 0),
                     e === i.toDataURL()
                 );
             }
+
             function c(e) {
                 var t = a.createElement("script");
                 (t.src = e),
-                    (t.defer = t.type = "text/javascript"),
-                    a.getElementsByTagName("head")[0].appendChild(t);
+                (t.defer = t.type = "text/javascript"),
+                a.getElementsByTagName("head")[0].appendChild(t);
             }
             for (
                 o = Array("flag", "emoji"),
@@ -24691,24 +24683,22 @@
                     everything: !0,
                     everythingExceptFlag: !0,
                 },
-                r = 0;
-                r < o.length;
-                r++
+                r = 0; r < o.length; r++
             )
-                (t.supports[o[r]] = (function (e) {
+                (t.supports[o[r]] = (function(e) {
                     if (p && p.fillText)
                         switch (
-                        ((p.textBaseline = "top"),
-                            (p.font = "600 32px Arial"),
-                            e)
+                            ((p.textBaseline = "top"),
+                                (p.font = "600 32px Arial"),
+                                e)
                         ) {
                             case "flag":
                                 return s(
-                                    [127987, 65039, 8205, 9895, 65039],
-                                    [127987, 65039, 8203, 9895, 65039]
-                                )
-                                    ? !1
-                                    : !s(
+                                        [127987, 65039, 8205, 9895, 65039],
+                                        [127987, 65039, 8203, 9895, 65039]
+                                    ) ?
+                                    !1 :
+                                    !s(
                                         [55356, 56826, 55356, 56819],
                                         [55356, 56826, 8203, 55356, 56819]
                                     ) &&
@@ -24736,35 +24726,35 @@
                         }
                     return !1;
                 })(o[r])),
-                    (t.supports.everything =
-                        t.supports.everything && t.supports[o[r]]),
-                    "flag" !== o[r] &&
-                    (t.supports.everythingExceptFlag =
-                        t.supports.everythingExceptFlag &&
-                        t.supports[o[r]]);
+                (t.supports.everything =
+                    t.supports.everything && t.supports[o[r]]),
+                "flag" !== o[r] &&
+                (t.supports.everythingExceptFlag =
+                    t.supports.everythingExceptFlag &&
+                    t.supports[o[r]]);
             (t.supports.everythingExceptFlag =
                 t.supports.everythingExceptFlag && !t.supports.flag),
-                (t.DOMReady = !1),
-                (t.readyCallback = function () {
-                    t.DOMReady = !0;
-                }),
-                t.supports.everything ||
-                ((n = function () {
-                    t.readyCallback();
-                }),
-                    a.addEventListener
-                        ? (a.addEventListener("DOMContentLoaded", n, !1),
-                            e.addEventListener("load", n, !1))
-                        : (e.attachEvent("onload", n),
-                            a.attachEvent("onreadystatechange", function () {
-                                "complete" === a.readyState &&
-                                    t.readyCallback();
-                            })),
-                    (e = t.source || {}).concatemoji
-                        ? c(e.concatemoji)
-                        : e.wpemoji &&
-                        e.twemoji &&
-                        (c(e.twemoji), c(e.wpemoji)));
+            (t.DOMReady = !1),
+            (t.readyCallback = function() {
+                t.DOMReady = !0;
+            }),
+            t.supports.everything ||
+                ((n = function() {
+                        t.readyCallback();
+                    }),
+                    a.addEventListener ?
+                    (a.addEventListener("DOMContentLoaded", n, !1),
+                        e.addEventListener("load", n, !1)) :
+                    (e.attachEvent("onload", n),
+                        a.attachEvent("onreadystatechange", function() {
+                            "complete" === a.readyState &&
+                                t.readyCallback();
+                        })),
+                    (e = t.source || {}).concatemoji ?
+                    c(e.concatemoji) :
+                    e.wpemoji &&
+                    e.twemoji &&
+                    (c(e.twemoji), c(e.wpemoji)));
         })(window, document, window._wpemojiSettings);
     </script>
     <style>
@@ -25445,53 +25435,57 @@
     <meta name="generator" content="WordPress 6.1.1" />
     <link rel="canonical" href="index.html" />
     <link rel="shortlink" href="../index1a78.html?p=1599" />
-    <link rel="alternate" type="application/json+oembed"
-        href="../wp-json/oembed/1.0/embed1ea2.json?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fbest-fujifilm-cameras-for-every-photographer%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="../wp-json/oembed/1.0/embedea07?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fbest-fujifilm-cameras-for-every-photographer%2F&amp;format=xml" />
+    <link rel="alternate" type="application/json+oembed" href="../wp-json/oembed/1.0/embed1ea2.json?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fbest-fujifilm-cameras-for-every-photographer%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="../wp-json/oembed/1.0/embedea07?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fbest-fujifilm-cameras-for-every-photographer%2F&amp;format=xml" />
     <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "WebSite",
-                "@id": "https://foxiz.themeruby.com/tech/#website",
-                "url": "https://foxiz.themeruby.com/tech/",
-                "name": "Technology",
-                "potentialAction": {
-                    "@type": "SearchAction",
-                    "target": "https://foxiz.themeruby.com/tech/?s={search_term_string}",
-                    "query-input": "required name=search_term_string"
-                }
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://foxiz.themeruby.com/tech/#website",
+            "url": "https://foxiz.themeruby.com/tech/",
+            "name": "Technology",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://foxiz.themeruby.com/tech/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
             }
-        </script>
+        }
+    </script>
     <script type="application/ld+json">
-            {
-                "@context": "https://schema.org",
-                "@type": "Product",
-                "description": "If you can justify the outlay, then the Fujifilm Cameras has to be one of the most well-rounded and complete we've seen. Suited to a range of subjects, from landscapes to sports and wildlife, it'll perform superbly in any situation.",
-                "image": "https://foxiz.themeruby.com/tech/wp-content/uploads/sites/3/2021/12/t40.jpg",
-                "name": "Best Fujifilm Cameras for Every Photographer",
-                "mpn": 1599,
-                "sku": "best-fujifilm-cameras-for-every-photographer",
-                "brand": { "@type": "Brand", "name": "Technology" },
-                "review": {
-                    "author": { "@type": "Person", "name": "Connor" },
-                    "@type": "Review",
-                    "reviewRating": {
-                        "@type": "Rating",
-                        "ratingValue": 8.8,
-                        "bestRating": 10,
-                        "worstRating": 1
-                    }
+        {
+            "@context": "https://schema.org",
+            "@type": "Product",
+            "description": "If you can justify the outlay, then the Fujifilm Cameras has to be one of the most well-rounded and complete we've seen. Suited to a range of subjects, from landscapes to sports and wildlife, it'll perform superbly in any situation.",
+            "image": "https://foxiz.themeruby.com/tech/wp-content/uploads/sites/3/2021/12/t40.jpg",
+            "name": "Best Fujifilm Cameras for Every Photographer",
+            "mpn": 1599,
+            "sku": "best-fujifilm-cameras-for-every-photographer",
+            "brand": {
+                "@type": "Brand",
+                "name": "Technology"
+            },
+            "review": {
+                "author": {
+                    "@type": "Person",
+                    "name": "Connor"
                 },
-                "aggregateRating": {
-                    "@type": "AggregateRating",
+                "@type": "Review",
+                "reviewRating": {
+                    "@type": "Rating",
                     "ratingValue": 8.8,
-                    "ratingCount": 3,
                     "bestRating": 10,
                     "worstRating": 1
                 }
+            },
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": 8.8,
+                "ratingCount": 3,
+                "bestRating": 10,
+                "worstRating": 1
             }
-        </script>
+        }
+    </script>
     <meta property="og:title" content="Best Fujifilm Cameras for Every Photographer" />
     <meta property="og:url" content="https://foxiz.themeruby.com/tech/best-fujifilm-cameras-for-every-photographer/" />
     <meta property="og:site_name" content="Technology" />
@@ -25508,9 +25502,7 @@
     <meta name="twitter:data2" content="6 minutes" />
 </head>
 
-<body
-    class="post-template-default single single-post postid-1599 single-format-standard wp-embed-responsive elementor-default elementor-kit-3 menu-ani-1 hover-ani-1 is-rm-1 is-hd-1 is-standard-1 is-mstick yes-tstick is-backtop none-m-backtop is-mstick sync-bookmarks"
-    data-theme="default">
+<body class="post-template-default single single-post postid-1599 single-format-standard wp-embed-responsive elementor-default elementor-kit-3 menu-ani-1 hover-ani-1 is-rm-1 is-hd-1 is-standard-1 is-mstick yes-tstick is-backtop none-m-backtop is-mstick sync-bookmarks" data-theme="default">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="
                 visibility: hidden;
                 position: absolute;
@@ -25519,8 +25511,7 @@
             ">
         <defs>
             <filter id="wp-duotone-dark-grayscale">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 0.49803921568627" />
                     <feFuncG type="table" tableValues="0 0.49803921568627" />
@@ -25530,8 +25521,7 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="
                 visibility: hidden;
                 position: absolute;
                 left: -9999px;
@@ -25539,8 +25529,7 @@
             ">
         <defs>
             <filter id="wp-duotone-grayscale">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 1" />
                     <feFuncG type="table" tableValues="0 1" />
@@ -25550,8 +25539,7 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="
                 visibility: hidden;
                 position: absolute;
                 left: -9999px;
@@ -25559,8 +25547,7 @@
             ">
         <defs>
             <filter id="wp-duotone-purple-yellow">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
                     <feFuncG type="table" tableValues="0 1" />
@@ -25570,8 +25557,7 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="
                 visibility: hidden;
                 position: absolute;
                 left: -9999px;
@@ -25579,8 +25565,7 @@
             ">
         <defs>
             <filter id="wp-duotone-blue-red">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 1" />
                     <feFuncG type="table" tableValues="0 0.27843137254902" />
@@ -25590,8 +25575,7 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="
                 visibility: hidden;
                 position: absolute;
                 left: -9999px;
@@ -25599,8 +25583,7 @@
             ">
         <defs>
             <filter id="wp-duotone-midnight">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 0" />
                     <feFuncG type="table" tableValues="0 0.64705882352941" />
@@ -25610,8 +25593,7 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="
                 visibility: hidden;
                 position: absolute;
                 left: -9999px;
@@ -25619,8 +25601,7 @@
             ">
         <defs>
             <filter id="wp-duotone-magenta-yellow">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.78039215686275 1" />
                     <feFuncG type="table" tableValues="0 0.94901960784314" />
@@ -25630,8 +25611,7 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="
                 visibility: hidden;
                 position: absolute;
                 left: -9999px;
@@ -25639,8 +25619,7 @@
             ">
         <defs>
             <filter id="wp-duotone-purple-green">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
                     <feFuncG type="table" tableValues="0 1" />
@@ -25650,8 +25629,7 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none"
-        style="
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="
                 visibility: hidden;
                 position: absolute;
                 left: -9999px;
@@ -25659,8 +25637,7 @@
             ">
         <defs>
             <filter id="wp-duotone-blue-orange">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.098039215686275 1" />
                     <feFuncG type="table" tableValues="0 0.66274509803922" />
@@ -25672,8 +25649,7 @@
         </defs>
     </svg>
     <div class="site-outer">
-        <header id="site-header"
-            class="header-wrap rb-section header-set-1 header-1 header-wrapper style-shadow has-quick-menu">
+        <header id="site-header" class="header-wrap rb-section header-set-1 header-1 header-wrapper style-shadow has-quick-menu">
             <div id="navbar-outer" class="navbar-outer">
                 <div id="sticky-holder" class="sticky-holder">
                     <div class="navbar-wrap">
@@ -25682,33 +25658,32 @@
                                 <div class="navbar-left">
                                     <div class="logo-wrap is-image-logo site-branding">
                                         <a href="#" class="logo" title="Technology">
-                                            <img class="logo-default" data-mode="default" height="60" width="92"
-                                                src="{{asset('logoatn.png')}}
+                                            <img class="logo-default" data-mode="default" height="60" width="92" src="{{asset('logoatn.png')}}
                                                     " alt="Technology" />
                                         </a>
                                     </div>
+
                                     @include('layouts.utama.navbar')
 
                                     <div class="wnav-holder w-header-search header-dropdown-outer">
-                                        <a href="#" data-title="Search"
-                                            class="icon-holder header-element search-btn search-trigger">
+                                        <a href="#" data-title="Search" class="icon-holder header-element search-btn search-trigger">
                                             <span class="search-icon-svg"></span>
                                         </a>
                                         <div class="header-dropdown">
                                             <div class="header-search-form live-search-form">
-                                               
+
                                                 <form action="{{url('search')}}" method="get" class="rb-search-form" style="display: flex">
                                                     <input class="form-control me-1" type="search" name="katakunci" value="{{ Request::get('katakunci') }}" placeholder="Masukkan kata kunci" aria-label="Search">
                                                     <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" style="color: black" viewBox="0 0 16 16">
-                                                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                                    </svg></button>
+                                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                        </svg></button>
                                                 </form>
                                                 <span class="live-search-animation rb-loader"></span>
                                                 <div class="live-search-response"></div>
                                             </div>
                                         </div>
                                     </div>
-                                  
+
                                 </div>
                             </div>
                         </div>
@@ -25720,14 +25695,11 @@
             </div>
         </header>
         <div class="site-wrap">
-            <div id="single-post-infinite" class="single-post-infinite none-mobile-sb"
-                data-nextposturl="../are-smartwatches-the-future-of-wearable-devices/index.html">
+            <div id="single-post-infinite" class="single-post-infinite none-mobile-sb" data-nextposturl="../are-smartwatches-the-future-of-wearable-devices/index.html">
                 <div class="single-post-outer activated" data-postid="1599" data-postlink="index.html">
                     <div class="single-standard-1 is-sidebar-right sticky-sidebar optimal-line-length">
                         <div class="rb-container edge-padding">
-                            <article id="post-1599"
-                                class="post-1599 post type-post status-publish format-standard has-post-thumbnail category-gadget tag-opinions tag-smartphone tag-top-10"
-                                itemscope itemtype="https://schema.org/Article">
+                            <article id="post-1599" class="post-1599 post type-post status-publish format-standard has-post-thumbnail category-gadget tag-opinions tag-smartphone tag-top-10" itemscope itemtype="https://schema.org/Article">
                                 <header class="single-header">
 
 
@@ -25742,34 +25714,24 @@
                                         <div class="smeta-in">
                                             <p class="meta-el meta-avatar">
                                                 @if ($data->users->foto == 'profile.jpg')
-                                                <img
-                                                    src="{{asset('profile.jpg')}}"
-                                                    width="120" height="120" alt="Connor"
-                                                    class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo"
-                                                    loading="lazy"/>
+                                                <img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" />
                                                 @else
-                                                <img
-                                                src="{{asset('storage/' . $data->users->foto)}}"
-                                                width="120" height="120" alt="Connor"
-                                                class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo"
-                                                loading="lazy"/>
+                                                <img src="{{asset('storage/' . $data->users->foto)}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" />
                                                 @endif
-                                                
 
-                                           
+
+
                                             </p>
                                             <div class="smeta-sec">
                                                 <div class="smeta-bottom meta-text">
-                                                    <time class="updated-date"
-                                                        datetime="2022-02-23T10:12:12+00:00">Dibuat:
+                                                    <time class="updated-date" datetime="2022-02-23T10:12:12+00:00">Dibuat:
                                                         {{$data->created_at}} </time>
                                                 </div>
                                                 <div class="p-meta">
                                                     <div class="meta-inner is-meta">
                                                         <span class="meta-el meta-author">
                                                             <p>{{$data->users->username}}</p>
-                                                            <span
-                                                                class="meta-label meta-author-label">&nbsp;&#45;&nbsp;Penulis</span>
+                                                            <span class="meta-label meta-author-label">&nbsp;&#45;&nbsp;Penulis</span>
                                                         </span>
                                                     </div>
                                                 </div>
@@ -25782,35 +25744,29 @@
                                     <div class="s-ct">
                                         <div class="s-feat-outer">
                                             <div class="s-feat">
-                                                <div class="featured-lightbox-trigger"
-                                                    data-source="https://foxiz.themeruby.com/tech/wp-content/uploads/sites/3/2021/12/t40.jpg"
-                                                    data-caption="" data-attribution="">
-                                                    <img width="860" height="573"
-                                                        src="{{asset('foto/'. $data->foto)}}"
-                                                        class="attachment-foxiz_crop_o1 size-foxiz_crop_o1 wp-post-image"
-                                                        alt="" decoding="async" loading="lazy" />
+                                                <div class="featured-lightbox-trigger" data-source="https://foxiz.themeruby.com/tech/wp-content/uploads/sites/3/2021/12/t40.jpg" data-caption="" data-attribution="">
+                                                    <img width="860" height="573" src="{{asset('foto/'. $data->foto)}}" class="attachment-foxiz_crop_o1 size-foxiz_crop_o1 wp-post-image" alt="" decoding="async" loading="lazy" />
                                                 </div>
                                             </div>
                                         </div>
 
 
-                                        <div class="entry-content rbct clearfix is-highlight-shares"
-                                            itemprop="articleBody">
+                                        <div class="entry-content rbct clearfix is-highlight-shares" itemprop="articleBody">
                                             <p class="has-drop-cap">
-                                               {!!$data->deskripsi!!}                
-                                               {!!$data->isi!!} 
+                                                {!!$data->deskripsi!!}
+                                                {!!$data->isi!!}
                                             </p>
                                             <div class="" style="margin-bottom: 5%">
                                                 <h3>Tag:</h3>
                                                 <div style="display: flex; margin-top: 2%;">
-                                                @foreach ($data->tags as $tag)
-                                                <form action="{{url('tag')}}" method="get" class="rb-search-form">
-                                                    <input class="form-control me-1" type="hidden" style="color: white;" name="katakunci" value="{{$tag->tag}}" placeholder="Masukkan kata kunci" aria-label="Search">
-                                                    <button type="submit">{{$tag->tag}}</button>
-                                                </form>
-                                                @endforeach
+                                                    @foreach ($data->tags as $tag)
+                                                    <form action="{{url('tag')}}" method="get" class="rb-search-form">
+                                                        <input class="form-control me-1" type="hidden" style="color: white;" name="katakunci" value="{{$tag->tag}}" placeholder="Masukkan kata kunci" aria-label="Search">
+                                                        <button type="submit">{{$tag->tag}}</button>
+                                                    </form>
+                                                    @endforeach
                                                 </div>
-                                                             
+
                                             </div>
 
 
@@ -25853,20 +25809,20 @@
                                                         </h3>
                                                         @if ($errors->any())
                                                         <div role="alert" style="background-color: red; padding: 2%; margin-bottom: 10px; color: white; text-align: center; font-family:Arial, Helvetica, sans-serif; opacity: 0.8; ">
-                                                           <ul>
-                                                             @foreach ($errors->all() as $item)
-                                                                 {{$item}}
-                                                             @endforeach
-                                                           </ul>
-                                                       </div>
+                                                            <ul>
+                                                                @foreach ($errors->all() as $item)
+                                                                {{$item}}
+                                                                @endforeach
+                                                            </ul>
+                                                        </div>
                                                         @endif
-                                                       
+
 
                                                         <form action="/komentar/{{$data->id}}" method="POST" enctype="multipart/form-data">
                                                             @csrf
 
                                                             <div class="rb-form-rating">
-                                                           </div>
+                                                            </div>
                                                             <p class="comment-form-comment">
                                                                 {{-- <input type="hidden" name="parent" value="0"> --}}
                                                                 <input type="hidden" name="parent" value="0">
@@ -25876,12 +25832,12 @@
                                                             </p>
                                                             <div class="mc4wp-form-fields"><br>
                                                                 @if (Route::has('login'))
-        
+
                                                                 @auth
                                                                 @if (Auth::user()->role_id != 4)
                                                                 <span class="meta-label" style="color: red">Hanya Akun Dengan Role Pembaca Yang Bisa Berkomentar !!!</span>
                                                                 <a href="{{url('isi_berita')}}">
-                                                                    <input type="submit" value="Kirim" disabled/>
+                                                                    <input type="submit" value="Kirim" disabled />
                                                                 </a>
                                                                 {{-- <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" disabled> --}}
                                                                 @else
@@ -25890,12 +25846,12 @@
                                                                 </a>
                                                                 {{-- <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" > --}}
                                                                 @endif
-                                                                
 
-                                                                
-                                                            {{-- <input type="submit" value="Kirim"/> --}}
+
+
+                                                                {{-- <input type="submit" value="Kirim"/> --}}
                                                         </form>
-                                                      @else
+                                                        @else
                                                         <div class="hubungi kami">
                                                             <a href="/register_komentar" class="is-btn header-element"><span>
                                                                     Kirim</span>
@@ -25906,7 +25862,7 @@
 
                                                         {{-- {{$tag->tag}} --}}
 
-                                                      
+
                                                         @foreach ($komentar as $row)
                                                         <div class="usr-holder entry-sec">
                                                             <div class="ubox">
@@ -25915,309 +25871,285 @@
                                                                         <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
                                                                         <div class="is-meta">
                                                                             <span class="nname-info meta-author">
-                                                                                <span class="meta-label">Dari</span><p class="nice-name" href="#">{{ $row->nama }}</p>
+                                                                                <span class="meta-label">Dari</span>
+                                                                                <p class="nice-name" href="#">{{ $row->nama }}</p>
                                                                             </span>
-                    
+
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ubio description-text">
-                                                                        <div class="d-flex">
-                                                                            {{ $row->komentar }}
+                                                                    <div class="d-flex">
+                                                                        {{ $row->komentar }}
+                                                                        @if (Route::has('login'))
+
+                                                                        @auth
+                                                                        <div id="" class="balaskomen" data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
+                                                                                <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
+                                                                            </svg>
+                                                                            Balas
+
+                                                                        </div>
+                                                                        @else
+                                                                        <a href="/register_komentar">
+                                                                            <div id="" class="balaskomen" data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
+                                                                                    <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
+                                                                                </svg>
+                                                                                Balas
+
+                                                                            </div>
+                                                                        </a>
+                                                                        @endauth
+                                                                        @endif
+                                                                    </div>
+                                                                    @if (Route::has('login'))
+
+                                                                    @auth
+
+                                                                    <form action="/komentar/{{$data->id}}" method="post" id="balas-{{$row->id}}" class="mb-3" style="display: none">
+                                                                        @csrf
+                                                                        <input type="hidden" name="parent" value="{{$row->id}}">
+                                                                        <input type="hidden" name="induk_user" value="{{$row->user_id}}">
+
+                                                                        <textarea id="komentar" name="komentar" placeholder="Balas Komentar" cols="45" rows="8" class="mb-3 mt-5" required></textarea>
+
+
+                                                                        @if (Auth::user()->role_id != 4)
+                                                                        <div class="">
+
+                                                                            <span class="meta-label" style="color: red">Hanya Akun Dengan Role Pembaca Yang Bisa Berkomentar !!!</span>
+                                                                        </div>
+
+                                                                        <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" disabled>
+                                                                        @else
+                                                                        <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas">
+                                                                        @endif
+
+                                                                    </form>
+                                                                    @else
+
+                                                                    @endauth
+                                                                    @endif
+                                                                    @foreach ($row->childs as $childs)
+                                                                    <div class="author-info-wrap" style="margin-left: 20px">
+                                                                        <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
+                                                                        <div class="is-meta">
+                                                                            <span class="nname-info meta-author">
+                                                                                <p class="nice-name" href="#">{{ $childs->nama }}</p>
+                                                                            </span>
+                                                                            <div class="" style="display: flex">
+                                                                                {{$childs->komentar}}
                                                                                 @if (Route::has('login'))
-    
                                                                                 @auth
-                                                                                <div id="" class="balaskomen" data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+                                                                                <div id="" class="balaskomen" data-id="balas-{{$childs->id}}" style="margin-left: 100px; display:flex; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
-                                                                                        <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
+                                                                                        <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
                                                                                     </svg>
-                                                                                        Balas
-                                                                                         
+                                                                                    Balas
+
                                                                                 </div>
                                                                                 @else
                                                                                 <a href="/register_komentar">
                                                                                     <div id="" class="balaskomen" data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                                                        
+
                                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
-                                                                                            <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
+                                                                                            <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
                                                                                         </svg>
                                                                                         Balas
-                                                                                        
+
                                                                                     </div>
                                                                                 </a>
                                                                                 @endauth
+
                                                                                 @endif
-                                                                        </div>
-                                                                        @if (Route::has('login'))
-        
-                                                                        @auth
-                                                                        
-                                                                        <form action="/komentar/{{$data->id}}" method="post" id="balas-{{$row->id}}" class="mb-3" style="display: none">
-                                                                            @csrf
-                                                                            <input type="hidden" name="parent" value="{{$row->id}}">
-                                                                            <input type="hidden" name="induk_user" value="{{$row->user_id}}">
-                                                                            
-                                                                            <textarea id="komentar" name="komentar" placeholder="Balas Komentar" cols="45" rows="8" class="mb-3 mt-5" required></textarea>
-
-                                                                            
-                                                                            @if (Auth::user()->role_id != 4)
-                                                                            <div class="">
-
-                                                                                <span class="meta-label" style="color: red">Hanya Akun Dengan Role Pembaca Yang Bisa Berkomentar !!!</span>
                                                                             </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    @if (Route::has('login'))
 
-                                                                            <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" disabled>
-                                                                            @else
-                                                                            <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" >
-                                                                            @endif
+                                                                    @auth
+                                                                    <form action="/komentar/{{$data->id}}" method="post" id="balas-{{$childs->id}}" class="mb-3" style="margin-left: 20px; display:none">
+                                                                        @csrf
+                                                                        <input type="hidden" name="parent" value="{{$childs->id}}">
+                                                                        {{-- <input type="text"  name="komentar" class="form-control mt-3 mb-3"  placeholder="Balas Komentar" id=""> --}}
+                                                                        <textarea id="komentar" name="komentar" placeholder="Balas Komentar" cols="45" rows="8" class="mb-3 mt-5" required></textarea>
 
-                                                                        </form>
+
+                                                                        @if (Auth::user()->role_id != 4)
+                                                                        <div class="">
+
+                                                                            <span class="meta-label" style="color: red">Hanya Akun Dengan Role Pembaca Yang Bisa Berkomentar !!!</span>
+                                                                        </div>
+
+                                                                        <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" disabled>
                                                                         @else
-                                                                            
-                                                                        @endauth
+                                                                        <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas">
                                                                         @endif
-                                                                        @foreach ($row->childs as $childs)
-                                                                                <div class="author-info-wrap" style="margin-left: 20px">
-                                                                                    <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
-                                                                                    <div class="is-meta">
-                                                                                        <span class="nname-info meta-author">
-                                                                                            <p class="nice-name" href="#">{{ $childs->nama }}</p>
-                                                                                        </span>
-                                                                                        <div class="" style="display: flex">
-                                                                                            {{$childs->komentar}}
-                                                                                            @if (Route::has('login'))
-                                                                                            @auth
-                                                                                                
-                                                                                            <div id="" class="balaskomen" data-id="balas-{{$childs->id}}" style="margin-left: 100px; display:flex; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
-                                                                                                    <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
-                                                                                                </svg>
-                                                                                                    Balas
-                                                                                                     
-                                                                                            </div>
-                                                                                            @else
-                                                                                            <a href="/register_komentar">
-                                                                                                <div id="" class="balaskomen" data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex;" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                                                                    
-                                                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
-                                                                                                        <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z"/>
-                                                                                                    </svg>
-                                                                                                    Balas
-                                                                                                    
-                                                                                                </div>
-                                                                                            </a>
-                                                                                            @endauth
-
-                                                                                            @endif
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                                @if (Route::has('login'))
-        
-                                                                                @auth
-                                                                                <form action="/komentar/{{$data->id}}" method="post" id="balas-{{$childs->id}}" class="mb-3" style="margin-left: 20px; display:none">
-                                                                                    @csrf
-                                                                                    <input type="hidden" name="parent" value="{{$childs->id}}">
-                                                                                    {{-- <input type="text"  name="komentar" class="form-control mt-3 mb-3"  placeholder="Balas Komentar" id=""> --}}
-                                                                                    <textarea id="komentar" name="komentar" placeholder="Balas Komentar" cols="45" rows="8" class="mb-3 mt-5" required></textarea>
-        
-                                                                                    
-                                                                                    @if (Auth::user()->role_id != 4)
-                                                                                    <div class="">
-
-                                                                                        <span class="meta-label" style="color: red">Hanya Akun Dengan Role Pembaca Yang Bisa Berkomentar !!!</span>
-                                                                                    </div>
-
-                                                                                    <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" disabled>
-                                                                                    @else
-                                                                                    <input type="submit" class="is-btn header-element" style="margin-top: 8px" value="Balas" >
-                                                                                    @endif
-                            
-        
-                                                                                </form>
-                                                                                @else
-                                                                            
-                                                                                @endauth
-                                                                                @endif
-                                                                                @foreach ($childs->childs as $childs2)
-                                                                                <div class="author-info-wrap" style="margin-left: 80px">
-                                                                                    <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
-                                                                                    <div class="is-meta">
-                                                                                        <span class="nname-info meta-author">
-                                                                                            <p class="nice-name" href="#">{{ $childs2->nama }}</p>
-                                                                                        </span>
-                                                                                        <div class="" style="display: flex">
-                                                                                            {{$childs2->komentar}}
-                                                                                            
-                                                                                        </div>
-                                                                                    </div>  
-                                                                                </div>
-                                                                               
-                                                                                      
-                                                                                @endforeach
 
 
-                                                                                @endforeach
+                                                                    </form>
+                                                                    @else
+
+                                                                    @endauth
+                                                                    @endif
+                                                                    @foreach ($childs->childs as $childs2)
+                                                                    <div class="author-info-wrap" style="margin-left: 80px">
+                                                                        <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
+                                                                        <div class="is-meta">
+                                                                            <span class="nname-info meta-author">
+                                                                                <p class="nice-name" href="#">{{ $childs2->nama }}</p>
+                                                                            </span>
+                                                                            <div class="" style="display: flex">
+                                                                                {{$childs2->komentar}}
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    @endforeach
+
+
+                                                                    @endforeach
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         @endforeach
-                                                               
+
                                                     </div>
-                                                   
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
+
 
                                     <div class="mc4wp-form-fields">
 
-                                        
+
+                                    </div>
+                                </div>
+                                <div id="widget-post-2" class="widget rb-section w-sidebar clearfix widget-post">
+                                    <div class="block-h widget-heading heading-layout-1">
+                                        <div class="heading-inner">
+                                            <h4 class="heading-title">
+                                                <span>Berita Terbaru</span>
+                                            </h4>
                                         </div>
                                     </div>
-                                    <div id="widget-post-2" class="widget rb-section w-sidebar clearfix widget-post">
-                                        <div class="block-h widget-heading heading-layout-1">
-                                            <div class="heading-inner">
-                                                <h4 class="heading-title">
-                                                    <span>Berita Terbaru</span>
-                                                </h4>
+                                    @foreach ($berita as $row)
+                                    <div class="widget-p-listing">
+                                        <div class="p-wrap p-small p-list-small-2" data-pid="1599">
+                                            <div class="feat-holder">
+                                                <div class="p-featured ratio-v1">
+                                                    <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
+                                                        <img width="150" height="150" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" />
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <div class="p-content">
+                                                <h5 class="entry-title">
+                                                    <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{$row->judul}}</a>
+                                                </h5>
+                                                <div class="review-meta is-meta is-rstyle-0 type-score">
+                                                    <div class="review-meta-inner">
+
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        @foreach ($berita as $row)
-                                        <div class="widget-p-listing">
-                                            <div class="p-wrap p-small p-list-small-2" data-pid="1599">
-                                                <div class="feat-holder">
-                                                    <div class="p-featured ratio-v1">
-                                                        <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
-                                                            <img width="150" height="150" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" />
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="p-content">
-                                                    <h5 class="entry-title">
-                                                        <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{$row->judul}}</a>
-                                                    </h5>
-                                                    <div class="review-meta is-meta is-rstyle-0 type-score">
-                                                        <div class="review-meta-inner">
+                                        @endforeach
+                                    </div>
+                                </div>
 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            @endforeach
+
+
+                                <div id="widget-post-2" class="widget rb-section w-sidebar clearfix widget-post" style="margin-top: 20px">
+                                    <div class="block-h widget-heading heading-layout-1">
+                                        <div class="heading-inner">
+                                            <h4 class="heading-title">
+                                                <span>Berita Terpopuler</span>
+                                            </h4>
                                         </div>
                                     </div>
 
-                                            
-                                        
-                                    <div id="widget-post-2" class="widget rb-section w-sidebar clearfix widget-post" style="margin-top: 20px">
-                                            <div class="block-h widget-heading heading-layout-1">
-                                                <div class="heading-inner">
-                                                    <h4 class="heading-title">
-                                                        <span>Berita Terpopuler</span>
-                                                    </h4>
+                                    @foreach ($beritalaris as $row)
+                                    <div class="widget-p-listing">
+                                        <div class="p-wrap p-small p-list-small-2" data-pid="1599">
+                                            <div class="feat-holder">
+                                                <div class="p-featured ratio-v1">
+                                                    <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
+                                                        <img width="150" height="150" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" />
+                                                    </a>
                                                 </div>
                                             </div>
+                                            <div class="p-content">
+                                                <h5 class="entry-title">
+                                                    <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{$row->judul}}</a>
+                                                </h5>
+                                                <div class="review-meta is-meta is-rstyle-0 type-score">
+                                                    <div class="review-meta-inner">
 
-                                            @foreach ($beritalaris as $row)
-                                            <div class="widget-p-listing">
-                                                <div class="p-wrap p-small p-list-small-2" data-pid="1599">
-                                                    <div class="feat-holder">
-                                                        <div class="p-featured ratio-v1">
-                                                            <a class="p-flink" href="/isi_berita/{{ $row->id }}" title="{{$row->judul}}">
-                                                                <img width="150" height="150" src="{{asset('foto/'. $row->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" />
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="p-content">
-                                                        <h5 class="entry-title">
-                                                            <a class="p-url" href="/isi_berita/{{ $row->id }}" rel="bookmark">{{$row->judul}}</a>
-                                                        </h5>
-                                                        <div class="review-meta is-meta is-rstyle-0 type-score">
-                                                            <div class="review-meta-inner">
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                @endforeach
-                                            </div>
-                                    </div>
-                                                    <div class="article-meta is-hidden">
-                                                        <meta itemprop="mainEntityOfPage" content="index.html" />
-                                                        <span class="vcard author">
-                                                            <span class="fn" itemprop="author" itemscope
-                                                                content="Connor" itemtype="https://schema.org/Person">
-                                                                <meta itemprop="url" content="../index.html" />
-                                                                <span itemprop="name">Ugud Budiman</span>
-                                                            </span> </span>
-                                                        <meta class="updated" itemprop="dateModified"
-                                                            content="2022-02-23T10:12:12+00:00" />
-                                                        <time class="date published entry-date"
-                                                            datetime="2021-12-17T03:32:00+00:00"
-                                                            content="2021-12-17T03:32:00+00:00"
-                                                            itemprop="datePublished">December 17,
-                                                            2021</time>
-                                                        <span itemprop="image" itemscope
-                                                            itemtype="https://schema.org/ImageObject">
-                                                            <meta itemprop="url"
-                                                                content="../wp-content/uploads/sites/3/2021/12/t40.jpg" />
-                                                            <meta itemprop="width" content="1200" />
-                                                            <meta itemprop="height" content="800" />
-                                                        </span>
-                                                        <meta itemprop="description"
-                                                            content="If you’re just moving up into your first mirrorless camera from a smartphone, you’ll appreciate the X-T200‘s bright, responsive 3.5-inch touchscreen. It allows shooters to quickly and easily access menus, settings, and shooting modes. But, it’s not totally reliant on its screen." />
-                                                        <span itemprop="publisher" itemscope
-                                                            itemtype="https://schema.org/Organization">
-                                                            <meta itemprop="name" content="Technology" />
-                                                            <meta itemprop="url" content="../index.html" />
-                                                            <span itemprop="logo" itemscope
-                                                                itemtype="https://schema.org/ImageObject">
-                                                                <meta itemprop="url"
-                                                                    content="../wp-content/uploads/sites/3/2022/01/logo-t.png" />
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-
-
-                                            <div class="sticky-share-list-buffer">
-                                                <div class="sticky-share-list">
-                                                    <div class="t-shared-header meta-text">
-                                                        <i class="rbi rbi-share"></i>
-                                                        <span class="share-label">Share</span>
-                                                    </div>
-                                                    <div class="sticky-share-list-items effect-fadeout is-color">
-                                                        <a class="share-action share-trigger icon-facebook"
-                                                            href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fbest-fujifilm-cameras-for-every-photographer%2F"
-                                                            data-title="Facebook" data-gravity="n" rel="nofollow"><i
-                                                                class="rbi rbi-facebook"></i></a>
-                                                        <a class="share-action share-trigger icon-twitter"
-                                                            href="https://twitter.com/intent/tweet?text=Best+Fujifilm+Cameras+for+Every+Photographer&amp;url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fbest-fujifilm-cameras-for-every-photographer%2F&amp;via=Technology"
-                                                            data-title="Twitter" data-gravity="n" rel="nofollow">
-                                                            <i class="rbi rbi-twitter"></i></a>
-                                                        <a class="share-action icon-email"
-                                                            href="https://foxiz.themeruby.com/cdn-cgi/l/email-protection#b887cbcddad2dddbcc85faddcbcc9d8a88fecdd2d1ded1d4d59d8a88fbd9d5ddcad9cb9d8a88ded7ca9d8a88fdceddcac19d8a88e8d0d7ccd7dfcad9c8d0ddca9d8a88faf7fce185f19d8a88ded7cdd6dc9d8a88ccd0d1cb9d8a88d9caccd1dbd4dd9d8a88d1d6ccddcaddcbccd1d6df9d8a88d9d6dc9d8a88ccd0d7cddfd0cc9d8a88d7de9d8a88cbd0d9cad1d6df9d8a88d1cc9d8a88cfd1ccd09d8a88c1d7cd969d8a88fbd0dddbd39d8a88d1cc9d8a88d7cdcc829d8a88d0ccccc8cb829797ded7c0d1c296ccd0ddd5ddcacddac196dbd7d597ccdddbd097daddcbcc95decdd2d1ded1d4d595dbd9d5ddcad9cb95ded7ca95ddceddcac195c8d0d7ccd7dfcad9c8d0ddca97"
-                                                            data-title="Email" data-gravity="n" rel="nofollow">
-                                                            <i class="rbi rbi-email"></i></a>
-                                                        <a class="share-action live-tooltip icon-copy copy-trigger"
-                                                            href="#" data-copied="Copied!"
-                                                            data-link="https://foxiz.themeruby.com/tech/best-fujifilm-cameras-for-every-photographer/"
-                                                            rel="nofollow" data-copy="Copy Link" data-gravity="n"><i
-                                                                class="rbi rbi-link-o"></i></a>
-                                                        <a class="share-action icon-print" rel="nofollow"
-                                                            href="javascript:if(window.print)window.print()"
-                                                            data-title="Print" data-gravity="n"><i
-                                                                class="rbi rbi-print"></i></a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <div class="usr-holder entry-sec">
+                                        @endforeach
+                                    </div>
+                                </div>
+                                <div class="article-meta is-hidden">
+                                    <meta itemprop="mainEntityOfPage" content="index.html" />
+                                    <span class="vcard author">
+                                        <span class="fn" itemprop="author" itemscope content="Connor" itemtype="https://schema.org/Person">
+                                            <meta itemprop="url" content="../index.html" />
+                                            <span itemprop="name">Ugud Budiman</span>
+                                        </span> </span>
+                                    <meta class="updated" itemprop="dateModified" content="2022-02-23T10:12:12+00:00" />
+                                    <time class="date published entry-date" datetime="2021-12-17T03:32:00+00:00" content="2021-12-17T03:32:00+00:00" itemprop="datePublished">December 17,
+                                        2021</time>
+                                    <span itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                                        <meta itemprop="url" content="../wp-content/uploads/sites/3/2021/12/t40.jpg" />
+                                        <meta itemprop="width" content="1200" />
+                                        <meta itemprop="height" content="800" />
+                                    </span>
+                                    <meta itemprop="description" content="If you’re just moving up into your first mirrorless camera from a smartphone, you’ll appreciate the X-T200‘s bright, responsive 3.5-inch touchscreen. It allows shooters to quickly and easily access menus, settings, and shooting modes. But, it’s not totally reliant on its screen." />
+                                    <span itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                                        <meta itemprop="name" content="Technology" />
+                                        <meta itemprop="url" content="../index.html" />
+                                        <span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                                            <meta itemprop="url" content="../wp-content/uploads/sites/3/2022/01/logo-t.png" />
+                                        </span>
+                                    </span>
+                                </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="sticky-share-list-buffer">
+                        <div class="sticky-share-list">
+                            <div class="t-shared-header meta-text">
+                                <i class="rbi rbi-share"></i>
+                                <span class="share-label">Share</span>
+                            </div>
+                            <div class="sticky-share-list-items effect-fadeout is-color">
+                                <a class="share-action share-trigger icon-facebook" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fbest-fujifilm-cameras-for-every-photographer%2F" data-title="Facebook" data-gravity="n" rel="nofollow"><i class="rbi rbi-facebook"></i></a>
+                                <a class="share-action share-trigger icon-twitter" href="https://twitter.com/intent/tweet?text=Best+Fujifilm+Cameras+for+Every+Photographer&amp;url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fbest-fujifilm-cameras-for-every-photographer%2F&amp;via=Technology" data-title="Twitter" data-gravity="n" rel="nofollow">
+                                    <i class="rbi rbi-twitter"></i></a>
+                                <a class="share-action icon-email" href="https://foxiz.themeruby.com/cdn-cgi/l/email-protection#b887cbcddad2dddbcc85faddcbcc9d8a88fecdd2d1ded1d4d59d8a88fbd9d5ddcad9cb9d8a88ded7ca9d8a88fdceddcac19d8a88e8d0d7ccd7dfcad9c8d0ddca9d8a88faf7fce185f19d8a88ded7cdd6dc9d8a88ccd0d1cb9d8a88d9caccd1dbd4dd9d8a88d1d6ccddcaddcbccd1d6df9d8a88d9d6dc9d8a88ccd0d7cddfd0cc9d8a88d7de9d8a88cbd0d9cad1d6df9d8a88d1cc9d8a88cfd1ccd09d8a88c1d7cd969d8a88fbd0dddbd39d8a88d1cc9d8a88d7cdcc829d8a88d0ccccc8cb829797ded7c0d1c296ccd0ddd5ddcacddac196dbd7d597ccdddbd097daddcbcc95decdd2d1ded1d4d595dbd9d5ddcad9cb95ded7ca95ddceddcac195c8d0d7ccd7dfcad9c8d0ddca97" data-title="Email" data-gravity="n" rel="nofollow">
+                                    <i class="rbi rbi-email"></i></a>
+                                <a class="share-action live-tooltip icon-copy copy-trigger" href="#" data-copied="Copied!" data-link="https://foxiz.themeruby.com/tech/best-fujifilm-cameras-for-every-photographer/" rel="nofollow" data-copy="Copy Link" data-gravity="n"><i class="rbi rbi-link-o"></i></a>
+                                <a class="share-action icon-print" rel="nofollow" href="javascript:if(window.print)window.print()" data-title="Print" data-gravity="n"><i class="rbi rbi-print"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="usr-holder entry-sec">
                                             <div class="ubox">
                                                 <div class="ubox-header">
                                                     <div class="author-info-wrap">
@@ -26269,7 +26201,7 @@
                                                 </div>
                                             </div>
                                         </div> -->
-                                        <!-- <div class="entry-sec entry-pagination e-pagi mobile-hide">
+                <!-- <div class="entry-sec entry-pagination e-pagi mobile-hide">
                                             <div class="inner">
                                                 <div class="nav-el nav-left">
                                                     <a
@@ -26293,7 +26225,7 @@
                                                         </span>
                                                     </a>
                                                 </div> -->
-                                            <!-- </div>
+                <!-- </div>
                                         </div>
                                         <div id="rb-user-reviews-1599"
                                             class="comment-box-wrap entry-sec rb-user-reviews">
@@ -26427,32 +26359,31 @@
                                                                 </p>
                                                             </form>
                                                         </div> -->
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="sidebar-wrap single-sidebar">
-                                        <div class="sidebar-inner clearfix">
-                                            <div id="widget-follower-2"
-                                                class="widget rb-section w-sidebar clearfix widget-follower">
-                                                <div class="block-h widget-heading heading-layout-1">
-                                                    <div class="heading-inner">
-                                                        <h4 class="heading-title">
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div class="sidebar-wrap single-sidebar">
+        <div class="sidebar-inner clearfix">
+            <div id="widget-follower-2" class="widget rb-section w-sidebar clearfix widget-follower">
+                <div class="block-h widget-heading heading-layout-1">
+                    <div class="heading-inner">
+                        <h4 class="heading-title">
 
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
     </div>
     </article>
 
@@ -26464,83 +26395,64 @@
     <i class="rb-loader"></i>
     </div>
     </div>
-    <div class="post-slider swiper-container pre-load"
-    data-play="1" data-speed="3000" >
-                    <div class="swiper-wrapper">
-                        @foreach ($penghargaan as $beritas)
-                        <div class="p-wrap p-highlight p-overlay-1 swiper-slide"
-                            data-pid="1599">
-                            <div class="overlay-holder">
-                                <div class="p-featured"> <a
-                                        class="p-flink"
-                                        href="/isi_berita/{{ $beritas->id }}"
-                                        title="{{$beritas->judul}}">
-                                        <img width="200" height="150"
-                                            src="{{asset('fotopenghargaan/'. $beritas->foto)}}"
-                                            class="featured-img wp-post-image"
-                                            alt="" decoding="async"
-                                            loading="lazy" /> </a></div>
-                                <div class="overlay-wrap">
-                                    <div
-                                        class="overlay-inner p-content overlay-text">
-                                        <div class="p-categories p-top">
+    <div class="post-slider swiper-container pre-load" data-play="1" data-speed="3000">
+        <div class="swiper-wrapper">
+            @foreach ($penghargaan as $beritas)
+            <div class="p-wrap p-highlight p-overlay-1 swiper-slide" data-pid="1599">
+                <div class="overlay-holder">
+                    <div class="p-featured"> <a class="p-flink" href="/isi_berita/{{ $beritas->id }}" title="{{$beritas->judul}}">
+                            <img width="200" height="150" src="{{asset('fotopenghargaan/'. $beritas->foto)}}" class="featured-img wp-post-image" alt="" decoding="async" loading="lazy" /> </a></div>
+                    <div class="overlay-wrap">
+                        <div class="overlay-inner p-content overlay-text">
+                            <div class="p-categories p-top">
 
-                                        </div>
-                                        <h2 class="entry-title"> <a
-                                                class="p-url"
-                                                href="/isi_berita/{{ $beritas->id }}"
-                                                rel="bookmark">{{ $beritas->judul }}</a>
-                                        </h2>
-                                        <div
-                                            class="review-meta is-meta is-rstyle-1 type-score has-bookmark">
-                                            <div
-                                                class="review-meta-inner">
-                                                <!-- <span
+                            </div>
+                            <h2 class="entry-title"> <a class="p-url" href="/isi_berita/{{ $beritas->id }}" rel="bookmark">{{ $beritas->judul }}</a>
+                            </h2>
+                            <div class="review-meta is-meta is-rstyle-1 type-score has-bookmark">
+                                <div class="review-meta-inner">
+                                    <!-- <span
                                                     class="rline-wrap"><span
                                                         class="rline activated"></span><span
                                                         class="rline activated"></span><span
                                                         class="rline activated"></span><span
                                                         class="rline activated"></span><span
                                                         class="rline activated"></span></span> -->
-                                                <div
-                                                    class="review-extra">
-                                                    <!-- <span
+                                    <div class="review-extra">
+                                        <!-- <span
                                                         class="review-description"><strong
                                                             class="meta-bold">8.8</strong>
                                                         dari
                                                         10</span><span
                                                         class="extra-meta meta-bold">Nilai
                                                         Bagus</span> -->
-                                                </div>
-                                            </div><span
-                                                class="rb-bookmark bookmark-trigger"
-                                                data-pid="1599">
-                                                <!-- <i
+                                    </div>
+                                </div><span class="rb-bookmark bookmark-trigger" data-pid="1599">
+                                    <!-- <i
                                                     data-title="Save it"
                                                     class="rbi rbi-bookmark"></i> -->
-                                                    <!-- <i
+                                    <!-- <i
                                                     data-title="Remove"
                                                     class="bookmarked-icon rbi rbi-bookmark-fill"></i> -->
-                                                </span>
-                                        </div>
-                                    </div>
-                                </div>
+                                </span>
                             </div>
                         </div>
-                        @endforeach
+                    </div>
+                </div>
+            </div>
+            @endforeach
 
-                         
-                    </div>
-                    <div
-                        class="slider-pagination slider-pagination-top">
-                    </div>
-                   </div> 
+
+        </div>
+        <div class="slider-pagination slider-pagination-top">
+        </div>
+    </div>
     @include('layouts.utama.footer')
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 
     <script>
-        (function () {
+        (function() {
             let currentMode = null;
             let darkModeID = "D_foxiz.themeruby.com_tech";
             if (navigator.cookieEnabled) {
@@ -26799,9 +26711,9 @@
             }
         }
     </style>
-   
+
     <script>
-        (function () {
+        (function() {
             function maybePrefixUrlField() {
                 if (
                     this.value.trim() !== "" &&
@@ -26823,18 +26735,16 @@
             }
         })();
     </script>
-    
+
     <script id="foxiz-core-js-extra">
         var foxizCoreParams = {
-            ajaxurl:
-                "https:\/\/foxiz.themeruby.com\/tech\/wp-admin\/admin-ajax.php",
+            ajaxurl: "https:\/\/foxiz.themeruby.com\/tech\/wp-admin\/admin-ajax.php",
             darkModeID: "D_foxiz.themeruby.com_tech",
         };
     </script>
     <script id="foxiz-global-js-extra">
         var foxizParams = {
-            ajaxurl:
-                "https:\/\/foxiz.themeruby.com\/tech\/wp-admin\/admin-ajax.php",
+            ajaxurl: "https:\/\/foxiz.themeruby.com\/tech\/wp-admin\/admin-ajax.php",
             twitterName: "Technology",
             highlightShares: "1",
             highlightShareFacebook: "1",
@@ -26860,13 +26770,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
     <script src="{{asset('assets/jquery.min.js')}}"></script>
     <script defer src="../wp-content/cache/autoptimize/3/js/autoptimize_718556d81bf3bd4ff92c02852c025dd3.js"></script>
-  
+
     <script>
-        $(document).ready(function () {
-            $('.balaskomen').click(function () {
+        $(document).ready(function() {
+            $('.balaskomen').click(function() {
                 var id = $(this).data('id');
                 console.log(id)
-                $('#'+id).toggle('slide')
+                $('#' + id).toggle('slide')
             })
         })
     </script>
@@ -26880,45 +26790,27 @@
         type: 'POST',
         data: {
             _token: '{{ csrf_token() }}'
-        },
-        success: function(data) {
-            // Tambahkan kelas CSS "dibaca" pada elemen yang sesuai
-            $('.p-content[data-komentar-id="' + komentarId + '"]').addClass('dibaca');
-        }
-        });
+    },
+    success: function(data) {
+    // Tambahkan kelas CSS "dibaca" pada elemen yang sesuai
+    $('.p-content[data-komentar-id="' + komentarId + '"]').addClass('dibaca');
+    }
+    });
     });
     });
 
-  </script> --}}
+    </script> --}}
     <script>
-        $(document).ready(function () {
-            $('.balaskomen1').click(function () {
+        $(document).ready(function() {
+            $('.balaskomen1').click(function() {
                 var id = $(this).data('id');
                 console.log(id)
-                $('#'+id).toggle('slide')
+                $('#' + id).toggle('slide')
             })
         })
     </script>
-    <script>
-        $(document).ready(function() {
-          $('a.p-url').click(function(event) {
-            event.preventDefault(); // prevent default behavior of the link
-            var linkId = $(this).attr('id'); // get the id of the clicked link
-            var id = linkId.split('-')[1]; // extract the id value
-            $.ajax({
-              type: "POST",
-              url: "/set_is_read/" + id,
-              success: function(data) {
-                // update the UI if necessary
-              },
-              error: function() {
-                // handle error if necessary
-              }
-            });
-          });
-        });
-        </script>
-        
+
+
 </body>
- 
+
 </html>

@@ -44,24 +44,26 @@ class HalamanutamaController extends Controller
         // $navbar5 = berita::where('status', 'diterima')->where('kategori_id', 2)->limit(5)->orderBy('view', 'desc')->get();
         $kategori = Kategori::limit(5)->orderBy('created_at', 'desc')->get();
         $kategori2 = Kategori::limit(10)->orderBy('created_at', 'desc')->skip(5)->get();
-        $iklan = sponsor::where('status', 'aktif')->where('paket', 'paket_hemat')->limit(1)->inRandomOrder()->get();
-        $iklan1 = sponsor::where('status', 'aktif')->where('paket', 'paket_super')->limit(1)->inRandomOrder()->get();
+        $iklan = sponsor::select('foto')->where('status', 'aktif')->where('paket', 'paket_hemat')->limit(1)->inRandomOrder()->first();
+        $iklan1 = sponsor::select('foto')->where('status', 'aktif')->where('paket', 'paket_super')->limit(1)->inRandomOrder()->first();
+
+        // $iklan = sponsor::where('status', 'aktif')->where('paket', 'paket_hemat')->limit(1)->inRandomOrder()->get();
+        // $iklan1 = sponsor::where('status', 'aktif')->where('paket', 'paket_super')->limit(1)->inRandomOrder()->get();
+
         // $iklan1 = sponsor::limit(1)->skip(1)->orderBy('created_at', 'desc')->get();
         $des = deskripsi::all();
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
         $penghargaan = penghargaan::orderBy('created_at', 'desc')->get();
 
+        $notif = [];
         if (Auth::check()) {
-
             $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
-
             // dd($notif);
-        } else {
-            $notif = [];
-        }
+        } 
+        // $hala=Notification::all();
 
 
-
+        // return response()->json();
 
         return view('category.beranda.index', [
             'berita' => $berita,
@@ -88,6 +90,28 @@ class HalamanutamaController extends Controller
             // 'navbar5' => $navbar5,
         ]);
     }
+
+    public function iklan()
+    {
+        $iklan_atas = sponsor::select('foto', 'sponsor')
+            ->where('status', 'aktif')
+            ->where('paket', 'paket_hemat')
+            ->limit(1)
+            ->inRandomOrder()
+            ->first();
+
+        $iklan_bawah = sponsor::select('foto', 'sponsor')
+            ->where('status', 'aktif')
+            ->where('paket', 'paket_super')
+            ->limit(1)
+            ->inRandomOrder()
+            ->first();
+
+        return response()->json([
+            'iklan_atas' => $iklan_atas,
+            'iklan_bawah' => $iklan_bawah
+        ]);
+    }
     public function isi($id)
     {
 
@@ -100,15 +124,11 @@ class HalamanutamaController extends Controller
         $penghargaan = penghargaan::limit(3)->get();
 
 
+       $notif = [];
         if (Auth::check()) {
-
             $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
-
-
-            //    dd($notif);
-        } else {
-            $notif = [];
-        }
+            // dd($notif);
+        } 
 
 
         $data = berita::find($id);
@@ -221,15 +241,16 @@ class HalamanutamaController extends Controller
     {
         $item = Notification::find($id);
         $item->is_read = 1;
-        $id_b =  $item->berita;
+        $id_b = $item->berita;
         $item->save();
 
         return redirect()->route('isi_berita', ['id' => $id_b]);
         // return redirect()->route('isi_berita/'.$id_b);
     }
 
-    public function baca_semua($id){
-        
+    public function baca_semua($id)
+    {
+
 
         $item = Notification::find($id);
         $item->is_read = 1;
@@ -239,23 +260,27 @@ class HalamanutamaController extends Controller
         return redirect()->route('/', ['id' => $id_b]);
     }
 
-    // public function baca_all(){
-        
+    
+    public function baca_all()
+    {
+        // Product::update(['price' => 100]);
+        $data = Notification::where('is_read', '0')->update(['is_read' => '1']);
 
-    //     $item = Notification::request([
-    //         'is_read' = 1,
-    //     ]);
-    //     $item->is_read = 1;
-    //     $id_b =  $item->berita;
-    //     $item->save();
-
-    //     return redirect()->route('/', ['id' => $id_b]);
-    // }
-    public function baca_all(){
-        $data = Notification::all();
-        foreach ($data as $row){
-            $row->update(['is_read' => 1]);
-        }
+        // return response()->json($data);
         return redirect()->route('/');
+    }
+
+    public function update_notif(Request $request, $id)
+    {
+        if ($id == '0') { //id 0 berarti update semua data
+            $data = Notification::where('is_read', '0')->update(['is_read' => '1']);
+        } else {
+            $data = Notification::find($id);
+            $data->is_read = $request->is_read;
+            $data->save();
         }
+
+
+        return response()->json($data);
+    }
 }

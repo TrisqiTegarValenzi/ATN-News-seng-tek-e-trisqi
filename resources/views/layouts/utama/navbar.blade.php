@@ -97,79 +97,46 @@
         <a href="#" class="dropdown-trigger notification-icon" data-notification="1819">
             <span class="notification-icon-inner" data-title="Notifkasi">
                 <span class="notification-icon-svg"> </span> <span class="notification-info"></span>
-                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span>
+                @if ( $notif->count() > 0 )
+                <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle notif"></span>
+                @endif
             </span> </a>
-
         <div class="header-dropdown notification-dropdown">
-
             <div class="notification-popup light-scheme">
                 <div class="notification-header"> <span class="h4">Notifikasi
-
-                        <a href="/baca_all" class="text-white" class="margin-left: 50%;">
-                            <small>Baca Semuaa</small>
+                        <a href="javascript:void(0)" class="text-white" style="margin-left: 165px;" id="all">
+                            <small>Baca Semua</small>
                         </a>
-
                     </span>
-
                 </div>
-
                 <div class="notification-content">
                     <div class="scroll-holder">
                         <div class="notification-bookmark"></div>
                         <div class="notification-latest">
                             <div id="uid_notification" class="block-wrap block-small block-list block-list-small-2 short-pagination rb-columns rb-col-1 p-middle">
                                 <div class="block-inner">
-
-
                                     @foreach ($notif as $row)
                                     {{-- @foreach ($row->childs as $childs) --}}
                                     {{-- @foreach ($childs->childs as $childs2) --}}
 
-                                    <div class="p-wrap p-small p-list-small-2" data-pid="1599">
-
-                                        <a href="/baca_semua/{{ $row->id }}">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
-                                                <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
-                                            </svg>
-                                        </a>
-
-
-
-                                        <!-- <a href="/baca_semua/{{ $row->id }}">
-                                            <input type="checkbox" name="notif">                                        
-                                            </a> -->
-
-                                        <!-- <input type="checkbox" name="notif" onclick=""> -->
-
-
+                                    <div class="p-wrap p-small p-list-small-2 notif-{{$row->id}} notif">
                                         <div class="p-content">
-                                            <h5 class="entry-title" class="margin-left: 10%;">
+                                            <h5 class="entry-title" class="margin-left: 10%;" class="text">
                                                 <a class="p-url" href="/baca/{{ $row->id }}" id="link-{{ $row->id }}" rel="bookmark">
                                                     {{ $row->users->username }} {{$row->message}} '{{ $row->komentar->komentar }}'
                                                 </a>
-                                                <!-- <form action="/baca_semua" method="post">
-                                                    @csrf
-                                                    <div class="col-sm-10"><button type="submit" id="submitBtn" disabled>SIMPAN</button></div>
-                                            </h5>
-                                            </form> -->
 
+                                                <a href="javascript:void(0)" data-id="{{$row->id}}" class="centang">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check-all" viewBox="0 0 16 16">
+                                                        <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z" />
+                                                    </svg>
+                                                </a>
                                         </div>
                                     </div>
 
                                     {{-- @endforeach --}}
                                     {{-- @endforeach --}}
                                     @endforeach
-                                    <!-- <div class="col-sm-10"><button type="submit" name="select-all-btn">pilih</button></div>
-                                    <div class="col-sm-10"><button type="submit" name="cancel-select-all-btn">batal</button></div> -->
-                                    <!-- <form action="/baca_semua/{{ $row->id }}" method="post">
-                                        @csrf
-                                    <div class="col-sm-10"><button type="submit" >SIMPAN</button></div>
-                                    </form> -->
-
-                                    <!-- <div class="col-sm-10"><button type="submit" id="submitBtn" disabled>SIMPAN</button></div>
-                                            </h5> -->
-
-
                                 </div>
                             </div>
                         </div>
@@ -177,76 +144,46 @@
                 </div>
             </div>
         </div>
-        <!-- <script type="text/javascript">
-            function getClick(str) {
-                alert(str);
-            }
-            </script> -->
-        <!-- <script>
-            document.getElementById("cancel-select-all-btn").addEventListener("click", function() {
-                var checkboxes = document.querySelectorAll("input[type=checkbox]");
-                for (var i = 0; i < checkboxes.length; i++) {
-                    checkboxes[i].checked = false;
-                }
+        <script>
+            $('a[data-id]').on('click', function(event) {
+                var el = $(this);
+                var id = el.attr('data-id');
+
+
+                $.ajax({
+                    type: 'GET',
+                    url: '/update_notif/' + id,
+                    data: {
+                        'is_read': "1"
+                    },
+                    success: function(response) {
+                        $('.notif-' + id).hide();
+                    },
+                    error: function(response) {
+                        alert(response);
+                    }
+                });
+            });
+        </script>
+        <script>
+            $('#all').on('click', function(event) {
+
+                $.ajax({
+                    type: 'GET',
+                    url: '/update_notif/0',
+                    data: {
+                        'is_read': "1"
+                    },
+                    success: function(response) {
+                        $('.notif').hide();
+                    },
+                    error: function(response) {
+                        console.log(response);
+                    }
+                });
             });
         </script>
 
-
-        <script>
-            document.getElementById("select-all-btn").addEventListener("click", function() {
-                var checkboxes = document.querySelectorAll("input[type=checkbox]");
-                for (var i = 0; i < checkboxes.length; i++) {
-                    checkboxes[i].checked = true;
-                }
-            });
-        </script> -->
-
-
-        <!-- // $("#myCheckbox").on("change", function() {
-        // // Ketika status checkbox berubah, ambil ID-nya
-        // if ($(this).is(":checked")) {
-        // var id = $(this).attr("id");
-        // console.log("ID checkbox yang dicentang: " + id);
-        // // Lakukan sesuatu dengan ID yang ditemukan
-        // }
-        // });
-
-        // // Ambil ID menggunakan jQuery
-        // var id = $("#id").val();
-
-        // Lakukan sesuatu dengan ID yang diambil
-        // $.ajax({
-        // url: "/baca_semua/" + id,
-        // method: "POST",
-        // success: function(response) {
-        // // Lakukan sesuatu setelah mendapatkan respons
-        // },
-        // error: function(jqXHR, textStatus, errorThrown) {
-        // console.log(textStatus + ": " + errorThrown);
-        // }
-        // });
-
-        // const termsCheck = document.querySelector('#termsCheck');
-        // const submitBtn = document.querySelector('#submitBtn');
-
-        // // Memeriksa checkbox setiap kali diperbarui
-        // termsCheck.addEventListener('change', function() {
-        // if (this.checked) {
-        // // Checkbox dicentang, aktifkan tombol submit
-        // submitBtn.removeAttribute('disabled');
-        // } else {
-        // // Checkbox tidak dicentang, nonaktifkan tombol submit
-        // submitBtn.setAttribute('disabled', true);
-        // }
-        // }); -->
-        <!-- </script> -->
-        <!-- <script>
-            // // Ambil ID menggunakan JavaScript murni
-            // var element = document.getElementById("id");
-            // var id = element.value;
-
-            // // Lakukan sesuatu dengan ID yang diambil
-        </script> -->
     </div>
     @endif
     @endauth
