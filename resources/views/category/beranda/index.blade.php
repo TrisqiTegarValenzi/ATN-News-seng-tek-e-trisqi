@@ -29966,7 +29966,7 @@
             <div id="navbar-outer" class="navbar-outer">
                 <div id="sticky-holder" class="sticky-holder">
                     <div class="navbar-wrap">
-                        <div class="rb-container edge-padding">
+                        <div class="rb-container-fluid edge-padding">
                             <div class="navbar-inner">
                                 <div class="navbar-left">
                                     <div class="logo-wrap is-image-logo site-branding">

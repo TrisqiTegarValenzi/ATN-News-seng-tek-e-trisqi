@@ -31366,7 +31366,7 @@
             }
         }
     </style>
-    <title>ATN News || {{$data->name}}</title>
+    <title>RAWR News || {{$data->name}}</title>
     <meta name="robots" content="max-image-preview:large" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts"
@@ -32520,13 +32520,13 @@
             <div id="navbar-outer" class="navbar-outer">
                 <div id="sticky-holder" class="sticky-holder">
                     <div class="navbar-wrap">
-                        <div class="rb-container edge-padding">
+                        <div class="rb-container-fluid edge-padding">
                             <div class="navbar-inner">
                                 <div class="navbar-left">
                                     <div class="logo-wrap is-image-logo site-branding">
                                         <a href="#" class="logo" title="Technology">
                                             <img class="logo-default" data-mode="default" height="60" width="92"
-                                                src="{{asset('logoatn.png')}}
+                                                src="{{asset('logorawr.png')}}
                                                     " alt="Technology" />
                                         </a>
                                     </div>
@@ -33030,25 +33030,7 @@
         </div>
     </div>
     </div>
-    <div class="heading-inner" style="display: flex; justify-content:center; margin-bottom:4%" >
-        <h3 class="heading-title"><span>Penghargaan / Galeri</span></h3>
-    </div>
-    <div class="" style="display: flex; justify-content:center; width: 100%">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false" style="width: 80%;">
-          <div class="carousel-indicators">
-            @foreach ($penghargaan as $index => $row)
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"></button>
-            @endforeach
-          </div>
-          <div class="carousel-inner">
-            @foreach ($penghargaan as $index => $row)
-            <div class="carousel-item @if($index == 0) active @endif">
-              <img src="{{ asset('fotopenghargaan/' . $row->foto) }}" class="d-block w-100 object-fit-cover" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>{{$row->penghargaan}}</h5>
-              </div>
-            </div>
-            @endforeach
+   
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -33062,18 +33044,6 @@
       </div>
       
       
-        <div class="tempe" style="display:flex; flex-wrap: wrap; justify-content: center; margin-bottom:15px">
-          @foreach ($penghargaan as $index => $row)
-            <img src="{{ asset('fotopenghargaan/' . $row->foto) }}"
-                 class="d-block foto-penghargaan {{ $index == 0 ? 'active' : '' }}" 
-                 data-bs-target="#carouselExampleCaptions" 
-                 data-bs-slide-to="{{ $index }}" @if($index == 0) class="active" aria-current="true" @endif aria-label="Slide {{ $index + 1 }}"
-                 alt="..." 
-                 style="max-width: 100px; max-height: 100px; margin: 5px; padding: 0; border: 3px solid transparent;">
-          @endforeach
-        </div>
-      </div>
-    @include('layouts.utama.footer')
     
     </div>
     <script>
