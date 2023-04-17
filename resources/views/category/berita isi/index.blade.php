@@ -24619,7 +24619,7 @@
         }
     </style>
     <title>
-        ATN News || {{$data->judul}}
+        RAWR News || {{$data->judul}}
     </title>
     <meta name="robots" content="max-image-preview:large" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -25658,7 +25658,7 @@
                                 <div class="navbar-left">
                                     <div class="logo-wrap is-image-logo site-branding">
                                         <a href="#" class="logo" title="Technology">
-                                            <img class="logo-default" data-mode="default" height="60" width="92" src="{{asset('logoatn.png')}}
+                                            <img class="logo-default" data-mode="default" height="60" width="92" src="{{asset('logorawr.png')}}
                                                     " alt="Technology" />
                                         </a>
                                     </div>
@@ -25934,7 +25934,7 @@
                                                                     @endauth
                                                                     @endif
                                                                     @foreach ($row->childs as $childs)
-                                                                    <div class="author-info-wrap" style="margin-left: 20px">
+                                                                    <div class="author-info-wrap" style="margin-left: 20px;margin-top: 10px;">
                                                                         <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
                                                                         <div class="is-meta">
                                                                             <span class="nname-info meta-author">
@@ -25997,7 +25997,7 @@
                                                                     @endauth
                                                                     @endif
                                                                     @foreach ($childs->childs as $childs2)
-                                                                    <div class="author-info-wrap" style="margin-left: 80px">
+                                                                    <div class="author-info-wrap" style="margin-left: 80px;margin-top: 10px;">
                                                                         <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
                                                                         <div class="is-meta">
                                                                             <span class="nname-info meta-author">
