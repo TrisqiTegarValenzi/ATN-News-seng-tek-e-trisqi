@@ -46,7 +46,7 @@ class HalamanutamaController extends Controller
         $kategori2 = Kategori::limit(10)->orderBy('created_at', 'desc')->skip(5)->get();
         $iklan = sponsor::select('foto')->where('status', 'aktif')->where('paket', 'paket_hemat')->limit(1)->inRandomOrder()->first();
         $iklan1 = sponsor::select('foto')->where('status', 'aktif')->where('paket', 'paket_super')->limit(1)->inRandomOrder()->first();
-
+        // dd($iklan);
         // $iklan = sponsor::where('status', 'aktif')->where('paket', 'paket_hemat')->limit(1)->inRandomOrder()->get();
         // $iklan1 = sponsor::where('status', 'aktif')->where('paket', 'paket_super')->limit(1)->inRandomOrder()->get();
 
@@ -59,7 +59,7 @@ class HalamanutamaController extends Controller
         if (Auth::check()) {
             $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
             // dd($notif);
-        } 
+        }
         // $hala=Notification::all();
 
 
@@ -91,7 +91,7 @@ class HalamanutamaController extends Controller
         ]);
     }
 
-    public function iklan()
+    public function iklan_js()
     {
         $iklan_atas = sponsor::select('foto', 'sponsor')
             ->where('status', 'aktif')
@@ -124,11 +124,11 @@ class HalamanutamaController extends Controller
         $penghargaan = penghargaan::limit(3)->get();
 
 
-       $notif = [];
+        $notif = [];
         if (Auth::check()) {
             $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
             // dd($notif);
-        } 
+        }
 
 
         $data = berita::find($id);
@@ -260,7 +260,7 @@ class HalamanutamaController extends Controller
         return redirect()->route('/', ['id' => $id_b]);
     }
 
-    
+
     public function baca_all()
     {
         // Product::update(['price' => 100]);

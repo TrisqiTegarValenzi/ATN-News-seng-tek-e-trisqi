@@ -30193,10 +30193,19 @@
                                 <div class="elementor-element elementor-element-3dbcdda elementor-widget elementor-widget-foxiz-ad-image" data-id="3dbcdda" data-element_type="widget" data-widget_type="foxiz-ad-image.default">
                                     <div class="elementor-widget-container">
                                         <div class="ad-wrap ad-image-wrap">
-                                            <h6 class="ad-description is-meta">- Disponsori -</h6>
+                                        @if($iklan)
+                                        <h6 class="ad-description is-meta">- Disponsori -</h6>
+                                                @else
+                                                <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
+                                                @endif
 
                                             <div class="ad-image" id="iklan_atas"> <a class="p-flink" title=""> </a>
-                                                <img loading="lazy" decoding="async" src="{{asset('fotoiklan/'. $iklan->foto)}}" alt="Ad image" width="800" style="height: 70px; object-fit: cover;" />
+                                                @if($iklan)
+                                                <img src="{{ asset('fotoiklan/' . $iklan->foto) }}" alt="banner" width="800" style="height:70px;object-fit:cover;">
+                                                @else
+                                                <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
+                                                @endif
+
                                             </div>
 
                                         </div>
@@ -30365,14 +30374,25 @@
                             <div class="elementor-widget-wrap elementor-element-populated">
                                 <div class="elementor-element elementor-element-86b3bc1 elementor-widget elementor-widget-foxiz-banner" data-id="86b3bc1" data-element_type="widget" data-widget_type="foxiz-banner.default">
                                     <div class="elementor-widget-container">
+                                    @if($iklan)
                                         <h6 class="ad-description is-meta">- Disponsori -</h6>
-
+                                                @else
+                                                <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
+                                                @endif
 
                                         <div class="w-banner" id="iklan_bawah">
+                                        
+                                              
+                                                
+                                                @if($iklan)
                                             <a class="p-flink" title=""></a>
                                             <div class="banner-bg">
-                                                <img loading="lazy" decoding="async" data-mode="dark" src="{{asset('fotoiklan/'. $iklan1->foto)}}" alt="banner" width="600" height="900">
+                                                <img src="{{asset('fotoiklan/'. $iklan1->foto)}}" alt="banner" width="600" height="900">
                                             </div>
+                                            @else
+                                                <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
+                                                @endif
+
                                             <div class="w-banner-content">
 
                                             </div>
@@ -31127,7 +31147,7 @@ Fancybox.bind("[data-fancybox]", {
         function sponsor(posisi = "atas") {
             // Kirim request AJAX ke endpoint /refresh-data
             $.ajax({
-                url: "/iklan",
+                url: "/iklan_js",
                 type: "GET",
                 dataType: "json",
                 success: function(response) {

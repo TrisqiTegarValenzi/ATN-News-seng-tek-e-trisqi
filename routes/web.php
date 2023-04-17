@@ -310,6 +310,10 @@ Route::get('baca/{id}', [HalamanutamaController::class, 'baca'])->name('baca');
 Route::get('/baca_semua/{id}', [HalamanutamaController::class, 'baca_semua'])->name('baca_semua');
 Route::get('/baca_all', [HalamanutamaController::class, 'baca_all'])->name('baca_all');
 
+Route::get('/update_notif/{id}', [HalamanutamaController::class, 'update_notif'])->name('update_notif');
+Route::get('/update_all/{id}', [HalamanutamaController::class, 'update_all'])->name('update_all');
+
+Route::get('/iklan_js', [HalamanutamaController::class, 'iklan_js'])->name('iklan_js');
 
 
 // Route::get("/baca_all", function (Request $request){
