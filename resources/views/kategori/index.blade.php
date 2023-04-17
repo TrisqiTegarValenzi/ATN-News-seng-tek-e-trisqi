@@ -33044,6 +33044,8 @@
       </div>
       
       
+        
+    @include('layouts.utama.footer')
     
     </div>
     <script>
