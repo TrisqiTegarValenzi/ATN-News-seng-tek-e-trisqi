@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\berita;
 use App\Models\Kategori;
 use App\Models\Komentar;
+use App\Models\Notification;
 use App\Models\Penghargaan;
 use App\Models\sosmed;
 use App\Models\tag;
@@ -22,15 +23,11 @@ class tagController extends Controller
         $beritaid = $tag->pluck('berita_id')->toArray();
         $berita = berita::whereIn('id', $beritaid)->where('status', 'diterima')->paginate(8)->withQueryString();
 
+        $notif = [];
         if (Auth::check()) {
-        
-            $notif = Komentar::where('user_id', Auth::user()->id)
-            ->where('parent','!=', 0)->get();
- 
-         //    dd($notif);
-         }else {
-             $notif = [];
-         }
+            $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
        
     
         $penghargaan = Penghargaan::limit(3)->orderBy('created_at', 'desc')->get();

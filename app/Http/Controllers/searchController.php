@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\berita;
 use App\Models\Kategori;
 use App\Models\Komentar;
+use App\Models\Notification;
 use App\Models\penghargaan;
 use App\Models\sosmed;
 use Illuminate\Http\Request;
@@ -23,15 +24,11 @@ class searchController extends Controller
         $kategori = Kategori::limit(5)->orderBy('created_at', 'desc')->get();
         $kategori2 = Kategori::limit(10)->orderBy('created_at', 'desc')->skip(5)->get();
         $sosmed = sosmed::limit(1)->orderBy('updated_at', 'desc')->get();
+        $notif = [];
         if (Auth::check()) {
-        
-            $notif = Komentar::where('user_id', Auth::user()->id)
-            ->where('parent','!=', 0)->get();
- 
-         //    dd($notif);
-         }else {
-             $notif = [];
-         }
+            $notif = Notification::where('induk_user', auth()->user()->id)->where('is_read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
 
 
 

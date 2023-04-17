@@ -123,6 +123,7 @@
                                         <div class="p-content">
                                             <h5 class="entry-title" class="margin-left: 10%;" class="text">
                                                 <a class="p-url" href="/baca/{{ $row->id }}" id="link-{{ $row->id }}" rel="bookmark">
+                                                {{ $row->users->username }} {{$row->message}} '{{ $row->komentar->komentar}}'
                                                 </a>
 
                                                 <a href="javascript:void(0)" data-id="{{$row->id}}" class="centang">
