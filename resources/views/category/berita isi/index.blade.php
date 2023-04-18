@@ -24619,7 +24619,7 @@
         }
     </style>
     <title>
-        ATN News || {{$data->judul}}
+        RAWR News || {{$data->judul}}
     </title>
     <meta name="robots" content="max-image-preview:large" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -25653,12 +25653,12 @@
             <div id="navbar-outer" class="navbar-outer">
                 <div id="sticky-holder" class="sticky-holder">
                     <div class="navbar-wrap">
-                        <div class="rb-container edge-padding">
+                        <div class="rb-container-fluid edge-padding">
                             <div class="navbar-inner">
                                 <div class="navbar-left">
                                     <div class="logo-wrap is-image-logo site-branding">
                                         <a href="#" class="logo" title="Technology">
-                                            <img class="logo-default" data-mode="default" height="60" width="92" src="{{asset('logoatn.png')}}
+                                            <img class="logo-default" data-mode="default" height="60" width="92" src="{{asset('logorawr.png')}}
                                                     " alt="Technology" />
                                         </a>
                                     </div>

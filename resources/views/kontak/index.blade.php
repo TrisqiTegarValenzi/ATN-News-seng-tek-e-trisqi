@@ -27136,7 +27136,7 @@
             }
         }
     </style>
-    <title>Contact &#8211; Technology</title>
+    <title>Hubungi Kami &#8211; RAWR News</title>
     <meta name='robots' content='max-image-preview:large' />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts"
@@ -28162,7 +28162,7 @@
             <div id="navbar-outer" class="navbar-outer">
                 <div id="sticky-holder" class="sticky-holder">
                     <div class="navbar-wrap">
-                        <div class="rb-container edge-padding">
+                        <div class="rb-container-fluid edge-padding">
                             <div class="navbar-inner">
                                 <div class="navbar-left">
                                     <div class="logo-wrap is-image-logo site-branding">
@@ -28420,7 +28420,7 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                                     <div class="elementor-widget-container">
                                         <div id="uid_c186811" class="block-h heading-layout-c10">
                                             <div class="heading-inner">
-                                                <h3 class="heading-title"><span>ATN News</span></h3>
+                                                <h3 class="heading-title"><span>RAWR News</span></h3>
                                             </div>
                                         </div>
                                     </div>
