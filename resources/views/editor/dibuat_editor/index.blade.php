@@ -98,10 +98,19 @@
                                         @foreach ($data as $berita)
                                             <div class="card" style="width: 18rem; margin: 17px;">
                                                 <div>
+                                                    {{-- width: 260px;
+                                                        height: 200px;
+                                                        margin-top: 10px;
+                                                        margin-left: 2.5px; --}}
+                                                        <a href="/isi/{{ $berita->id }}">
+                                                            <img src="{{asset('foto/'. $berita->foto)}}"
+                                                            class="card-img-top mt-2" width="150" height="200" alt="...">
+                                                        </a>
+                                                    </div>
                                                     <div class="dropdown">
-                                                        <a class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white;color: black;border: thick;">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
-                                                        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                                                        <a class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white;color: black;border: thick;margin-left: 228px;margin-top: 10px;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
                                                         </svg>
                                                         </a>
                                                         <ul class="dropdown-menu">
@@ -114,16 +123,7 @@
                                                             </svg>Hapus</a></li>
                                                         </ul>
                                                         </div>
-                                                    {{-- width: 260px;
-                                                    height: 200px;
-                                                    margin-top: 10px;
-                                                    margin-left: 2.5px; --}}
-                                                    <a href="/isi/{{ $berita->id }}">
-                                                        <img src="{{asset('foto/'. $berita->foto)}}"
-                                                        class="card-img-top" width="150" height="200" alt="...">
-                                                    </a>
-                                                </div>
-                                                <div class="card-body ">
+                                                    <div class="card-body ">
                                                     <a href="/isi/{{ $berita->id }}">
                                                     <h5 class="card-title" style="color: black;">{!! $berita->judul !!}
                                                     </h5>

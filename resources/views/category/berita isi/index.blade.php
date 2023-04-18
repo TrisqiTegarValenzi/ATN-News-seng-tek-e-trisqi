@@ -25908,7 +25908,7 @@
                                                                         </div>
                                                                         @else
                                                                         <a href="/register_komentar">
-<<<<<<< Updated upstream
+
                                                                             <div id="" class="balaskomen " data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex;" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
@@ -25922,7 +25922,7 @@
                                                                         @endif
                                                                     </div>
                                                                     <hr style="width: 806px;">
-=======
+
                                                                             <div id="" class="balaskomen" data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                                                 
                                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
@@ -25933,11 +25933,11 @@
                                                                         </div>
                                                                     </a>
                                                                     @endauth
-                                                                        @endif
+                                                                        @endif8/
                                                                     </div>
                                                                 </div>
                                                                     </div>
->>>>>>> Stashed changes
+
                                                                     @if (Route::has('login'))
 
                                                                     @auth
