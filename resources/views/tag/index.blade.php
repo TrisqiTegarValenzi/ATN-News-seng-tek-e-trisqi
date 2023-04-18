@@ -28569,7 +28569,7 @@
             animation-iteration-count: 1
         }
     </style>
-    <title>ATN News</title>
+    <title>RAWR News</title>
     <meta name='robots' content='max-image-preview:large' />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts"
@@ -29993,7 +29993,7 @@
                                     <div class="logo-wrap is-image-logo site-branding">
                                         <a href="#" class="logo" title="Technology">
                                             <img class="logo-default" data-mode="default" height="60" width="92"
-                                                src="{{asset('logoatn.png')}}
+                                                src="{{asset('logorawr.png')}}
                                                     " alt="Technology" />
                                         </a>
                                     </div>
@@ -30034,7 +30034,7 @@
                                     </div>
                                     <div class="mobile-logo-wrap is-image-logo site-branding"> <a href="#"
                                             title="Technology"> <img class="logo-default" data-mode="default" height="60" width="92"
-                                            src="{{asset('logoatn.png')}}
+                                            src="{{asset('logorawr.png')}}
                                                 " alt="Technology" /> </a></div>
                                 </div>
                                 <div class="navbar-right"> <a href="#" class="mobile-menu-trigger mobile-search-icon"
