@@ -18,8 +18,16 @@
     <style media="all">
         @charset "UTF-8";
 
+        /* .balaskomen {
+            display: block;
+            margin-top: 30px;
+            margin-left: 70%;
+        } */
 
-
+        .tombol {
+            text-align: right;
+        }
+        
         .wp-block-archives-dropdown label {
             display: block;
         }
@@ -25871,20 +25879,20 @@
                                                                         <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
                                                                         <div class="is-meta">
                                                                             <span class="nname-info meta-author">
-                                                                                <span class="meta-label">Dari</span>
-                                                                                <p class="nice-name" href="#">{{ $row->nama }}</p>
+                                                                                <span class="meta-label" style="margin-left: 20%;">Dari</span>
+                                                                                <p class="nice-name" href="#" style="margin-left: 20%;">{{ $row->nama }}</p>
                                                                             </span>
 
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="ubio description-text">
-                                                                    <div class="d-flex">
+                                                                    <div class="d-flex justify-content-between" >
                                                                         {{ $row->komentar }}
                                                                         @if (Route::has('login'))
 
                                                                         @auth
-                                                                        <div id="" class="balaskomen" data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                        <div  class="balaskomen"  data-id="balas-{{$row->id}}"  style="display:flex; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
                                                                                 <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
                                                                             </svg>
@@ -25893,7 +25901,7 @@
                                                                         </div>
                                                                         @else
                                                                         <a href="/register_komentar">
-                                                                            <div id="" class="balaskomen" data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                            <div id="" class="balaskomen " data-id="balas-{{$row->id}}" style="margin-left: 100px; display:flex;" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
                                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
                                                                                     <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
@@ -25905,6 +25913,7 @@
                                                                         @endauth
                                                                         @endif
                                                                     </div>
+                                                                    <hr style="width: 806px;">
                                                                     @if (Route::has('login'))
 
                                                                     @auth
@@ -25934,18 +25943,20 @@
                                                                     @endauth
                                                                     @endif
                                                                     @foreach ($row->childs as $childs)
-                                                                    <div class="author-info-wrap" style="margin-left: 20px;margin-top: 10px;">
+                                                                    <div class="author-info-wrap" style="margin-left: 20px;margin-top: 30px;">
                                                                         <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
                                                                         <div class="is-meta">
                                                                             <span class="nname-info meta-author">
-                                                                                <p class="nice-name" href="#">{{ $childs->nama }}</p>
+                                                                                <p class="nice-name" href="#" style="margin-left: 15px;">{{ $childs->nama }}</p>
                                                                             </span>
-                                                                            <div class="" style="display: flex">
+                                                                            <div class="d-flex justify-content-between">
+                                                                            <div  style="margin-left: 15px;">
                                                                                 {{$childs->komentar}}
+                                                                                </div>
                                                                                 @if (Route::has('login'))
                                                                                 @auth
 
-                                                                                <div id="" class="balaskomen" data-id="balas-{{$childs->id}}" style="margin-left: 100px; display:flex; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                                                <div id=""  class="balaskomen" data-id="balas-{{$childs->id}}" style="margin-left: 638px; display:flex; cursor: pointer;" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-reply" viewBox="0 0 16 16">
                                                                                         <path d="M6.598 5.013a.144.144 0 0 1 .202.134V6.3a.5.5 0 0 0 .5.5c.667 0 2.013.005 3.3.822.984.624 1.99 1.76 2.595 3.876-1.02-.983-2.185-1.516-3.205-1.799a8.74 8.74 0 0 0-1.921-.306 7.404 7.404 0 0 0-.798.008h-.013l-.005.001h-.001L7.3 9.9l-.05-.498a.5.5 0 0 0-.45.498v1.153c0 .108-.11.176-.202.134L2.614 8.254a.503.503 0 0 0-.042-.028.147.147 0 0 1 0-.252.499.499 0 0 0 .042-.028l3.984-2.933zM7.8 10.386c.068 0 .143.003.223.006.434.02 1.034.086 1.7.271 1.326.368 2.896 1.202 3.94 3.08a.5.5 0 0 0 .933-.305c-.464-3.71-1.886-5.662-3.46-6.66-1.245-.79-2.527-.942-3.336-.971v-.66a1.144 1.144 0 0 0-1.767-.96l-3.994 2.94a1.147 1.147 0 0 0 0 1.946l3.994 2.94a1.144 1.144 0 0 0 1.767-.96v-.667z" />
                                                                                     </svg>
@@ -25969,6 +25980,7 @@
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                    <hr style="margin-left: 20px;">
                                                                     @if (Route::has('login'))
 
                                                                     @auth
@@ -25997,18 +26009,21 @@
                                                                     @endauth
                                                                     @endif
                                                                     @foreach ($childs->childs as $childs2)
-                                                                    <div class="author-info-wrap" style="margin-left: 80px;margin-top: 10px;">
+                                                                    <div class="author-info-wrap" style="margin-left: 80px;margin-top: 30px;">
                                                                         <p class="author-avatar" href="#"><img src="{{asset('profile.jpg')}}" width="120" height="120" alt="Connor" class="avatar avatar-120 wp-user-avatar wp-user-avatar-120 alignnone photo" loading="lazy" /></p>
                                                                         <div class="is-meta">
                                                                             <span class="nname-info meta-author">
-                                                                                <p class="nice-name" href="#">{{ $childs2->nama }}</p>
+                                                                                <p class="nice-name" href="#" style="margin-left: 15px;">{{ $childs2->nama }}</p>
                                                                             </span>
-                                                                            <div class="" style="display: flex">
+                                                                            <div class="" style="display: flex" >
+                                                                            <div style="margin-left: 15px;">
                                                                                 {{$childs2->komentar}}
+                                                                                </div>
 
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                    <hr style="margin-left: 80px;">
 
 
                                                                     @endforeach
