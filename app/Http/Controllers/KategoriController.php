@@ -30,10 +30,11 @@ class KategoriController extends Controller
         
         $request->validate([
             
-            'name'=>'required',
+            'name' => 'required|unique:kategori',
             'deskripsi'=>'required',
         ],[
             'name.required'=>'Kolom Kategori Wajib Diisi',
+            'name.unique' => 'Kategori dengan nama tersebut sudah ada',
             'deskripsi.required'=>'Kolom Deskripsi Wajib Diisi',
         ]);
         

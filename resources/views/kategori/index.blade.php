@@ -32663,7 +32663,7 @@
                                     <div class="elementor-element elementor-element-ec83d7d elementor-widget elementor-widget-foxiz-heading"
                                         data-id="ec83d7d" data-element_type="widget"
                                         data-widget_type="foxiz-heading.default">
-                                        <div class="elementor-widget-container">
+                                        <div class="elementor-widget-container-fluid">
                                             <div id="uid_ec83d7d" class="block-h heading-layout-1">
                                                 <div class="heading-inner">
                                                     <h2 class="heading-title">
