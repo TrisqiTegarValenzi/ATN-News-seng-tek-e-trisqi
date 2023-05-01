@@ -5,7 +5,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Calendar | RAWR News - Responsive Bootstrap 4 Admin Dashboard</title>
+    <title>Tampil Pesan | RAWR News </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Responsive bootstrap 4 admin template" name="description" />
     <meta content="Coderthemes" name="author" />
@@ -184,7 +184,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        2016 - 2019 &copy; RAWR News theme by <a href="#">Coderthemes</a>
+                        &copy; RAWR Admin</a>
                     </div>
                 </div>
             </div>

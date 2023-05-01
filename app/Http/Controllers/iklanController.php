@@ -95,10 +95,11 @@ class iklanController extends Controller
 
     $data->update([
         'sponsor' => $request -> sponsor,
-        'deskripsi' => $request -> deskripsi,
+        // 'deskripsi' => $request -> deskripsi,
         'mulai' => $request -> mulai,
         'akhir' => $request -> akhir,
         'paket' => $request -> paket,
+        'status' => 'aktif',
     ]);
         return redirect()->route('iklan')->with('success','Data Berhasil Di Update');
 

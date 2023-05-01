@@ -22461,7 +22461,7 @@
         blockquote {
             position: relative;
             padding: 0 1em;
-            quotes: '\201C''\201D''\2018''\2019'
+            quotes: '\201C' '\201D' '\2018' '\2019'
         }
 
         blockquote>* {
@@ -22957,7 +22957,7 @@
         }
 
         .table-link-depth:before {
-            content: counter(table-content) '.'counter(table-content-subsection);
+            content: counter(table-content) '.' counter(table-content-subsection);
             counter-increment: table-content-subsection
         }
 
@@ -22989,12 +22989,12 @@
         }
 
         .table-link-depth.depth-2:before {
-            content: counter(table-content) '.'counter(table-content-subsection) '.'counter(table-content-depth2);
+            content: counter(table-content) '.' counter(table-content-subsection) '.' counter(table-content-depth2);
             counter-increment: table-content-depth2
         }
 
         .table-link-depth.depth-3:before {
-            content: counter(table-content) '.'counter(table-content-subsection) '.'counter(table-content-depth2) '.'counter(table-content-depth3);
+            content: counter(table-content) '.' counter(table-content-subsection) '.' counter(table-content-depth2) '.' counter(table-content-depth3);
             counter-increment: table-content-depth3
         }
 
@@ -27139,16 +27139,19 @@
     <title>Hubungi Kami &#8211; RAWR News</title>
     <meta name='robots' content='max-image-preview:large' />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
-    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts"
-        href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap"
-        crossorigin><noscript>
-        <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap">
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" id="rb-preload-gfonts" href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap" crossorigin><noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans%3A400%2C500%2C700%2C400italic%2C500italic%2C700italic%7CMontserrat%3A700%2C800%7CAbel%3A400&amp;display=swap">
     </noscript>
     <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Feed" href="feed/index.html" />
-    <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Comments Feed"
-        href="comments/feed/index.html" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","legalName":"Technology","url":"https://foxiz.themeruby.com/tech/"}</script>
+    <link rel="alternate" type="application/rss+xml" title="Technology &raquo; Comments Feed" href="comments/feed/index.html" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "legalName": "Technology",
+            "url": "https://foxiz.themeruby.com/tech/"
+        }
+    </script>
     <script>
         window._wpemojiSettings = {
             "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/",
@@ -28000,11 +28003,22 @@
     <meta name="generator" content="WordPress 6.1.1" />
     <link rel="canonical" href="contact/index.html" />
     <link rel='shortlink' href='index69b9.html?p=1481' />
-    <link rel="alternate" type="application/json+oembed"
-        href="wp-json/oembed/1.0/embed74d2.json?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fcontact%2F" />
-    <link rel="alternate" type="text/xml+oembed"
-        href="wp-json/oembed/1.0/embeda2e5?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fcontact%2F&amp;format=xml" />
-    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","@id":"https://foxiz.themeruby.com/tech/#website","url":"https://foxiz.themeruby.com/tech/","name":"Technology","potentialAction":{"@type":"SearchAction","target":"https://foxiz.themeruby.com/tech/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+    <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embed74d2.json?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fcontact%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embeda2e5?url=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech%2Fcontact%2F&amp;format=xml" />
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "@id": "https://foxiz.themeruby.com/tech/#website",
+            "url": "https://foxiz.themeruby.com/tech/",
+            "name": "Technology",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://foxiz.themeruby.com/tech/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+    </script>
     <meta property="og:title" content="Contact" />
     <meta property="og:url" content="https://foxiz.themeruby.com/tech/contact/" />
     <meta property="og:site_name" content="Technology" />
@@ -28020,15 +28034,10 @@
     </script>
 </head>
 
-<body
-    class="page-template-default page page-id-1481 wp-embed-responsive elementor-default elementor-kit-3 elementor-page elementor-page-1481 menu-ani-1 hover-ani-1 is-rm-1 is-hd-1 is-backtop none-m-backtop is-mstick sync-bookmarks"
-    data-theme="default"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0"
-        focusable="false" role="none"
-        style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+<body class="page-template-default page page-id-1481 wp-embed-responsive elementor-default elementor-kit-3 elementor-page elementor-page-1481 menu-ani-1 hover-ani-1 is-rm-1 is-hd-1 is-backtop none-m-backtop is-mstick sync-bookmarks" data-theme="default"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-dark-grayscale">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 0.49803921568627" />
                     <feFuncG type="table" tableValues="0 0.49803921568627" />
@@ -28038,12 +28047,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-grayscale">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 1" />
                     <feFuncG type="table" tableValues="0 1" />
@@ -28053,12 +28060,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-purple-yellow">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
                     <feFuncG type="table" tableValues="0 1" />
@@ -28068,12 +28073,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-blue-red">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 1" />
                     <feFuncG type="table" tableValues="0 0.27843137254902" />
@@ -28083,12 +28086,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-midnight">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0 0" />
                     <feFuncG type="table" tableValues="0 0.64705882352941" />
@@ -28098,12 +28099,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-magenta-yellow">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.78039215686275 1" />
                     <feFuncG type="table" tableValues="0 0.94901960784314" />
@@ -28113,12 +28112,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-purple-green">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
                     <feFuncG type="table" tableValues="0 1" />
@@ -28128,12 +28125,10 @@
                 <feComposite in2="SourceGraphic" operator="in" />
             </filter>
         </defs>
-    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
-        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
         <defs>
             <filter id="wp-duotone-blue-orange">
-                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
-                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
                 <feComponentTransfer color-interpolation-filters="sRGB">
                     <feFuncR type="table" tableValues="0.098039215686275 1" />
                     <feFuncG type="table" tableValues="0 0.66274509803922" />
@@ -28145,8 +28140,7 @@
         </defs>
     </svg>
     <div class="site-outer">
-        <header id="site-header"
-            class="header-wrap rb-section header-set-1 header-1 header-wrapper style-shadow has-quick-menu">
+        <header id="site-header" class="header-wrap rb-section header-set-1 header-1 header-wrapper style-shadow has-quick-menu">
             {{-- <aside id="rb-privacy" class="privacy-bar privacy-left">
                 <div class="privacy-inner">
                     <div class="privacy-content">
@@ -28167,73 +28161,69 @@
                                 <div class="navbar-left">
                                     <div class="logo-wrap is-image-logo site-branding">
                                         <a href="#" class="logo" title="Technology">
-                                            <img class="logo-default" data-mode="default" height="60" width="92"
-                                                src="{{asset('logorawr.png')}}
+                                            <img class="logo-default" data-mode="default" height="60" width="92" src="{{asset('logorawr.png')}}
                                                     " alt="Technology" />
                                         </a>
                                     </div>
                                     <nav id="site-navigation" class="main-menu-wrap" aria-label="main menu">
-                                        <ul id="menu-main" class="main-menu rb-menu large-menu" itemscope
-                                            itemtype="https://www.schema.org/SiteNavigationElement">
-                                            <li id="menu-item-1585"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-1585">
+                                        <ul id="menu-main" class="main-menu rb-menu large-menu" itemscope itemtype="https://www.schema.org/SiteNavigationElement">
+                                            <li id="menu-item-1585" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-1585">
                                                 <a href="{{ url('/') }}"><span>Beranda</span></a>
-                                    
+
                                             </li>
-                                    
+
                                             @foreach ($kategori as $row)
-                                                
-                                            <li id="menu-item-1736"
-                                                class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-1736 menu-item-has-children menu-has-child-mega is-child-wide">
+
+                                            <li id="menu-item-1736" class="menu-item menu-item-type-taxonomy menu-item-object-category current-menu-item menu-item-1736 menu-item-has-children menu-has-child-mega is-child-wide">
                                                 <a href="/isikategori/{{ $row->id }}" aria-current="page"><span>{{$row->name}}</span></a>
-                                               
+
                                             </li>
                                             @endforeach
-                                    
-                                            </ul>
+
+                                        </ul>
                                         </li>
                                         </ul>
-                                    
+
                                     </nav>
-                                    <div
-class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout-col-3">
-<a class="more-trigger icon-holder" href="#" data-title="Lainnya"
-    aria-label="more"> <span
-        class="dots-icon"><span></span><span></span><span></span></span> </a>
-<div id="rb-more" class="more-section flex-dropdown">
-    <div class="more-section-inner">
-        <div class="more-content">
-           
-            <div class="mega-columns">
-                @foreach ($kategori2 as $row)
-                    
-                <a href="/isikategori/{{ $row->id }}">
-                <div class="more-col">
-                    <div id="nav_menu-4"
-                        class="rb-section clearfix widget_nav_menu">
-                        <div class="block-h widget-heading heading-layout-10">
-                            <div class="heading-inner">
-                                <h5 class="heading-title">
-                                    <span>{{$row->name}}</span></h5>
-                            </div>
-                        </div>
-                        
-                    </div>
-                </div>
-            </a>
-            @endforeach
+                                    @if ($kategori->count() >= 6)
+                                    <div class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout-col-3">
+                                        <a class="more-trigger icon-holder" href="#" data-title="Lainnya" aria-label="more"> <span class="dots-icon"><span></span><span></span><span></span></span> </a>
+                                        <div id="rb-more" class="more-section flex-dropdown">
+                                            <div class="more-section-inner">
+                                                <div class="more-content">
+
+                                                    <div class="mega-columns">
+                                                        @foreach ($kategori2 as $row)
+
+                                                        <a href="/isikategori/{{ $row->id }}">
+                                                            <div class="more-col">
+                                                                <div id="nav_menu-4" class="rb-section clearfix widget_nav_menu">
+                                                                    <div class="block-h widget-heading heading-layout-10">
+                                                                        <div class="heading-inner">
+                                                                            <h5 class="heading-title">
+                                                                                <span>{{$row->name}}</span>
+                                                                            </h5>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        @endforeach
 
 
-                
-            </div>
-        </div>
-      
-    </div>
-</div>
-</div>
-                                    
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @else
+                                    @endif
+
                                 </div>
-                               
+
                             </div>
                         </div>
                     </div>
@@ -28241,14 +28231,13 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                         <div class="header-mobile-wrap">
                             <div class="mbnav edge-padding">
                                 <div class="navbar-left">
-                                    {{--  --}}
+                                    {{-- --}}
                                     <div class="mobile-logo-wrap is-image-logo site-branding">
-                                        <img class="logo-default" data-mode="default" height="60" width="92"
-                                        src="{{asset('logorawr.png')}}
+                                        <img class="logo-default" data-mode="default" height="60" width="92" src="{{asset('logorawr.png')}}
                                             " alt="Technology" />
                                     </div>
                                 </div>
-                                
+
                             </div>
                             <div class="mobile-qview">
                                 <ul id="menu-mobile-quick-access-1" class="mobile-qview-inner">
@@ -28274,90 +28263,69 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                                     <div class="mobile-search-form edge-padding">
                                         <div class="header-search-form"> <span class="h5">Search</span>
                                             <form method="get" action="https://foxiz.themeruby.com/tech/" class="rb-search-form">
-                                                <div class="search-form-inner"> <span class="search-icon"><span
-                                                            class="search-icon-svg"></span></span> <span class="search-text"><input
-                                                            type="text" class="field" placeholder="Search Headlines, News..."
-                                                            value="" name="s" /></span> <span class="rb-search-submit"><input
-                                                            type="submit" value="Search" /> <i class="rbi rbi-cright"></i></span></div>
+                                                <div class="search-form-inner"> <span class="search-icon"><span class="search-icon-svg"></span></span> <span class="search-text"><input type="text" class="field" placeholder="Search Headlines, News..." value="" name="s" /></span> <span class="rb-search-submit"><input type="submit" value="Search" /> <i class="rbi rbi-cright"></i></span></div>
                                             </form>
                                         </div>
                                     </div>
                                     <nav class="mobile-menu-wrap edge-padding">
                                         <ul id="mobile-menu" class="mobile-menu">
-                                            <li id="menu-item-1841"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1841">
+                                            <li id="menu-item-1841" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-1841">
                                                 <a href="#"><span>Home</span></a>
                                                 <ul class="sub-menu">
-                                                    <li id="menu-item-1846"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1465 current_page_item menu-item-1846">
+                                                    <li id="menu-item-1846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1465 current_page_item menu-item-1846">
                                                         <a href="index.html" aria-current="page"><span>Home 1</span></a>
                                                     </li>
-                                                    <li id="menu-item-1845"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1845">
+                                                    <li id="menu-item-1845" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1845">
                                                         <a href="home-2/index.html"><span>Home 2</span></a>
                                                     </li>
-                                                    <li id="menu-item-1844"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1844">
+                                                    <li id="menu-item-1844" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1844">
                                                         <a href="home-3/index.html"><span>Home 3</span></a>
                                                     </li>
-                                                    <li id="menu-item-1843"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843">
+                                                    <li id="menu-item-1843" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1843">
                                                         <a href="home-4/index.html"><span>Home 4</span></a>
                                                     </li>
-                                                    <li id="menu-item-1842"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1842">
+                                                    <li id="menu-item-1842" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1842">
                                                         <a href="home-5/index.html"><span>Home 5</span></a>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li id="menu-item-1701"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1701">
+                                            <li id="menu-item-1701" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1701">
                                                 <a href="#"><span>Categories</span></a>
                                                 <ul class="sub-menu">
-                                                    <li id="menu-item-1702"
-                                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1702">
+                                                    <li id="menu-item-1702" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1702">
                                                         <a href="category/tech-news/index.html"><span>Tech
                                                                 News</span></a>
                                                     </li>
-                                                    <li id="menu-item-1703"
-                                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1703">
+                                                    <li id="menu-item-1703" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1703">
                                                         <a href="category/gadget/index.html"><span>Gadget</span></a>
                                                     </li>
-                                                    <li id="menu-item-1704"
-                                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1704">
+                                                    <li id="menu-item-1704" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1704">
                                                         <a href="category/technology/index.html"><span>Technology</span></a>
                                                     </li>
-                                                    <li id="menu-item-1705"
-                                                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1705">
+                                                    <li id="menu-item-1705" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1705">
                                                         <a href="category/mobile/index.html"><span>Mobile</span></a>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li id="menu-item-1706"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1706">
+                                            <li id="menu-item-1706" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1706">
                                                 <a href="#"><span>Bookmarks</span></a>
                                                 <ul class="sub-menu">
-                                                    <li id="menu-item-1707"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1707">
+                                                    <li id="menu-item-1707" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1707">
                                                         <a href="customize-interests/index.html"><span>Customize
                                                                 Interests</span></a>
                                                     </li>
-                                                    <li id="menu-item-1708"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1708">
+                                                    <li id="menu-item-1708" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1708">
                                                         <a href="my-bookmarks/index.html"><span>My Bookmarks</span></a>
                                                     </li>
                                                 </ul>
                                             </li>
-                                            <li id="menu-item-1709"
-                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1709">
+                                            <li id="menu-item-1709" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1709">
                                                 <a href="#"><span>Lainnya Foxiz</span></a>
                                                 <ul class="sub-menu">
-                                                    <li id="menu-item-1710"
-                                                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1710">
+                                                    <li id="menu-item-1710" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1710">
                                                         <a href="blog/index.html"><span>Blog Index</span></a>
                                                     </li>
-                                                    <li id="menu-item-1711"
-                                                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1711">
+                                                    <li id="menu-item-1711" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1711">
                                                         <a href="#"><span>Sitemap</span></a>
                                                     </li>
                                                 </ul>
@@ -28366,16 +28334,8 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                                     </nav>
                                     <div class="mobile-collapse-sections edge-padding">
                                         <div class="mobile-login"> <span class="mobile-login-title h6">Have an existing
-                                                account?</span> <a
-                                                href="wp-login95d2.html?redirect_to=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech"
-                                                class="login-toggle is-login is-btn">Sign In</a></div>
-                                        <div class="mobile-social-list"> <span class="mobile-social-list-title h6">Follow US</span> <a
-                                                class="social-link-facebook" data-title="Facebook" href="#" target="_blank"
-                                                rel="noopener nofollow"><i class="rbi rbi-facebook"></i></a><a
-                                                class="social-link-twitter" data-title="Twitter" href="#" target="_blank"
-                                                rel="noopener nofollow"><i class="rbi rbi-twitter"></i></a><a class="social-link-youtube"
-                                                data-title="YouTube" href="#" target="_blank" rel="noopener nofollow"><i
-                                                    class="rbi rbi-youtube"></i></a></div>
+                                                account?</span> <a href="wp-login95d2.html?redirect_to=https%3A%2F%2Ffoxiz.themeruby.com%2Ftech" class="login-toggle is-login is-btn">Sign In</a></div>
+                                        <div class="mobile-social-list"> <span class="mobile-social-list-title h6">Follow US</span> <a class="social-link-facebook" data-title="Facebook" href="#" target="_blank" rel="noopener nofollow"><i class="rbi rbi-facebook"></i></a><a class="social-link-twitter" data-title="Twitter" href="#" target="_blank" rel="noopener nofollow"><i class="rbi rbi-twitter"></i></a><a class="social-link-youtube" data-title="YouTube" href="#" target="_blank" rel="noopener nofollow"><i class="rbi rbi-youtube"></i></a></div>
                                     </div>
                                     <div class="collapse-footer">
                                         <div class="collapse-footer-menu">
@@ -28401,22 +28361,17 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </header>
         <div class="site-wrap">
             <div data-elementor-type="wp-page" data-elementor-id="1481" class="elementor elementor-1481">
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-caffc90 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="caffc90" data-element_type="section">
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-caffc90 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="caffc90" data-element_type="section">
                     <div class="elementor-container elementor-column-gap-custom">
-                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-93fc17a"
-                            data-id="93fc17a" data-element_type="column">
+                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-93fc17a" data-id="93fc17a" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-c186811 elementor-widget elementor-widget-foxiz-heading"
-                                    data-id="c186811" data-element_type="widget"
-                                    data-widget_type="foxiz-heading.default">
+                                <div class="elementor-element elementor-element-c186811 elementor-widget elementor-widget-foxiz-heading" data-id="c186811" data-element_type="widget" data-widget_type="foxiz-heading.default">
                                     <div class="elementor-widget-container">
                                         <div id="uid_c186811" class="block-h heading-layout-c10">
                                             <div class="heading-inner">
@@ -28425,9 +28380,7 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-25c3c22 elementor-widget elementor-widget-foxiz-heading"
-                                    data-id="25c3c22" data-element_type="widget"
-                                    data-widget_type="foxiz-heading.default">
+                                <div class="elementor-element elementor-element-25c3c22 elementor-widget elementor-widget-foxiz-heading" data-id="25c3c22" data-element_type="widget" data-widget_type="foxiz-heading.default">
                                     <div class="elementor-widget-container">
                                         <div id="uid_25c3c22" class="block-h heading-layout-c10">
                                             <div class="heading-inner">
@@ -28436,8 +28389,7 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-139a109 elementor-widget elementor-widget-image"
-                                    data-id="139a109" data-element_type="widget" data-widget_type="image.default">
+                                <div class="elementor-element elementor-element-139a109 elementor-widget elementor-widget-image" data-id="139a109" data-element_type="widget" data-widget_type="image.default">
                                     <div class="elementor-widget-container">
                                         <style>
                                             /*! elementor - v3.8.1 - 13-11-2022 */
@@ -28457,98 +28409,75 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                                                 vertical-align: middle;
                                                 display: inline-block
                                             }
-                                        </style><a href="https://www.google.com/maps/@40.6315416,-75.3576829,18z"
-                                            target="_blank" rel="nofollow"> <img decoding="async"
-                                                src="../default/wp-content/uploads/sites/2/2021/11/map.png"
-                                                title="" alt="" loading="lazy" /> </a>
+                                        </style><a href="https://www.google.com/maps/@40.6315416,-75.3576829,18z" target="_blank" rel="nofollow"> <img decoding="async" src="../default/wp-content/uploads/sites/2/2021/11/map.png" title="" alt="" loading="lazy" /> </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
-                <section
-                    class="elementor-section elementor-top-section elementor-element elementor-element-6ba5260 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                    data-id="6ba5260" data-element_type="section">
+                <section class="elementor-section elementor-top-section elementor-element elementor-element-6ba5260 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6ba5260" data-element_type="section">
                     <div class="elementor-container elementor-column-gap-custom">
-                        <div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-ffe814a"
-                            data-id="ffe814a" data-element_type="column">
+                        <div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-ffe814a" data-id="ffe814a" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-5399611 elementor-widget elementor-widget-html"
-                                    data-id="5399611" data-element_type="widget" data-widget_type="html.default">
+                                <div class="elementor-element elementor-element-5399611 elementor-widget elementor-widget-html" data-id="5399611" data-element_type="widget" data-widget_type="html.default">
                                     <div class="elementor-widget-container">
                                         <h3>Layanan Pelanggan Umum & Dukungan Teknis</h3>
                                         <p style="margin-top: 15px;font-size: 14px;font-style: italic">Karena kami memenuhi kebutuhan pelanggan, waktu tunggu email mungkin lebih lama dari biasanya. Dalam upaya memberi Anda pengalaman pelanggan terbaik, kami mendorong Anda untuk memanfaatkan ponsel kami. Dalam kebanyakan kasus, ini adalah opsi tercepat dan termudah.</p>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-3125def elementor-widget elementor-widget-shortcode"
-                                    data-id="3125def" data-element_type="widget"
-                                    data-widget_type="shortcode.default">
+                                <div class="elementor-element elementor-element-3125def elementor-widget elementor-widget-shortcode" data-id="3125def" data-element_type="widget" data-widget_type="shortcode.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-shortcode">
-                                            <div role="form" class="wpcf7" id="wpcf7-f1692-p1481-o1"
-                                                lang="en-US" dir="ltr">
+                                            <div role="form" class="wpcf7" id="wpcf7-f1692-p1481-o1" lang="en-US" dir="ltr">
                                                 <div class="screen-reader-response">
                                                     <p role="status" aria-live="polite" aria-atomic="true"></p>
                                                     <ul></ul>
                                                 </div>
                                                 @if (Route::has('login'))
-                                                    @auth
-                                                    @if (Auth::user()->role_id == 1)
-                                                    @if (Session::has('gagal'))
+                                                @auth
+                                                @if (Auth::user()->role_id == 1)
+                                                @if (Session::has('gagal'))
                                                 <div class="alert alert-danger mt-4" role="alert" style="margin-right: 250px; margin-left: 250px">
-                                                  {{Session::get('gagal')}}
+                                                    {{Session::get('gagal')}}
                                                 </div>
                                                 @endif
-                                                    @elseif (Session::has('sukses'))
+                                                @elseif (Session::has('sukses'))
                                                 <div class="alert alert-success mt-4" role="alert" style="margin-right: 250px; margin-left: 250px">
-                                                  {{Session::get('sukses')}}
+                                                    {{Session::get('sukses')}}
                                                 </div>
                                                 @endif
-                                                 @endauth
-                                                    @endif 
+                                                @endauth
+                                                @endif
                                                 @if ($errors->any())
                                                 <div class="alert alert-danger" style="margin-right: 250px; margin-left: 250px">
                                                     <ul>
                                                         @foreach ($errors->all() as $error)
-                                                            <li>{{ $error }}</li>
+                                                        <li>{{ $error }}</li>
                                                         @endforeach
                                                     </ul>
                                                 </div>
-                                            @endif
-                                                <form
-                                                    action="/kontak"
-                                                    method="post" class="wpcf7-form init" novalidate="novalidate"
-                                                    data-status="init">
+                                                @endif
+                                                <form action="/kontak" method="post" class="wpcf7-form init" novalidate="novalidate" data-status="init">
                                                     @csrf
-                                                     <span
-                                                        class="wpcf7-form-control-wrap"
-                                                        data-name="your-message">
-                                                        <input type="text"
-                                                            name="judul" cols="40" value="" size="40" 
-                                                            class="" 
-                                                            aria-required="true" aria-invalid="false"
-                                                            placeholder="Judul"/>
-                                                        </span>
-                                                          <span
-                                                        class="wpcf7-form-control-wrap" data-name="your-message">
-                                                        <textarea name="pesan" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea"
-                                                            aria-invalid="false" placeholder="Isi Pesan"></textarea>
-                                                    </span> 
+                                                    <span class="wpcf7-form-control-wrap" data-name="your-message">
+                                                        <input type="text" name="judul" cols="40" value="" size="40" class="" aria-required="true" aria-invalid="false" placeholder="Judul" />
+                                                    </span>
+                                                    <span class="wpcf7-form-control-wrap" data-name="your-message">
+                                                        <textarea name="pesan" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false" placeholder="Isi Pesan"></textarea>
+                                                    </span>
                                                     @if (Route::has('login'))
                                                     @auth
                                                     @if (Auth::user()->username = 'admin')
-                                                    <input type="submit" value="Kirim"
-                                                        class="wpcf7-form-control has-spinner wpcf7-submit" />
+                                                    <input type="submit" value="Kirim" class="wpcf7-form-control has-spinner wpcf7-submit" />
                                                     @else
-                                                    <input type="submit" value="Kirim"
-                                                        class="wpcf7-form-control has-spinner wpcf7-submit" />
+                                                    <input type="submit" value="Kirim" class="wpcf7-form-control has-spinner wpcf7-submit" />
                                                     @endif
-                                                    
+
                                                     @else <a href="register_komentar" style="margin-left:1%;" class="is-btn header-element">
-                                                            <span>Kirim</span>
-                                                          </a> @endauth
-                                                    @endif 
+                                                        <span>Kirim</span>
+                                                    </a> @endauth
+                                                    @endif
                                                     <div class="wpcf7-response-output" aria-hidden="true"></div>
                                                 </form>
                                             </div>
@@ -28557,43 +28486,35 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                                 </div>
                             </div>
                         </div>
-                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-75972dc"
-                            data-id="75972dc" data-element_type="column">
+                        <div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-75972dc" data-id="75972dc" data-element_type="column">
                             <div class="elementor-widget-wrap elementor-element-populated">
-                                <div class="elementor-element elementor-element-d8ea50d elementor-widget elementor-widget-foxiz-heading"
-                                    data-id="d8ea50d" data-element_type="widget"
-                                    data-widget_type="foxiz-heading.default">
-                                    
+                                <div class="elementor-element elementor-element-d8ea50d elementor-widget elementor-widget-foxiz-heading" data-id="d8ea50d" data-element_type="widget" data-widget_type="foxiz-heading.default">
+
                                 </div>
-                                <div class="elementor-element elementor-element-dac63df elementor-widget elementor-widget-wp-widget-widget-follower"
-                                    data-id="dac63df" data-element_type="widget"
-                                    data-widget_type="wp-widget-widget-follower.default">
+                                <div class="elementor-element elementor-element-dac63df elementor-widget elementor-widget-wp-widget-widget-follower" data-id="dac63df" data-element_type="widget" data-widget_type="wp-widget-widget-follower.default">
                                     <div class="elementor-widget-container">
                                         <div class="sb-social-counter fncount-wrap is-style-15">
-                                           
+
                                         </div>
                                     </div>
                                 </div>
-                                <div class="elementor-element elementor-element-ffc669c elementor-widget elementor-widget-sidebar"
-                                    data-id="ffc669c" data-element_type="widget"
-                                    data-widget_type="sidebar.default">
+                                <div class="elementor-element elementor-element-ffc669c elementor-widget elementor-widget-sidebar" data-id="ffc669c" data-element_type="widget" data-widget_type="sidebar.default">
                                     <div class="elementor-widget-container">
-                                        <div id="widget-address-2"
-                                            class="widget rb-section w-sidebar clearfix widget-address">
+                                        <div id="widget-address-2" class="widget rb-section w-sidebar clearfix widget-address">
                                             @foreach ($sosmed as $row)
-                                                
+
                                             <div class="address-info">
-                                                
+
                                                 <h5 class="phone-title h4">Informasi Hubungi Kami</h5>
                                                 <a href="https://wa.me/+62{{$row->wa}}" class="phone"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
-                                                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                                                  </svg><strong>Whatsapp: </strong> 0{{$row->wa}}</a>
+                                                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+                                                    </svg><strong>Whatsapp: </strong> 0{{$row->wa}}</a>
                                                 <a href="https://instagram.com/{{$row->ig}}" class="tel"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-                                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-                                                  </svg><strong>Instagram: </strong> {{$row->ig}}</a>
+                                                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                                                    </svg><strong>Instagram: </strong> {{$row->ig}}</a>
                                                 <a href="mailto:{{$row->email}}" class="email"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
-                                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                                                  </svg><strong>Email: </strong> {{$row->email}}</a>
+                                                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                    </svg><strong>Email: </strong> {{$row->email}}</a>
                                             </div>
                                             @endforeach
 
@@ -28866,7 +28787,7 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
             }
         }
     </style>
-    
+
     <script>
         (function() {
             function maybePrefixUrlField() {
@@ -28882,21 +28803,15 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
             }
         })();
     </script>
-    <aside id="rb-popup-newsletter" class="popup-newsletter mfp-animation mfp-hide light-scheme"
-        data-display="scroll" data-delay="0" data-expired="1" data-offset="2000">
+    <aside id="rb-popup-newsletter" class="popup-newsletter mfp-animation mfp-hide light-scheme" data-display="scroll" data-delay="0" data-expired="1" data-offset="2000">
         <div class="popup-newsletter-inner">
             <div class="popup-newsletter-cover">
-                <div class="popup-newsletter-cover-holder"><img loading="lazy" decoding="async"
-                        class="popup-newsletter-img" src="wp-content/uploads/sites/3/2022/02/newsletter.jpg"
-                        alt="" width="600" height="800"></div>
+                <div class="popup-newsletter-cover-holder"><img loading="lazy" decoding="async" class="popup-newsletter-img" src="wp-content/uploads/sites/3/2022/02/newsletter.jpg" alt="" width="600" height="800"></div>
             </div>
             <div class="popup-newsletter-content">
                 <div class="popup-newsletter-header">
-                    <h6 class="popup-newsletter-heading h1">Join Us!<span class="popup-newsletter-icon"><svg
-                                class="svg-icon svg-newsletter" aria-hidden="true" role="img"
-                                focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path fill="currentColor"
-                                    d="M506.955,1.314c-3.119-1.78-6.955-1.75-10.045,0.078L313.656,109.756c-4.754,2.811-6.329,8.943-3.518,13.697
+                    <h6 class="popup-newsletter-heading h1">Join Us!<span class="popup-newsletter-icon"><svg class="svg-icon svg-newsletter" aria-hidden="true" role="img" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path fill="currentColor" d="M506.955,1.314c-3.119-1.78-6.955-1.75-10.045,0.078L313.656,109.756c-4.754,2.811-6.329,8.943-3.518,13.697
  c2.81,4.753,8.942,6.328,13.697,3.518l131.482-77.749L210.411,303.335L88.603,266.069l158.965-94
  c4.754-2.812,6.329-8.944,3.518-13.698c-2.81-4.753-8.943-6.33-13.697-3.518L58.91,260.392c-3.41,2.017-5.309,5.856-4.84,9.791
  s3.216,7.221,7.004,8.38l145.469,44.504L270.72,439.88c0.067,0.121,0.136,0.223,0.207,0.314c1.071,1.786,2.676,3.245,4.678,4.087
@@ -28905,24 +28820,18 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
  C512,6.409,510.074,3.093,506.955,1.314z M271.265,329.23c-1.158,1.673-1.779,3.659-1.779,5.694v61.171l-43.823-79.765
  l193.921-201.21L271.265,329.23z M289.486,411.309v-62.867l48.99,14.988L289.486,411.309z M492,389.483l-196.499-60.116
  L492,45.704V389.483z" />
-                                <path fill="currentColor"
-                                    d="M164.423,347.577c-3.906-3.905-10.236-3.905-14.143,0l-93.352,93.352c-3.905,3.905-3.905,10.237,0,14.143
+                                <path fill="currentColor" d="M164.423,347.577c-3.906-3.905-10.236-3.905-14.143,0l-93.352,93.352c-3.905,3.905-3.905,10.237,0,14.143
  C58.882,457.024,61.441,458,64,458s5.118-0.976,7.071-2.929l93.352-93.352C168.328,357.815,168.328,351.483,164.423,347.577z" />
-                                <path fill="currentColor"
-                                    d="M40.071,471.928c-3.906-3.903-10.236-3.903-14.142,0.001l-23,23c-3.905,3.905-3.905,10.237,0,14.143
+                                <path fill="currentColor" d="M40.071,471.928c-3.906-3.903-10.236-3.903-14.142,0.001l-23,23c-3.905,3.905-3.905,10.237,0,14.143
  C4.882,511.024,7.441,512,10,512s5.118-0.977,7.071-2.929l23-23C43.976,482.166,43.976,475.834,40.071,471.928z" />
-                                <path fill="currentColor"
-                                    d="M142.649,494.34c-1.859-1.86-4.439-2.93-7.069-2.93c-2.641,0-5.21,1.07-7.07,2.93c-1.86,1.86-2.93,4.43-2.93,7.07
+                                <path fill="currentColor" d="M142.649,494.34c-1.859-1.86-4.439-2.93-7.069-2.93c-2.641,0-5.21,1.07-7.07,2.93c-1.86,1.86-2.93,4.43-2.93,7.07
  c0,2.63,1.069,5.21,2.93,7.07c1.86,1.86,4.44,2.93,7.07,2.93s5.21-1.07,7.069-2.93c1.86-1.86,2.931-4.44,2.931-7.07
  C145.58,498.77,144.51,496.2,142.649,494.34z" />
-                                <path fill="currentColor"
-                                    d="M217.051,419.935c-3.903-3.905-10.233-3.905-14.142,0l-49.446,49.445c-3.905,3.905-3.905,10.237,0,14.142
+                                <path fill="currentColor" d="M217.051,419.935c-3.903-3.905-10.233-3.905-14.142,0l-49.446,49.445c-3.905,3.905-3.905,10.237,0,14.142
  c1.953,1.953,4.512,2.929,7.071,2.929s5.118-0.977,7.071-2.929l49.446-49.445C220.956,430.172,220.956,423.84,217.051,419.935z" />
-                                <path fill="currentColor"
-                                    d="M387.704,416.139c-3.906-3.904-10.236-3.904-14.142,0l-49.58,49.58c-3.905,3.905-3.905,10.237,0,14.143
+                                <path fill="currentColor" d="M387.704,416.139c-3.906-3.904-10.236-3.904-14.142,0l-49.58,49.58c-3.905,3.905-3.905,10.237,0,14.143
  c1.953,1.952,4.512,2.929,7.071,2.929s5.118-0.977,7.071-2.929l49.58-49.58C391.609,426.377,391.609,420.045,387.704,416.139z" />
-                                <path fill="currentColor"
-                                    d="M283.5,136.31c-1.86-1.86-4.44-2.93-7.07-2.93s-5.21,1.07-7.07,2.93c-1.859,1.86-2.93,4.44-2.93,7.08
+                                <path fill="currentColor" d="M283.5,136.31c-1.86-1.86-4.44-2.93-7.07-2.93s-5.21,1.07-7.07,2.93c-1.859,1.86-2.93,4.44-2.93,7.08
  c0,2.63,1.07,5.2,2.93,7.06c1.86,1.87,4.44,2.93,7.07,2.93s5.21-1.06,7.07-2.93c1.859-1.86,2.93-4.43,2.93-7.06
  C286.43,140.75,285.36,138.17,283.5,136.31z" />
                             </svg></span></h6>
@@ -28945,20 +28854,12 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
                             }
                         })();
                     </script>
-                    <form id="mc4wp-form-4" class="mc4wp-form mc4wp-form-1616" method="post" data-id="1616"
-                        data-name="form">
+                    <form id="mc4wp-form-4" class="mc4wp-form mc4wp-form-1616" method="post" data-id="1616" data-name="form">
                         <div class="mc4wp-form-fields">
-                            <div> <input type="email" name="EMAIL" placeholder="Your email address"
-                                    required /> <input type="submit" value="Sign Up Now" /></div>
-                            <div class="agree-to-terms"> <input name="AGREE_TO_TERMS" type="checkbox"
-                                    value="1" required="">I have read and agree to the terms &amp;
+                            <div> <input type="email" name="EMAIL" placeholder="Your email address" required /> <input type="submit" value="Sign Up Now" /></div>
+                            <div class="agree-to-terms"> <input name="AGREE_TO_TERMS" type="checkbox" value="1" required="">I have read and agree to the terms &amp;
                                 conditions</div>
-                        </div><label style="display: none !important;">Leave this field empty if you're human: <input
-                                type="text" name="_mc4wp_honeypot" value="" tabindex="-1"
-                                autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp"
-                            value="1675688120" /><input type="hidden" name="_mc4wp_form_id"
-                            value="1616" /><input type="hidden" name="_mc4wp_form_element_id"
-                            value="mc4wp-form-4" />
+                        </div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1675688120" /><input type="hidden" name="_mc4wp_form_id" value="1616" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-4" />
                         <div class="mc4wp-response"></div>
                     </form>
                 </div>
@@ -28970,8 +28871,7 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
     <aside id="bookmark-toggle-info" class="bookmark-info edge-padding">
         <div class="bookmark-holder">
             <div class="bookmark-featured"></div>
-            <div class="bookmark-inner"> <span class="bookmark-title h5"></span> <span
-                    class="bookmark-desc"></span></div>
+            <div class="bookmark-inner"> <span class="bookmark-title h5"></span> <span class="bookmark-desc"></span></div>
         </div>
     </aside>
     <aside id="follow-toggle-info" class="bookmark-info edge-padding">
@@ -28979,33 +28879,22 @@ class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout
     </aside>
     <aside id="bookmark-remove-info" class="bookmark-info edge-padding">
         <div class="bookmark-remove-holder bookmark-holder">
-            <p>Removed from reading list</p> <a href="#" id="bookmark-undo"
-                class="bookmark-undo h4">Undo</a>
+            <p>Removed from reading list</p> <a href="#" id="bookmark-undo" class="bookmark-undo h4">Undo</a>
         </div>
     </aside>
     <div id="rb-user-popup-form" class="rb-user-popup-form mfp-animation mfp-hide">
         <div class="logo-popup-outer">
             <div class="logo-popup">
                 <div class="login-popup-header">
-                    <div class="logo-popup-logo"> <img loading="lazy" decoding="async"
-                            src="wp-content/uploads/sites/3/2022/02/login.png" alt="" height="200"
-                            width="200"></div> <span class="logo-popup-heading h3">Welcome Back!</span>
+                    <div class="logo-popup-logo"> <img loading="lazy" decoding="async" src="wp-content/uploads/sites/3/2022/02/login.png" alt="" height="200" width="200"></div> <span class="logo-popup-heading h3">Welcome Back!</span>
                     <p class="logo-popup-description is-meta">Sign in to your account</p>
                 </div>
                 <div class="user-form">
-                    <form name="popup-form" id="popup-form" action="https://foxiz.themeruby.com/tech/wp-login.php"
-                        method="post">
-                        <p class="login-username"> <label for="user_login">Username or Email Address</label> <input
-                                type="text" name="log" id="user_login" autocomplete="username"
-                                class="input" value="" size="20" /></p>
-                        <p class="login-password"> <label for="user_pass">Password</label> <input type="password"
-                                name="pwd" id="user_pass" autocomplete="current-password" class="input"
-                                value="" size="20" /></p>
-                        <p class="login-remember"><label><input name="rememberme" type="checkbox"
-                                    id="rememberme" value="forever" /> Remember Me</label></p>
-                        <p class="login-submit"> <input type="submit" name="wp-submit" id="wp-submit"
-                                class="button button-primary" value="Log In" /> <input type="hidden"
-                                name="redirect_to" value="contact.html" /></p>
+                    <form name="popup-form" id="popup-form" action="https://foxiz.themeruby.com/tech/wp-login.php" method="post">
+                        <p class="login-username"> <label for="user_login">Username or Email Address</label> <input type="text" name="log" id="user_login" autocomplete="username" class="input" value="" size="20" /></p>
+                        <p class="login-password"> <label for="user_pass">Password</label> <input type="password" name="pwd" id="user_pass" autocomplete="current-password" class="input" value="" size="20" /></p>
+                        <p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever" /> Remember Me</label></p>
+                        <p class="login-submit"> <input type="submit" name="wp-submit" id="wp-submit" class="button button-primary" value="Log In" /> <input type="hidden" name="redirect_to" value="contact.html" /></p>
                     </form>
                 </div>
                 <div class="user-form-footer is-meta"> <a href="wp-loginc2b6.html?action=lostpassword">Lost your

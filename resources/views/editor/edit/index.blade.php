@@ -254,7 +254,7 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-12">
-                                &copy; RAWR News
+                                &copy; RAWR Editor
                             </div>
                         </div>
                     </div>
