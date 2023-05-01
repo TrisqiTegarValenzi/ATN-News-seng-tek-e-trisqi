@@ -17,7 +17,7 @@
     </ul>
 
 </nav>
-@if ($kategori->count() >= 5)
+@if ($kategori->count() >= 6)
 <div class="more-section-outer menu-has-child-flex menu-has-child-mega-columns layout-col-3">
     <a class="more-trigger icon-holder" href="#" data-title="Lainnya" aria-label="more"> <span class="dots-icon"><span></span><span></span><span></span></span> </a>
     <div id="rb-more" class="more-section flex-dropdown">
@@ -51,7 +51,7 @@
     </div>
 </div>
 @else
-<h1>test</h1>
+
 @endif
 
 
