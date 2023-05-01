@@ -29987,7 +29987,7 @@
             <div id="navbar-outer" class="navbar-outer">
                 <div id="sticky-holder" class="sticky-holder">
                     <div class="navbar-wrap">
-                        <div class="rb-container edge-padding">
+                        <div class="rb-container-fluid edge-padding">
                             <div class="navbar-inner">
                                 <div class="navbar-left">
                                     <div class="logo-wrap is-image-logo site-branding">
@@ -30237,7 +30237,7 @@
       
         <div class="site-wrap">
             <header class="search-header">
-                <div class="rb-container edge-padding">
+                {{-- <div class="rb-container edge-padding"> --}}
                     <div class="search-header-inner">
                         <div class="search-header-content">
                             <h1 class="search-title">Hasil Pencarian Anda...</h1>
@@ -30287,6 +30287,7 @@
                 </div>
             </div>
         </div>
+    </div>
         @include('layouts.utama.footer')
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
