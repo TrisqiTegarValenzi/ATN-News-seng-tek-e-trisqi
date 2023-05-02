@@ -30193,18 +30193,19 @@
                                 <div class="elementor-element elementor-element-3dbcdda elementor-widget elementor-widget-foxiz-ad-image" data-id="3dbcdda" data-element_type="widget" data-widget_type="foxiz-ad-image.default">
                                     <div class="elementor-widget-container">
                                         <div class="ad-wrap ad-image-wrap">
-                                        @if($iklan)
+                                        @if ($iklan)
                                         <h6 class="ad-description is-meta">- Disponsori -</h6>
-                                                @else
-                                                <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
+
+                                        <div class="ad-image" id="iklan_atas" > <a class="p-flink"> </a>
+                                            @if($iklan->count() >= 1)
+                                            <img src="{{ asset('fotoiklan/abuabu.jpg')}}"> 
+                                            @else
+                                            <img src="{{ asset('fotoiklan/' . $iklan->foto) }}" alt="banner" width="800" style="height:70px;object-fit:cover;">
+
+                                            @endif
                                                 @endif
 
-                                            <div class="ad-image" id="iklan_atas" > <a class="p-flink"> </a>
-                                                @if($iklan)
-                                                <img src="{{ asset('fotoiklan/' . $iklan->foto) }}" alt="banner" width="800" style="height:70px;object-fit:cover;">
-                                                @else
-                                                <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
-                                                @endif
+                                            
 
                                             </div>
 
