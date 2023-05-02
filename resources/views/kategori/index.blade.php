@@ -32896,16 +32896,18 @@
                                         data-widget_type="foxiz-ad-image.default">
                                         <div class="elementor-widget-container">
                                             <div class="ad-wrap ad-image-wrap">
+                                                @if($iklan)
                                                 <h6 class="ad-description is-meta">- Disponsori -</h6>
-                                            
-                                                @foreach ($iklan as $row)
-                                                    
-                                                <div class="ad-image">
-                                                    <img loading="lazy" decoding="async" src="{{ asset('fotoiklan/'. $row->foto)}}" alt="Ad image" width="800" style="height: 70px; object-fit: cover;" />
-                                                </div>
-                                                
-                                                
-                                                @endforeach
+                                                        @else
+                                                        <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
+                                                        @endif
+        
+                                                    <div class="ad-image" id="iklan_atas" > <a class="p-flink"> </a>
+                                                        @if($iklan)
+                                                        <img src="{{ asset('fotoiklan/' . $iklan->foto) }}" alt="banner" width="800" style="height:70px;object-fit:cover;">
+                                                        @else
+                                                        <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
+                                                        @endif
 
                                             </div>
                                         </div>
@@ -32991,22 +32993,25 @@
                                 data-id="86b3bc1" data-element_type="widget"
                                 data-widget_type="foxiz-banner.default">
                                 <div class="elementor-widget-container">
-                                    <h6 class="ad-description is-meta">- Disponsori -</h6>
-                                    @foreach ($iklan1 as $row)
+                                    
+                                    @if($iklan)
+                                        <h6 class="ad-description is-meta">- Disponsori -</h6>
+                                                @else
+                                                <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
+                                                @endif
+
+                                        <div class="w-banner" id="iklan_bawah">
                                         
-                                    <div class="w-banner">
-                                        <div class="banner-bg"> <img loading="lazy" decoding="async"
-                                                data-mode="default"
-                                                src="{{ asset('fotoiklan/'. $row->foto)}}"
-                                                alt="banner" width="400" height="600"> <img loading="lazy"
-                                                decoding="async" data-mode="dark"
-                                                src="{{ asset('fotoiklan/'. $row->foto)}}" alt="banner"
-                                                width="600" height="900"></div>
-                                        <div class="w-banner-content">
-                                            
-                                        </div>
-                                    </div>
-                                    @endforeach
+                                              
+                                                
+                                                @if($iklan)
+                                            <a class="p-flink" title=""></a>
+                                            <div class="banner-bg">
+                                                <img src="{{asset('fotoiklan/'. $iklan1->foto)}}" alt="banner" width="600" height="900">
+                                            </div>
+                                            @else
+                                                <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
+                                                @endif
                                 </div>
                             </div>
                             <div class="elementor-element elementor-element-4a9eadc elementor-invisible elementor-widget elementor-widget-foxiz-heading"
