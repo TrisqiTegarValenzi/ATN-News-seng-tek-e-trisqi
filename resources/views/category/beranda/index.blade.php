@@ -30199,7 +30199,7 @@
                                                 <!-- <img src="{{ asset('fotoiklan/abu.jpg')}}"> -->
                                                 @endif
 
-                                            <div class="ad-image" id="iklan_atas" > <a class="p-flink" title="{{$iklan->sponsor}}"> </a>
+                                            <div class="ad-image" id="iklan_atas" > <a class="p-flink" title="{{ $iklan->sponsor }}"> </a>
                                                 @if($iklan)
                                                 <img src="{{ asset('fotoiklan/' . $iklan->foto) }}" alt="banner" width="800" style="height:70px;object-fit:cover;">
                                                 @else

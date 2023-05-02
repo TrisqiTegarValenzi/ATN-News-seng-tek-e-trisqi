@@ -106,6 +106,25 @@
                                                         <img style="" src="{{ asset('foto/' . $berita->foto) }}"
                                                         class="card-img-top" width="150" height="200" alt="...">
                                                     </a>
+                                                    <div class="dropdown">
+                                                        <a class="btn btn-secondary" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color: white;color: black;border: thick;margin-left: 228px;margin-top: 10px;">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                                        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                                                        </svg>
+                                                        </a>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a onclick="return confirm('Yakin Ingin Menerima Berita ini?')" class="dropdown-item" href="/terimaberita/{{ $berita->id }}" method="get" enctype="multipart/form-data"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 mr-2" viewBox="0 0 16 16">
+                                                                <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                                              </svg>Terima Berita</a></li>
+                                                            <li><a class="dropdown-item" href="/edite/{{ $berita->id }}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil mr-2" viewBox="0 0 16 16">
+                                                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                                                                </svg>Edit</a></li>
+                                                            <li><a class="dropdown-item" href="/tolak/{{$berita->id}}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash mr-2" viewBox="0 0 16 16">
+                                                                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                                                                <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                                                                </svg>Tolak</a></li>
+                                                        </ul>
+                                                        </div>
                                                 </div>
                                                 <div class="card-body " style="">
                                                     <a href="/isi/{{ $berita->id }}">
@@ -132,13 +151,6 @@
                                                     </a>
                                                 </div>
                                                 <div class="card-body">
-                                                    <form onsubmit="return confirm('Yakin Ingin Menerima Berita Ini?')" class="d-inline" action="/terimaberita/{{ $berita->id }}" method="POST" enctype="multipart/form-data">
-                                                        @csrf
-                                                        <button type="submit" name="submit"
-                                                            class="btn btn-success btn-sm">Terima Berita</button>
-                                                    </form>
-                                                    <a href="/edite/{{ $berita->id }}" class="btn btn-warning btn-sm">Edit</a>
-                                                    <a href="/tolak/{{$berita->id}}" class="btn btn-danger btn-sm">Tolak</a>
                                                 </div>
                                             </div>
                                         @endforeach
