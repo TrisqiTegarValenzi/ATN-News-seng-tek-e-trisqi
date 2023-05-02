@@ -28,7 +28,7 @@
                             @foreach ($kontak as $row)
                             <a href="/tampilpesan/{{ $row->id }}">
                                 <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="assets/images/users/avatar-1.jpg" class="rounded-circle" alt=""></div>
+                                    <div class="inbox-item-img"><img src="profile.jpg" class="rounded-circle" alt=""></div>
                                     <p class="inbox-item-author">{{$row->name}}</p>
                                     <p class="inbox-item-text text-truncate">
                                         {{$row->pesan}}</p>

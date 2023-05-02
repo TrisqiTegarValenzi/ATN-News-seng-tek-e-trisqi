@@ -152,7 +152,7 @@
                       
                         <div class="card" >
                             <div class="card-body d-flex">
-                                <div class="col-1 inbox-item-img"><img src="{{asset('assets/images/users/avatar-1.jpg')}}" width="50" class="rounded-circle" alt=""></div>
+                                <div class="col-1 inbox-item-img"><img src="{{ asset('profile.jpg')}}" width="50" class="rounded-circle" alt=""></div>
                                 <div class="d-flex justify-content-between" style="width:100%">
                                 <div class="" style="display: block;">
                                     <div class="inbox-item-img"><div class="mb-5" style="font-weight:bold;">{{$kontak->name}}</div></div>

@@ -76,7 +76,7 @@
                             <a href="/tampilpesan/{{ $row->id }}">
                             <div class="card" >
                                 <div class="card-body d-flex">
-                                    <div class="col-1 inbox-item-img"><img src="assets/images/users/avatar-1.jpg" width="50" class="rounded-circle" alt=""></div>
+                                    <div class="col-1 inbox-item-img"><img src="profile.jpg" width="50" class="rounded-circle" alt=""></div>
                                     <div class="" style="display: block;">
                                         <div class="inbox-item-img"><div class="" style="font-weight:bold; color:black;">{{$row->name}}</div></div>
                                         <div class="inbox-item-img"><div class="ellipsis1" style="color: black;">{{$row->pesan}}</div></div>
