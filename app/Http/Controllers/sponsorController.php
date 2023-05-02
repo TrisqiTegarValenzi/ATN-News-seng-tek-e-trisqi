@@ -9,6 +9,7 @@ use App\Models\Role;
 use App\Models\sosmed;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 class sponsorController extends Controller
@@ -19,9 +20,14 @@ class sponsorController extends Controller
         // $Role = Role::all();
         $data = sosmed::find(1);
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
         // $item = Role::all();
        
-        return view('admin.sosmed.index',['data' => $data, 'kontak' => $kontak]);
+        return view('admin.sosmed.index',['data' => $data, 'kontak' => $kontak, 'kontak1' => $kontak1]);
     }
 
     public function insertsosmed(Request $request){

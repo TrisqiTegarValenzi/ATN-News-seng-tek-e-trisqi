@@ -242,9 +242,15 @@ class BeritaController extends Controller
         ->orderBy('created_at', 'desc')->where('judul', 'LIKE', '%'.$katakunci.'%')->where('statususer', 'aman')->paginate(3)->withQueryString();
         // $data = compact('kat');
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
         return view('admin.berita dibuat.index',[
             'data' => $data,
-            'kontak' => $kontak
+            'kontak' => $kontak,
+            'kontak1' => $kontak1
         ] );
     }
 

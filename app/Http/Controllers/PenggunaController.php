@@ -17,6 +17,11 @@ class PenggunaController extends Controller
         $katakunci = $request->katakunci;
         $files = Storage::files('public/cv');
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
         $detail = User::all();
         $data = User::where('username', 'LIKE', '%'.$katakunci.'%')
         ->where('status', 'tidak aktif')
@@ -25,7 +30,7 @@ class PenggunaController extends Controller
     //    dd($files);/
         
         
-        return view('admin.acc.index', compact('data', 'files','kontak', 'detail'));
+        return view('admin.acc.index', compact('data', 'files','kontak', 'kontak1', 'detail'));
     }
 
     public function terimauser($id){

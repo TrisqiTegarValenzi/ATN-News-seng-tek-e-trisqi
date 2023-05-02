@@ -24,8 +24,15 @@ class dbadminController extends Controller
         $userCount = User::where('status', 'aktif')->count();
         $beritaCount = berita::where('status', 'diterima')->count();
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
+        
         return view('admin.dashboard.index', ['kontak' => $kontak,
         'iklanCount' => $iklanCount,
+        'kontak1' => $kontak1,
         'kategoryCount' => $kategoryCount,
         'userCount' => $userCount,
         'beritaCount' => $beritaCount,
@@ -60,9 +67,21 @@ class dbadminController extends Controller
     }
     public function pindex(){
         $kontak = Kontak::all();
-            return view('admin.pesan.index', ['kontak' => $kontak]);
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
         }
+        
+            return view('admin.pesan.index', ['kontak' => $kontak,'kontak1' => $kontak1]);
+        }
+        
+        public function tampilsemua(){
+            $data = Kontak::where('read', '0')->update(['read' => '1']);
 
+            // return response()->json($data);
+            return redirect('pesan');
+        }
         public function deleteall(){
             schema::disableForeignKeyConstraints();
             \App\Models\Kontak::truncate();

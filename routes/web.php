@@ -315,7 +315,8 @@ Route::get('/update_all/{id}', [HalamanutamaController::class, 'update_all'])->n
 
 Route::get('/iklan_js', [HalamanutamaController::class, 'iklan_js'])->name('iklan_js');
 
-
+Route::get('/tampilsemua', [dbadminController::class, 'tampilsemua'])->name('tampilsemua');
+Route::get('/bacapesan/{id}', [pesanController::class, 'bacapesan'])->name('bacapesan');
 // Route::get("/baca_all", function (Request $request){
 //     DB::table("notifications")->update([
 //         "is_read" => 1

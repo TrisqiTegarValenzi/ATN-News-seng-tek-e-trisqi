@@ -17,6 +17,11 @@ class adminberitaController extends Controller
 
       
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
         $data = User::query()
         ->withCount('berita')
         ->where('role_id', 2)
@@ -26,7 +31,7 @@ class adminberitaController extends Controller
         ->orderByDesc('berita_sum_view')
         ->paginate(5)->withQueryString();
 
-        return view('admin.penulis berita.index', ['data' => $data, 'kontak' => $kontak]);
+        return view('admin.penulis berita.index', ['data' => $data, 'kontak' => $kontak, 'kontak1' => $kontak1]);
     }
 
     public function naikjabatan($id)
@@ -67,8 +72,13 @@ class adminberitaController extends Controller
         
 
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
 
-        return view('admin.daftar_editor.index', ['data' => $data, 'kontak' => $kontak]);
+        return view('admin.daftar_editor.index', ['data' => $data, 'kontak' => $kontak, 'kontak1' => $kontak1]);
     }
     public function turunjabatan($id)
     {

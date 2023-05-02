@@ -54,8 +54,13 @@ class daftaruserController extends Controller
         }
         // $datap = peminjaman::with('nama', 'buku')->orderBy('id', 'desc')->paginate(5);
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
        
-        return view('admin.dibanned.index',['data' => $data, 'kontak' => $kontak]);
+        return view('admin.dibanned.index',['data' => $data, 'kontak' => $kontak, 'kontak1' => $kontak1]);
     }
     public function rebanned($id){
         $data = User::find($id);

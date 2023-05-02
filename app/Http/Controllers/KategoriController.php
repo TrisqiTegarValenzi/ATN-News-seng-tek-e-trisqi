@@ -6,6 +6,7 @@ use App\Models\Kategori;
 use App\Http\Controllers\Controller;
 use App\Models\Kontak;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Spatie\Backtrace\File;
 
 
@@ -16,13 +17,23 @@ class KategoriController extends Controller
         $katakunci = $request->katakunci;
         $data = Kategori::where('name', 'LIKE', '%'.$katakunci.'%')->orderBy('created_at', 'desc')->paginate(5)->withQueryString();
         $kontak = Kontak::all();
-        return view('admin.kategori_admin.index',['data' => $data, 'kontak' => $kontak]);
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
+        return view('admin.kategori_admin.index',['data' => $data, 'kontak' => $kontak,'kontak1' => $kontak1]);
         
     }
 
     public function tambahkategori(){
         $kontak = Kontak::all();
-        return view('admin.kategori_admin.tambahkategori', compact('kontak'));
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
+        return view('admin.kategori_admin.tambahkategori', compact('kontak','kontak1'));
     }
 
     public function insertkategori(Request $request){
@@ -63,8 +74,13 @@ class KategoriController extends Controller
     public function tampilkategori($id){
 
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
         $data = Kategori::find($id);
-        return view('admin.kategori_admin.tampilkategori', compact('data', 'kontak'));
+        return view('admin.kategori_admin.tampilkategori', compact('data', 'kontak', 'kontak1'));
     }
     
     // public function tampilaturan($id){

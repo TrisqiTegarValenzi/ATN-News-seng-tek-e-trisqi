@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Kontak;
 use App\Models\sponsor;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 class iklanController extends Controller
@@ -29,13 +30,23 @@ class iklanController extends Controller
         }
     
         $kontak = Kontak::all();
-        return view('admin.iklan.index',['data' => $data, 'kontak' =>$kontak]);
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
+        return view('admin.iklan.index',['data' => $data, 'kontak' =>$kontak, 'kontak1' => $kontak1]);
     }
     
 
     public function tambahiklan(){
         $kontak = Kontak::all();
-        return view('admin.iklan.tambahiklan', compact('kontak'));
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
+        return view('admin.iklan.tambahiklan', compact('kontak','kontak1'));
     }
 
     public function insertiklan(Request $request){
@@ -78,8 +89,13 @@ class iklanController extends Controller
     public function tampiliklan($id){
 
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
         $data = sponsor::find($id);
-        return view('admin.iklan.tampiliklan', compact('data', 'kontak'));
+        return view('admin.iklan.tampiliklan', compact('data', 'kontak', 'kontak1'));
     }
     
     public function updateiklan(Request $request, $id){

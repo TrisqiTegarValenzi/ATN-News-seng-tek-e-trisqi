@@ -2,56 +2,63 @@
 <div class="navbar-custom">
     <ul class="list-unstyled topnav-menu float-right mb-0">
 
+
         <li class="dropdown notification-list">
-            <li class="dropdown notification-list">
-                <a class="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                    <i class="mdi mdi-email-outline noti-icon"></i>
-                   
-                </a>
-                <div class="dropdown-menu dropdown-menu-right dropdown-lg">
-
-                    <!-- item-->
-                    <div class="dropdown-item noti-title">
-                        <h5 class="font-16 text-white m-0">
-                            <span class="float-right">
-                                <a href="/deleteall" class="text-white">
-                                    <small>Hapus Semua</small>
-                                </a>
-                            </span>Pesan
-                        </h5>
-                    </div>
-                    
-
-                    <div class="slimscroll noti-scroll">
-
-                        <div class="inbox-widget">
-                            @foreach ($kontak as $row)
-                            <a href="/tampilpesan/{{ $row->id }}">
-                                <div class="inbox-item">
-                                    <div class="inbox-item-img"><img src="profile.jpg" class="rounded-circle" alt=""></div>
-                                    <p class="inbox-item-author">{{$row->name}}</p>
-                                    <p class="inbox-item-text text-truncate">
-                                        {{$row->pesan}}</p>
-                                </div>
+                
+           <a class="nav-link dropdown-toggle  waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+          
+                 <span class="mdi mdi-email-outline noti-icon" >
+                 @if ( $kontak1->count() > 0 )
+               
+               <span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle notif" style="margin-left: -50px; margin-top: 28px;"></span>
+               
+               @endif 
+                 </span>
+            </a> 
+            <div class="dropdown-menu dropdown-menu-right dropdown-lg">
+            
+                <!-- item-->
+                <div class="dropdown-item noti-title">
+                    <h5 class="font-16 text-white m-0">
+                        <span class="float-right">
+                            <a href="/deleteall" class="text-white">
+                                <small>Hapus Semua</small>
                             </a>
-                            @endforeach
-                        </div> <!-- end inbox-widget -->
+                        </span>Pesan
+                    </h5>
+                </div>
 
-                    </div>
-                    <!-- All-->
-                    <a href="{{url('pesan')}}" class="dropdown-item text-primary notify-item notify-all">
-                        Tampilkan Semua
-                        <i class="fi-arrow-right"></i>
-                    </a>
+
+                <div class="slimscroll noti-scroll">
+
+                    <div class="inbox-widget">
+                        @foreach ($kontak1 as $row)
+                        <a href="/bacapesan/{{ $row->id }}">
+                            <div class="inbox-item">
+                                <div class="inbox-item-img"><img src="profile.jpg" class="rounded-circle" alt=""></div>
+                                <p class="inbox-item-author">{{$row->name}}</p>
+                                <p class="inbox-item-text text-truncate">
+                                    {{$row->pesan}}
+                                </p>
+                            </div>
+                        </a>
+                        @endforeach
+                    </div> <!-- end inbox-widget -->
 
                 </div>
-            </li>
+                <!-- All-->
+                <a href="{{url('tampilsemua')}}" class="dropdown-item text-primary notify-item notify-all">
+                    Tampilkan Semua
+                    <i class="fi-arrow-right"></i>
+                </a>
+
+            </div>
+
         </li>
         <li class="dropdown notification-list">
-            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown"
-                href="#" role="button" aria-haspopup="false" aria-expanded="false">
+            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect waves-light" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                 @if (Auth::user()->foto == 'profile.jpg')
-                <img src="profile.jpg" width="100" height="100" style="border-radius: 50%;"> 
+                <img src="profile.jpg" width="100" height="100" style="border-radius: 50%;">
                 @else
                 <img src="{{asset('storage/' . Auth::user()->foto)}}" width="100" height="100" style="border-radius: 50%;">
                 @endif
@@ -67,8 +74,7 @@
 
                 <!-- item-->
                 <!-- Button trigger modal -->
-                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    class="dropdown-item notify-item">
+                <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#exampleModal" class="dropdown-item notify-item">
                     <i class="mdi mdi-account-outline"></i>
                     <span>Profil</span>
                 </a>
@@ -85,7 +91,7 @@
             </div>
         </li>
 
-        
+
 
     </ul>
 

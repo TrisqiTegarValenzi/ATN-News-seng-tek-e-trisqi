@@ -6,6 +6,7 @@ use App\Models\Penghargaan;
 use App\Http\Controllers\Controller;
 use App\Models\Kontak;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
 class PenghargaanController extends Controller
@@ -15,13 +16,23 @@ class PenghargaanController extends Controller
         $katakunci = $request->katakunci;
         $data = Penghargaan::where('penghargaan', 'LIKE', '%'.$katakunci.'%')->paginate(5)->withQueryString();
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
        
-        return view('admin.penghargaan.index',['data' => $data, 'kontak' => $kontak]);
+        return view('admin.penghargaan.index',['data' => $data, 'kontak' => $kontak, 'kontak1' => $kontak1]);
     }
 
     public function tambahpenghargaan(){
         $kontak = Kontak::all();
-        return view('admin.penghargaan.tambahpenghargaan', compact('kontak'));
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
+        return view('admin.penghargaan.tambahpenghargaan', compact('kontak','kontak1'));
     }
 
     public function insertpenghargaan(Request $request){
@@ -58,8 +69,13 @@ class PenghargaanController extends Controller
     public function tampilpenghargaan($id){
 
         $kontak = Kontak::all();
+        $kontak1 = [];
+        if (Auth::check()) {
+            $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
+            // dd($notif);
+        }
         $data = Penghargaan::find($id);
-        return view('admin.penghargaan.tampilpenghargaan', compact('data', 'kontak'));
+        return view('admin.penghargaan.tampilpenghargaan', compact('data', 'kontak', 'kontak1'));
     }
     
     // public function tampilaturan($id){

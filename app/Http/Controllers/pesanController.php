@@ -15,5 +15,13 @@ class pesanController extends Controller
         $kontak = Kontak::find($id);
         return view('admin.tampilpesan.index', compact('kontak'));
     }
+
+    public function bacapesan($id){
+        $data = Kontak::find($id);
+        $data->read = 1;
+        $data->save();
+
+        return redirect()->route('tampilpesan', ['id' => $id]);
+    }
 }
  
