@@ -10,4 +10,9 @@ class Kontak extends Model
     use HasFactory;
     protected $table = 'kontak';
     protected $fillable = ['name', 'email', 'judul', 'pesan'];
+
+    public function profiluser()
+    {
+        return $this->hasOne(User::class);
+    }
 }

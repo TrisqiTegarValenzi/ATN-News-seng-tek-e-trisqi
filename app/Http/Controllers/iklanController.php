@@ -51,13 +51,14 @@ class iklanController extends Controller
 
     public function insertiklan(Request $request){
         $request->validate([
+
+            // 'sponsor' => 'required|unique:sponsor',
             'sponsor'=>'required',
             'foto'=>'required|mimes:jpg, jpeg, png',
             'mulai'=>'required|date',
             'akhir'=>'required|date|after_or_equal:mulai',
-            
-
         ],[
+            // 'sponsor.unique' => 'Sponsor dengan nama tersebut sudah ada',
             'sponsor.required'=>'Kolom iklan Wajib Diisi',
             'foto.required'=>'Kolom Foto Wajib Diisi',
             'foto.mimes'=>'Foto Wajib Berformat JPG, JPEG & PNG',

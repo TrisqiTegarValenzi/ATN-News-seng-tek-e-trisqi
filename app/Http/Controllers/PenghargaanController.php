@@ -41,13 +41,15 @@ class PenghargaanController extends Controller
         Session::flash('tanggal', $request->penghargaan);
 
         $request->validate([
-            
-            'penghargaan'=>'required',
+
+            'penghargaan' => 'required|unique:penghargaan',
+            // 'penghargaan'=>'required',
             'foto'=>'required|mimes:jpg, jpeg, png',
             'foto' => 'dimensions:width=1000,height=600',
             'tanggal'=>'required',
         ],[
-            'penghargaan.required'=>'Kolom Penghargaan Wajib Diisi',
+            'penghargaan.unique' => 'Penghargaan dengan nama tersebut sudah ada',
+            // 'penghargaan.required'=>'Kolom Penghargaan Wajib Diisi',
             'foto.required'=>'Kolom Foto Wajib Diisi',
             'foto.mimes'=>'Foto Wajib Berformat JPG, JPEG & PNG',
             'foto.dimensions' => 'Sesuaikan Ukuran Foto',       

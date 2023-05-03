@@ -70,22 +70,34 @@
                     <!-- end page title -->
 
                     <div class="row">
-                        <div class="col-12">
+                        @foreach ($kontak as $row)
 
-                            @foreach ($kontak as $row)
-                            <a href="/tampilpesan/{{ $row->id }}">
-                            <div class="card" >
-                                <div class="card-body d-flex">
-                                    <div class="col-1 inbox-item-img"><img src="profile.jpg" width="50" class="rounded-circle" alt=""></div>
-                                    <div class="" style="display: block;">
-                                        <div class="inbox-item-img"><div class="" style="font-weight:bold; color:black;">{{$row->name}}</div></div>
-                                        <div class="inbox-item-img"><div class="ellipsis1" style="color: black;">{{$row->pesan}}</div></div>
-                                    </div>
+                            
+                        <div class="col-md-4 ">
+                            <div class="row col-14">
+                                <div class="card" style="width: 18rem; height: 10rem; margin: 17px; ">
+                                    <a href="/tampilpesan/{{ $row->id }}">
+                                        <div class="card-body d-flex">
+                                            <div class="col-1 inbox-item-img"><img src="profile.jpg" width="50" class="rounded-circle" alt=""></div>
+                                            <div class="" style="display: block;">
+                                                <div class="inbox-item-img">
+                                                    <div class="ellipsis card-text" style="font-weight:bold; color:black; margin-left: 50px; max-width: 150px;">{{$row->name}}</div>
+                                                </div>
+                                                <div class="inbox-item-img">
+                                                    <div class="ellipsis card-text" style="color: black; margin-left: 50px; max-height: 150px; max-width: 155px;">{{$row->pesan}}</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
-                              </div>
-                            </a>
-                                @endforeach
+                                
+                            </div>
                         </div>
+
+                        
+                        
+                        @endforeach
+
                         <!-- BEGIN MODAL -->
                         <div class="modal fade none-border" id="event-modal">
                             <div class="modal-dialog">
@@ -161,7 +173,7 @@
             </div> <!-- end container-fluid -->
 
         </div> <!-- end content -->
-
+        {{ $kontak->links() }}
 
 
         <!-- Footer Start -->

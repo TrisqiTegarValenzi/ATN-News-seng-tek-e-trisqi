@@ -78,7 +78,7 @@
 
     <!-- LOGO -->
     <div class="logo-box">
-        <a href="index.html" class="logo text-center logo-dark">
+        <a href="/" class="logo text-center logo-dark">
             <span class="logo-lg">
                 <!-- <img src="assets/images/logo-light.png/" alt="" height="22"> -->
                 <span class="logo-lg-text-dark">RAWR News</span>
@@ -150,20 +150,28 @@
 
                         
                       
-                        <div class="card" >
+                        <div class="card" style="width: 25rem; height: 24rem; margin: 17px; margin-left: 29%; " >
                             <div class="card-body d-flex">
                                 <div class="col-1 inbox-item-img"><img src="{{ asset('profile.jpg')}}" width="50" class="rounded-circle" alt=""></div>
                                 <div class="d-flex justify-content-between" style="width:100%">
                                 <div class="" style="display: block;">
-                                    <div class="inbox-item-img"><div class="mb-5" style="font-weight:bold;">{{$kontak->name}}</div></div>
-                                    <div class="inbox-item-img"><div class="mb-2" style="font-weight:bold; text-align:center">{{$kontak->judul}}</div></div>
+                                    <div class="inbox-item-img"><div class="mb-5" style="font-weight:bold; margin-left: 50px;">{{$kontak->name}}</div></div>
+                                    <div class="inbox-item-img"><div class="mb-2" style="font-weight:bold; text-align:center margin-left: 50px;">{{$kontak->judul}}</div></div>
                                     <div class="inbox-item-img"><div class="me-3">{{$kontak->pesan}}</div></div>
                                     <div class="inbox-item-img"><div class="ellipsis1"></div></div>
                                 </div>
                                 {{-- <div class="inbox-item-img"><div class="" style="display:flex; justify-content:end; font-weight:bold;">{{$kontak->judul}}</div></div> --}}
                                 </div>
                             </div>
+                            <a href="mailto:{{ $kontak->email }}"
+                                target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-reply-fill mb-3" viewBox="0 0 16 16" style="margin-left: 365px; ">
+                                <path d="M5.921 11.9 1.353 8.62a.719.719 0 0 1 0-1.238L5.921 4.1A.716.716 0 0 1 7 4.719V6c1.5 0 6 0 7 8-2.5-4.5-7-4-7-4v1.281c0 .56-.606.898-1.079.62z"/>
+                              </svg>
+                            </a>
+                              
                           </div>
+                          
                         </a>
                           
                         </div>

@@ -4,7 +4,7 @@
 <!-- Mirrored from coderthemes.com/uplon/layouts/vertical/pages-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 16 Feb 2023 09:15:50 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Log In | Uplon - Responsive Bootstrap 4 Admin Dashboard</title>
+        <title>Reset Sandi | RAWR News</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="Responsive bootstrap 4 admin template" name="description" />
         <meta content="Coderthemes" name="author" />
@@ -31,7 +31,7 @@
                                     
                                     <div class="text-center">
                                         <div class="my-3">
-                                                <span><img width="100" src="{{asset('logoatn.png')}}" alt=""></span>
+                                                <span><img width="100" src="{{asset('logorawr.png')}}" alt=""></span>
                                         </div>
                                         <h5 class="text-muted text-uppercase py-3 font-16">Lupa Kata Sandi?</h5>
                                         <h1 class="text-muted text-uppercase py-1 font-12">Silahkan Masukkan Email, Untuk Mereset Kata Sandi Anda</h5>

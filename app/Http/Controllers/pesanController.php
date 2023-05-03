@@ -12,8 +12,11 @@ class pesanController extends Controller
 {
     public function index($id){
 
+        $user = User::find($id);
+        $fotouser = $user->fotouser;
+
         $kontak = Kontak::find($id);
-        return view('admin.tampilpesan.index', compact('kontak'));
+        return view('admin.tampilpesan.index', compact('kontak','user','fotouser'));
     }
 
     public function bacapesan($id){

@@ -66,14 +66,16 @@ class dbadminController extends Controller
         ]);
     }
     public function pindex(){
-        $kontak = Kontak::all();
+        $kontak = Kontak::paginate(6);
+        // $pagin = Kontak::;
         $kontak1 = [];
+        $user = User::all();
         if (Auth::check()) {
             $kontak1 = Kontak::where('read', 0)->orderBy('created_at', 'desc')->get();
             // dd($notif);
         }
         
-            return view('admin.pesan.index', ['kontak' => $kontak,'kontak1' => $kontak1]);
+            return view('admin.pesan.index', ['kontak' => $kontak,'kontak1' => $kontak1,'user' => $user]);
         }
         
         public function tampilsemua(){
