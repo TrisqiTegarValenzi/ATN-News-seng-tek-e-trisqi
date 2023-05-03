@@ -9,7 +9,7 @@ class Kontak extends Model
 {
     use HasFactory;
     protected $table = 'kontak';
-    protected $fillable = ['name', 'email', 'judul', 'pesan'];
+    protected $fillable = ['name', 'email', 'judul', 'pesan', 'foto'];
 
     public function profiluser()
     {

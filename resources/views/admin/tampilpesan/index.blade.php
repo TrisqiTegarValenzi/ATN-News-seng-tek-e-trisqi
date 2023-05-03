@@ -152,7 +152,14 @@
                       
                         <div class="card" style="width: 25rem; height: 24rem; margin: 17px; margin-left: 29%; " >
                             <div class="card-body d-flex">
-                                <div class="col-1 inbox-item-img"><img src="{{ asset('profile.jpg')}}" width="50" class="rounded-circle" alt=""></div>
+                                <div class="col-1 inbox-item-img">
+                                    <!-- <img src="{{ asset('profile.jpg')}}" width="50" class="rounded-circle" alt=""> -->
+                                    @if ($kontak->foto == 'profile.jpg')
+                                    <img src="{{asset('profile.jpg')}}" width="50" height="50"  class="rounded-circle" />
+                                    @else
+                                    <img src="{{asset('storage/' . $kontak->foto)}}" width="50" height="50"  class="rounded-circle" />
+                                    @endif
+                                </div>
                                 <div class="d-flex justify-content-between" style="width:100%">
                                 <div class="" style="display: block;">
                                     <div class="inbox-item-img"><div class="mb-5" style="font-weight:bold; margin-left: 50px;">{{$kontak->name}}</div></div>

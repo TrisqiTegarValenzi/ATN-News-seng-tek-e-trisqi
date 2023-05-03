@@ -54,6 +54,7 @@ class kontakController extends Controller
             Kontak::create([
                 'name' => Auth::user()->username,
                 'email' => Auth::user()->email,
+                'foto' => Auth::user()->foto,
                 'judul' => $request -> judul,
                 'pesan' => $request -> pesan
             ]);
