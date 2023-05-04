@@ -35,7 +35,11 @@
                         @foreach ($kontak1 as $row)
                         <a href="/bacapesan/{{ $row->id }}">
                             <div class="inbox-item">
-                                <div class="inbox-item-img"><img src="profile.jpg" class="rounded-circle" alt=""></div>
+                                <div class="inbox-item-img">@if ($row->foto == 'profile.jpg')
+                                    <img src="{{asset('profile.jpg')}}" width="50" height="40" class="rounded-circle" />
+                                    @else
+                                    <img src="{{asset('storage/' . $row->foto)}}" width="50" height="40" class="rounded-circle" />
+                                    @endif</div>
                                 <p class="inbox-item-author">{{$row->name}}</p>
                                 <p class="inbox-item-text text-truncate">
                                     {{$row->pesan}}
